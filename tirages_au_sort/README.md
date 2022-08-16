@@ -2,7 +2,7 @@
 
 To attribute gains in a lotery depending on the number of participants and gifts.
 
-It's a Delphi project.
+It's a Delphi VCL project for Windows.
 
 ![main form screen capture](https://github.com/DeveloppeurPascal/one-shot-tools/raw/main/tirages_au_sort/screen-captures/main-form.png)
 
