@@ -14,6 +14,10 @@ Except if you have issues or questions to share with me, the projects in this re
 
 Creates a randomly generated password list.
 
+## import-CSV-from-MSSQLServer-To-MySQL
+
+Generate SQL commands to create a database structure from a MS SQL Server dump as CSV files.
+
 ## menage_mailing_list
 
 Scripts to extract emails from a list of email or a log.
