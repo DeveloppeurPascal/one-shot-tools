@@ -10,6 +10,10 @@ Except if you have issues or questions to share with me, the projects in this re
 
 (c) Patrick Prémartin / Olf Software 2003
 
+## generation-serie-mots-de-passe
+
+Creates a randomly generated password list.
+
 ## menage_mailing_list
 
 Scripts to extract emails from a list of email or a log.

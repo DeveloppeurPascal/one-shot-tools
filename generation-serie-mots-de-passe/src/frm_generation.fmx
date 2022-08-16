@@ -1,0 +1,56 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 378.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 374.000000000000000000
+  end
+  object Memo2: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      
+        'Permet de g'#233'n'#233'rer une s'#233'rie de mots de passe sous forme de deux ' +
+        'colonnes: la premi'#232're doit '#234'tre renseign'#233'e avant de cliquer et c' +
+        'ontenir le user, la seconde sera remplie par une s'#233'rie al'#233'atoire' +
+        ' de 8 lettres et chiffres si elle est vide. le s'#233'parateur est un' +
+        'e tabulation.'
+      '')
+    ReadOnly = True
+    ShowScrollBars = False
+    TextSettings.WordWrap = True
+    Align = Bottom
+    CanFocus = False
+    Position.Y = 400.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 80.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 76.000000000000000000
+  end
+  object Button1: TButton
+    Align = Bottom
+    Position.Y = 378.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Button1'
+    OnClick = Button1Click
+  end
+end
