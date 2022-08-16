@@ -10,6 +10,10 @@ Except if you have issues or questions to share with me, the projects in this re
 
 (c) Patrick Prémartin / Olf Software 2003
 
+## menage_mailing_list
+
+Scripts to extract emails from a list of email or a log.
+
 ## tirages_au_sort
 
 To attribute gains in a lotery depending on the number of participants and gifts.
