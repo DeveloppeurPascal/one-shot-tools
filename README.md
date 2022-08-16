@@ -25,3 +25,7 @@ Scripts to extract emails from a list of email or a log.
 ## tirages_au_sort
 
 To attribute gains in a lotery depending on the number of participants and gifts.
+
+## webhosting-send-ftp-config-email
+
+Send the "FTP config email" for a web hosting service from a list of user/passwords.
