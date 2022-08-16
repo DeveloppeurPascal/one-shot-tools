@@ -28,4 +28,8 @@ To attribute gains in a lotery depending on the number of participants and gifts
 
 ## webhosting-send-ftp-config-email
 
-Send the "FTP config email" for a web hosting service from a list of user/passwords.
+Send the "FTP config mail" for a web hosting service from a list of user/passwords.
+
+## webhosting-send-mysql-config-email
+
+Send the "database config mail" for a web hosting service from a list of user/passwords.
