@@ -9,3 +9,7 @@ It's Pascal programming language in Delphi, JavaScript or PHP depending on what 
 Except if you have issues or questions to share with me, the projects in this repository won't be maintained.
 
 (c) Patrick Prémartin / Olf Software 2003
+
+## tirages_au_sort
+
+To attribute gains in a lotery depending on the number of participants and gifts.
