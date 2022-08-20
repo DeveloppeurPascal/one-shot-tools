@@ -1,6 +1,6 @@
 # Génération d'une série de mots de passes
 
-Creates a randomly generated password list.
+Creates a randomly generated password list for a user list.
 
 It's a Delphi FireMonkey project for Windows, Mac, iOS, Android and Linux (and probably other OS depending on the Delphi release you use).
 

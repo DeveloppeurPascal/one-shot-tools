@@ -12,7 +12,7 @@ Except if you have issues or questions to share with me, the projects in this re
 
 ## generation-serie-mots-de-passe
 
-Creates a randomly generated password list.
+Creates a randomly generated password list for a user list.
 
 ## import-CSV-from-MSSQLServer-To-MySQL
 
