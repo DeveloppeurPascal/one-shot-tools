@@ -14,6 +14,10 @@ Except if you have issues or questions to share with me, the projects in this re
 
 Creates a randomly generated password list for a user list.
 
+## genpassword
+
+Generates a list of passwords with only letters and numbers.
+
 ## import-CSV-from-MSSQLServer-To-MySQL
 
 Generate SQL commands to create a database structure from a MS SQL Server dump as CSV files.
