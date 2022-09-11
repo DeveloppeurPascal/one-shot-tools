@@ -1,0 +1,132 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 488
+  ClientWidth = 514
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Top
+    Size.Width = 514.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 510.000000000000000000
+    Viewport.Height = 96.000000000000000000
+  end
+  object Memo2: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Top
+    Position.Y = 150.000000000000000000
+    Size.Width = 514.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 510.000000000000000000
+    Viewport.Height = 96.000000000000000000
+  end
+  object Memo3: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Top
+    Position.Y = 250.000000000000000000
+    Size.Width = 514.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Viewport.Width = 510.000000000000000000
+    Viewport.Height = 96.000000000000000000
+  end
+  object Layout1: TLayout
+    Align = Top
+    Position.Y = 100.000000000000000000
+    Size.Width = 514.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Button1: TButton
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 181.818176269531300000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Generer'
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 211.818176269531300000
+      Position.Y = 10.000000000000000000
+      Size.Width = 181.818176269531300000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Reafficher'
+      OnClick = Button2Click
+    end
+  end
+  object Memo4: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Top
+    Position.Y = 350.000000000000000000
+    Size.Width = 514.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 510.000000000000000000
+    Viewport.Height = 96.000000000000000000
+  end
+  object FDMemTable1: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'user'
+        DataType = ftString
+        Size = 20
+      end
+      item
+        Name = 'pass'
+        DataType = ftString
+        Size = 20
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 376
+    Top = 168
+    object FDMemTable1user: TStringField
+      FieldName = 'user'
+    end
+    object FDMemTable1pass: TStringField
+      FieldName = 'pass'
+    end
+  end
+  object FDStanStorageJSONLink1: TFDStanStorageJSONLink
+    Left = 240
+    Top = 176
+  end
+end

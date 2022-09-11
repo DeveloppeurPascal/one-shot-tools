@@ -26,6 +26,14 @@ Generate SQL commands to create a database structure from a MS SQL Server dump a
 
 Scripts to extract emails from a list of email or a log.
 
+## mesimf371818_ovh
+
+A program created in 2018 to add users, virtual domains web hosting and MySQL Databases on a Debian 9 OVH virtual private server.
+
+Give users names on first memo field, click the button and copy/paste the users/passwords list, the Apache <VirtualHost> source, the MySQL create databases SQL script and bash commands to create users and folders.
+
+Of course change the domaine name "mesimf371818.ovh" hard coded in the source before doing anything with this program.
+
 ## tirages_au_sort
 
 To attribute gains in a lotery depending on the number of participants and gifts.
