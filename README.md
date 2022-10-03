@@ -34,6 +34,10 @@ Give users names on first memo field, click the button and copy/paste the users/
 
 Of course change the domaine name "mesimf371818.ovh" hard coded in the source before doing anything with this program.
 
+## TDirectory_CreateDirectory_Check
+
+Test methods TDirectory.CreateDirectory(), TDirectory.Delete() and the TPath.GetXXXPath() for Delphi programs on all available platforms.
+
 ## tirages_au_sort
 
 To attribute gains in a lotery depending on the number of participants and gifts.
