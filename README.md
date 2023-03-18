@@ -10,6 +10,8 @@ It's Pascal programming language in Delphi, JavaScript or PHP depending on what 
 
 Except if you have issues or questions to share with me, the projects in this repository won't be maintained.
 
+If you are looking for code examples to learn Delphi or basic manipulations look instead at [this repository of examples of all kinds](https://github.com/DeveloppeurPascal/Delphi-samples).
+
 This code repository contains projects developed in Object Pascal language under Delphi. You don't know what Delphi is and where to download it ? You'll learn more [on this web site](https://delphi-resources.developpeur-pascal.fr/).
 
 ## Install

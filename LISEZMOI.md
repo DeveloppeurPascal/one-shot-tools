@@ -10,6 +10,8 @@ Il s'agit du langage de programmation Pascal dans Delphi, JavaScript ou PHP en f
 
 Sauf si vous avez des problèmes ou des questions à partager avec moi, les projets de ce dépôt ne seront pas maintenus.
 
+Si vous cherchez des exemples de code pour apprendre Delphi ou des manipulations de base regardez plutôt [ce dépôt d'exemples de toutes sortes](https://github.com/DeveloppeurPascal/Delphi-samples).
+
 Ce dépôt de code contient des projets développés en langage Pascal Objet sous Delphi. Vous ne savez pas ce qu'est Dephi ni où le télécharger ? Vous en saurez plus [sur ce site web](https://delphi-resources.developpeur-pascal.fr/).
 
 ## Installation
