@@ -37,9 +37,9 @@ begin
   for i := 1 to SpinEdit1.Value do
   begin
     s := '';
-    for j := 1 to 10 do
+    for j := 1 to 12 + random(7) do
     begin
-      choix := Random(26 + 26 + 10);
+      choix := random(26 + 26 + 10);
       case choix of
         0 .. 25:
           c := chr(ord('a') + choix);
@@ -48,7 +48,7 @@ begin
         52 .. 61:
           c := chr(ord('0') + choix - 52);
       end;
-      s := s+c;
+      s := s + c;
     end;
     Memo1.Lines.Add(s);
   end;
