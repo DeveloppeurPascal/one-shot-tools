@@ -69,6 +69,10 @@ Générer des commandes SQL pour créer une structure de base de données à par
 
 Scripts pour extraire les emails d'une liste d'emails ou d'un journal.
 
+### mesiim471222_ovh_vps
+
+Programme créé en 2022 pour générer des comptes utilisateurs et des textes détaillés pour accéder à un compte d'hébergement avec FTP/MySQL/PostgreSQL et bien sûr un nom de (sous-)domaine à configurer sur un serveur web sous Debian avec VirtualMin (mais fonctionne pour tout type d'hébergement).
+
 ### mesimf371818_ovh
 
 Un programme créé en 2018 pour ajouter des utilisateurs, des domaines virtuels d'hébergement web et des bases de données MySQL sur un serveur privé virtuel Debian 9 OVH.

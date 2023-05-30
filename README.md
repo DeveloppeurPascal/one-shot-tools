@@ -69,6 +69,10 @@ Generate SQL commands to create a database structure from a MS SQL Server dump a
 
 Scripts to extract emails from a list of email or a log.
 
+### mesiim471222_ovh_vps
+
+Program created in 2022 to generate user accounts and detailed texts for accessing a hosting account with FTP/MySQL/PostgreSQL and of course a (sub)domain name to configure on a web server under Debian with VirtualMin (but work for all sort of hosting).
+
 ### mesimf371818_ovh
 
 A program created in 2018 to add users, virtual domains web hosting and MySQL Databases on a Debian 9 OVH virtual private server.
