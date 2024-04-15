@@ -81,9 +81,17 @@ Give users names on first memo field, click the button and copy/paste the users/
 
 Of course change the domaine name "mesimf371818.ovh" hard coded in the source before doing anything with this program.
 
+### RedirectionPasDPK
+
+Change all PAS files in a folder with a deprecated comment and an include to the new file path (for compatibility reasons). (useful when changing the tree structure of an open source library or related enterprise project)
+
 ### rename-all-files-in-a-folder
 
 A simple code to rename files in a folder and use a local counter for that.
+
+### show-images-fullscreen
+
+Show all images (JPG, PNG) from a folder in full screen. Use arrow keys to change the picture (next / previous) and ESC/RETURN to exit.
 
 ### TDirectory_CreateDirectory_Check
 

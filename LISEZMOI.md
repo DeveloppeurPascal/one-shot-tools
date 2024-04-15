@@ -81,9 +81,17 @@ Donnez des noms d'utilisateurs sur le premier champ mémo, cliquez sur le bouton
 
 Bien sûr, changez le nom de domaine "mesimf371818.ovh" codé en dur dans la source avant de faire quoi que ce soit avec ce programme.
 
+### RedirectionPasDPK
+
+Modifie les fichiers PAS d'un dossier en ajoutant un commentaire indiquant qu'ils sont dépréciés et enfaisant un lien vers la nouvelle position du fichier déplacé pour des raisons de compatibilité ascendante. (utile en cas de changement d'arborescence d'une librairie open source ou d'un projet lié en entreprise)
+
 ### rename-all-files-in-a-folder
 
 Un code simple pour renommer des fichiers dans un dossier et utiliser un compteur local pour cela.
+
+### show-images-fullscreen
+
+Affiche toutes les images (JPG, PNB) d'un dossier en plein écran une par une. Changez avec les flèches pour passer de l'une à l'autre et sortez avec ESC ou ENTREE.
 
 ### TDirectory_CreateDirectory_Check
 
