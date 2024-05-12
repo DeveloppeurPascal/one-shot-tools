@@ -32,10 +32,13 @@ type
     Button3: TButton;
     XMLDocument1: TXMLDocument;
     Button4: TButton;
+    Button5: TButton;
+    OpenDialog1: TOpenDialog;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
   private
     { Déclarations privées }
   public
@@ -54,7 +57,10 @@ implementation
 {$R *.fmx}
 
 uses
-  System.IOUtils;
+  Win.Registry,
+  System.IOUtils,
+  Olf.RTL.PathAliases,
+  Olf.RTL.DPROJReader;
 
 procedure TForm1.AfficheInfos(Const FileName: string);
 var
@@ -63,122 +69,164 @@ var
   i: integer;
   Win32, Win64: boolean;
   ExeWin32, ExeWin64: string;
+  AliasList: TKeyValueList;
 begin
-  log('******************');
-  log('* ' + tpath.getfilename(FileName));
-  log('******************');
-  log('');
-  XMLDocument1.LoadFromFile(FileName);
-
-  ProjectNode := XMLDocument1.ChildNodes.FindNode('Project');
-  if assigned(ProjectNode) then
-  begin
-    if ProjectNode.HasAttribute('xmlns') then
-      log(ProjectNode.Attributes['xmlns'])
+  AliasList := TKeyValueList.create;
+  try
+    if tpath.IsRelativePath(tpath.GetDirectoryName(FileName)) then
+      AliasList.Add('PROJECTDIR',
+        tpath.GetFullPath(tpath.GetDirectoryName(FileName)))
     else
-      log('Project doesn''t have XMLNS attribute.');
-    ProjectExtensionsNode := ProjectNode.ChildNodes.FindNode
-      ('ProjectExtensions');
-    if assigned(ProjectExtensionsNode) then
+      AliasList.Add('PROJECTDIR', tpath.GetDirectoryName(FileName));
+
+    log('******************');
+    log('* ' + tpath.getfilename(FileName));
+    log('******************');
+    log('');
+    XMLDocument1.LoadFromFile(FileName);
+
+    // showmessage(XMLDocument1.Node.NodeName);
+    // log(XMLDocument1.Xml.Text);
+    ProjectNode := XMLDocument1.ChildNodes.FindNode('Project');
+    if assigned(ProjectNode) then
     begin
-      BorlandProjectNode := ProjectExtensionsNode.ChildNodes.FindNode
-        ('BorlandProject');
-      if assigned(BorlandProjectNode) then
+      if ProjectNode.HasAttribute('xmlns') then
+        log(ProjectNode.Attributes['xmlns'])
+      else
+        log('Project doesn''t have XMLNS attribute.');
+      ProjectExtensionsNode := ProjectNode.ChildNodes.FindNode
+        ('ProjectExtensions');
+      if assigned(ProjectExtensionsNode) then
       begin
-
-        // Plateformes actives : Win32, Win64 ou les deux ?
-        PlatformsNode := BorlandProjectNode.ChildNodes.FindNode('Platforms');
-        if assigned(PlatformsNode) then
+        BorlandProjectNode := ProjectExtensionsNode.ChildNodes.FindNode
+          ('BorlandProject');
+        if assigned(BorlandProjectNode) then
         begin
-          Win32 := false;
-          Win64 := false;
-          for i := 0 to PlatformsNode.ChildNodes.Count - 1 do
-          begin
-            Node := PlatformsNode.ChildNodes[i];
-            if Node.HasAttribute('value') and
-              (Node.Attributes['value'] = 'Win32') then
-              Win32 := Node.NodeValue;
-            if Node.HasAttribute('value') and
-              (Node.Attributes['value'] = 'Win64') then
-              Win64 := Node.NodeValue;
-          end;
-          log('Platform Win32 : ' + Win32.ToString);
-          log('Platform Win64 : ' + Win64.ToString);
-        end
-        else
-          log('No Platforms');
 
-        // Quel est le programme principal et où est-il ? (exe Win32/Win64)
-        DeploymentNode := BorlandProjectNode.ChildNodes.FindNode('Deployment');
-        if assigned(DeploymentNode) then
-        begin
-          ExeWin32 := '';
-          ExeWin64 := '';
-          for i := 0 to DeploymentNode.ChildNodes.Count - 1 do
+          // Plateformes actives : Win32, Win64 ou les deux ?
+          PlatformsNode := BorlandProjectNode.ChildNodes.FindNode('Platforms');
+          if assigned(PlatformsNode) then
           begin
-            DeployFileNode := DeploymentNode.ChildNodes[i];
-            if (DeployFileNode.NodeName = 'DeployFile') and
-              DeployFileNode.HasAttribute('Configuration') and
-              (DeployFileNode.Attributes['Configuration'] = 'Release') and
-              DeployFileNode.HasAttribute('Class') and
-              (DeployFileNode.Attributes['Class'] = 'ProjectOutput') and
-              DeployFileNode.HasAttribute('LocalName') then
+            Win32 := false;
+            Win64 := false;
+            for i := 0 to PlatformsNode.ChildNodes.Count - 1 do
             begin
-              Node := DeployFileNode.ChildNodes.FindNode('Platform');
-              if assigned(Node) and Node.HasAttribute('Name') then
-                if (Node.Attributes['Name'] = 'Win32') then
-                  ExeWin32 := DeployFileNode.Attributes['LocalName']
-                else if Node.Attributes['Name'] = 'Win64' then
-                  ExeWin64 := DeployFileNode.Attributes['LocalName'];
-              if (not ExeWin32.IsEmpty) and (not ExeWin64.IsEmpty) then
-                break;
+              Node := PlatformsNode.ChildNodes[i];
+              if Node.HasAttribute('value') and
+                (Node.Attributes['value'] = 'Win32') then
+                Win32 := Node.NodeValue;
+              if Node.HasAttribute('value') and
+                (Node.Attributes['value'] = 'Win64') then
+                Win64 := Node.NodeValue;
             end;
-          end;
-          if ExeWin32.IsEmpty then
-            log('No Win32 executable.')
-          else if tpath.IsRelativePath(ExeWin32) then
+            log('Platform Win32 : ' + Win32.ToString);
+            log('Platform Win64 : ' + Win64.ToString);
+          end
+          else
+            log('No Platforms');
+
+          // Quel est le programme principal et où est-il ? (exe Win32/Win64)
+          DeploymentNode := BorlandProjectNode.ChildNodes.FindNode
+            ('Deployment');
+          if assigned(DeploymentNode) and DeploymentNode.HasAttribute('Version')
+            and (DeploymentNode.Attributes['Version'] = 4) then
+          // TODO : prendre en charge autres versions du déploiement en XE (bof, mais why not) et 10.x
           begin
-            ExeWin32 := tpath.Combine(tpath.GetDirectoryName(FileName),
-              ExeWin32);
-            log('Win32 Executable : ' + ExeWin32);
-          end;
-          if ExeWin64.IsEmpty then
-            log('No Win64 executable.')
-          else if tpath.IsRelativePath(ExeWin64) then
+            ExeWin32 := '';
+            ExeWin64 := '';
+            for i := 0 to DeploymentNode.ChildNodes.Count - 1 do
+            begin
+              DeployFileNode := DeploymentNode.ChildNodes[i];
+              if (DeployFileNode.NodeName = 'DeployFile') and
+                DeployFileNode.HasAttribute('Configuration') and
+                (DeployFileNode.Attributes['Configuration'] = 'Release') and
+                DeployFileNode.HasAttribute('Class') and
+                (DeployFileNode.Attributes['Class'] = 'ProjectOutput') and
+                DeployFileNode.HasAttribute('LocalName') then
+              begin
+                Node := DeployFileNode.ChildNodes.FindNode('Platform');
+                if assigned(Node) and Node.HasAttribute('Name') then
+                  if (Node.Attributes['Name'] = 'Win32') then
+                  begin
+                    AliasList.AddOrSetValue('Platform',
+                      Node.Attributes['Name']);
+                    AliasList.AddOrSetValue('Configuration',
+                      DeployFileNode.Attributes['Configuration']);
+                    ExeWin32 := ReplaceAliasesInPath
+                      (DeployFileNode.Attributes['LocalName'], AliasList,
+                      false, '23.0',
+                      function(const AAlias: string): string
+                      begin
+                        if AAlias = 'SKIADIR' then
+                          result := 'c:\temp'
+                        else
+                          result := '';
+                      end);
+                  end
+                  else if Node.Attributes['Name'] = 'Win64' then
+                  begin
+                    AliasList.AddOrSetValue('Platform',
+                      Node.Attributes['Name']);
+                    AliasList.AddOrSetValue('Configuration',
+                      DeployFileNode.Attributes['Configuration']);
+                    ExeWin64 := ReplaceAliasesInPath
+                      (DeployFileNode.Attributes['LocalName'], AliasList,
+                      false, '23.0',
+                      function(const AAlias: string): string
+                      begin
+                        if AAlias = 'SKIADIR' then
+                          result := 'c:\temp'
+                        else
+                          result := '';
+                      end);
+                  end;
+                if (not ExeWin32.IsEmpty) and (not ExeWin64.IsEmpty) then
+                  break;
+              end;
+            end;
+            if ExeWin32.IsEmpty then
+              log('No Win32 executable.')
+            else
+              log('Win32 Executable : ' + ExeWin32);
+            if ExeWin64.IsEmpty then
+              log('No Win64 executable.')
+            else
+              log('Win64 Executable : ' + ExeWin64);
+          end
+          else
+            log('No Deployment');
+
+          // Quels fichier pour Win32, puis pour Win64 ?
+          DeploymentNode := BorlandProjectNode.ChildNodes.FindNode
+            ('Deployment');
+          if assigned(DeploymentNode) and DeploymentNode.HasAttribute('Version')
+            and (DeploymentNode.Attributes['Version'] = 4) then
+          // TODO : prendre en charge autres versions du déploiement en XE (bof, mais why not) et 10.x
           begin
-            ExeWin64 := tpath.Combine(tpath.GetDirectoryName(FileName),
-              ExeWin64);
-            log('Win64 Executable : ' + ExeWin64);
-          end;
+            if Win32 then
+              ListerFichiers(FileName, 'Win32', DeploymentNode);
+            if Win64 then
+              ListerFichiers(FileName, 'Win64', DeploymentNode);
+          end
+          else
+            log('No Deployment');
         end
         else
-          log('No Deployment');
-
-        // Quels fichier pour Win32, puis pour Win64 ?
-        DeploymentNode := BorlandProjectNode.ChildNodes.FindNode('Deployment');
-        if assigned(DeploymentNode) then
-        begin
-          if Win32 then
-            ListerFichiers(FileName, 'Win32', DeploymentNode);
-          if Win64 then
-            ListerFichiers(FileName, 'Win64', DeploymentNode);
-        end
-        else
-          log('No Deployment');
-
+          log('No BorlandProject');
       end
       else
-        log('No BorlandProject');
+        log('No ProjectExtensions');
     end
     else
-      log('No ProjectExtensions');
-  end
-  else
-    log('No Project');
+      log('No Project');
 
-  log('');
-  log('');
-  log('');
+    log('');
+    log('');
+    log('');
+
+  finally
+    AliasList.free;
+  end;
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
@@ -204,70 +252,169 @@ begin
   AfficheInfos('..\..\DisplayDPROJContent.dproj');
 end;
 
+procedure TForm1.Button5Click(Sender: TObject);
+var
+  DPROJReader: TOlfDPROJReader;
+
+  procedure ShowInfos(const APlatform: string;
+  const AConfiguration: string = 'Release');
+  var
+    ProgramFilePath: string;
+    DeployFileList: TOlfFilesToDeployList;
+    i: integer;
+  begin
+    log(APlatform + ' OK');
+    ProgramFilePath := DPROJReader.GetProjectExecutable(APlatform,
+      AConfiguration);
+    if ProgramFilePath.IsEmpty then
+      log('No program for "' + AConfiguration + '" configuration.')
+    else
+    begin
+      log('Program (' + AConfiguration + ') : ' + ProgramFilePath);
+      DPROJReader.BDSVersion := '23.0';
+      DPROJReader.onGetPathForAliasFunc :=
+          function(Const AAlias: string): string
+        begin
+          if AAlias = 'SKIADIR' then
+            result := 'c:\temp'
+          else
+            result := '';
+        end;
+      DeployFileList := DPROJReader.GetFilesToDeploy(APlatform, AConfiguration);
+      try
+        for i := 0 to DeployFileList.Count - 1 do
+        begin
+          log('- File : ' + DeployFileList[i].FromFileName);
+          log('=> from folder : ' + DeployFileList[i].FromPath);
+          log('=> to folder : ' + DeployFileList[i].toPath);
+          log('=> as : ' + DeployFileList[i].ToFileName);
+          log('=> overwrite : ' + DeployFileList[i].Overwrite.ToString);
+        end;
+      finally
+        DeployFileList.free;
+      end;
+    end;
+  end;
+
+begin
+  if OpenDialog1.Execute and tfile.Exists(OpenDialog1.FileName) and
+    (tpath.GetExtension(OpenDialog1.FileName).tolower = '.dproj') then
+  begin
+    Memo1.lines.Clear;
+    DPROJReader := TOlfDPROJReader.create(OpenDialog1.FileName);
+    try
+      if DPROJReader.HasPlatform('Win32') then
+        ShowInfos('Win32')
+      else
+        log('No Win32');
+      if DPROJReader.HasPlatform('Win64') then
+        ShowInfos('Win64')
+      else
+        log('No Win64');
+      if DPROJReader.HasPlatform('WinARM') then
+        ShowInfos('WinARM')
+      else
+        log('No WinARM');
+      if DPROJReader.HasPlatform('Linux64') then
+        ShowInfos('Linux64')
+      else
+        log('No Linux64');
+    finally
+      DPROJReader.free;
+    end;
+  end;
+end;
+
 procedure TForm1.ListerFichiers(Const FileName: string;
-  const Plateforme: string; const DeploymentNode: IXMLNode);
+const Plateforme: string; const DeploymentNode: IXMLNode);
 var
   Node, DeployFileNode, PlatformNode: IXMLNode;
   i, j: integer;
   FilePath: string;
+  AliasList: TKeyValueList;
 begin
-  log('');
-  log('**********');
-  log('* Liste des fichiers à déployer pour ' + Plateforme);
-  log('**********');
-  log('');
-  for i := 0 to DeploymentNode.ChildNodes.Count - 1 do
-  begin
-    DeployFileNode := DeploymentNode.ChildNodes[i];
-    if (DeployFileNode.NodeName = 'DeployFile') and
-      DeployFileNode.HasAttribute('Configuration') and
-      (DeployFileNode.Attributes['Configuration'] = 'Release') and
-      DeployFileNode.HasAttribute('LocalName') then
+  AliasList := TKeyValueList.create;
+  try
+    if tpath.IsRelativePath(tpath.GetDirectoryName(FileName)) then
+      AliasList.Add('PROJECTDIR',
+        tpath.GetFullPath(tpath.GetDirectoryName(FileName)))
+    else
+      AliasList.Add('PROJECTDIR', tpath.GetDirectoryName(FileName));
+
+    log('');
+    log('**********');
+    log('* Liste des fichiers à déployer pour ' + Plateforme);
+    log('**********');
+    log('');
+    for i := 0 to DeploymentNode.ChildNodes.Count - 1 do
     begin
-      PlatformNode := nil;
-      for j := 0 to DeployFileNode.ChildNodes.Count - 1 do
+      DeployFileNode := DeploymentNode.ChildNodes[i];
+      if (DeployFileNode.NodeName = 'DeployFile') and
+        DeployFileNode.HasAttribute('Configuration') and
+        (DeployFileNode.Attributes['Configuration'] = 'Release') and
+        DeployFileNode.HasAttribute('LocalName') then
       begin
-        Node := DeployFileNode.ChildNodes[j];
-        if (Node.NodeName = 'Platform') and Node.HasAttribute('Name') and
-          (Node.Attributes['Name'] = Plateforme) then
+        PlatformNode := nil;
+        for j := 0 to DeployFileNode.ChildNodes.Count - 1 do
         begin
-          PlatformNode := Node;
-          break;
+          Node := DeployFileNode.ChildNodes[j];
+          if (Node.NodeName = 'Platform') and Node.HasAttribute('Name') and
+            (Node.Attributes['Name'] = Plateforme) then
+          begin
+            PlatformNode := Node;
+            AliasList.AddOrSetValue('Platform', Node.Attributes['Name']);
+            AliasList.AddOrSetValue('Configuration',
+              DeployFileNode.Attributes['Configuration']);
+            break;
+          end;
+        end;
+        if assigned(PlatformNode) then
+        begin
+          log('From : ' + DeployFileNode.Attributes['LocalName']);
+
+          log(ReplaceAliasesInPath(DeployFileNode.Attributes['LocalName'],
+            AliasList, false, '23.0',
+            function(const AAlias: string): string
+            begin
+              if AAlias = 'SKIADIR' then
+                result := 'c:\temp'
+              else
+                result := '';
+            end));
+
+          Node := PlatformNode.ChildNodes.FindNode('RemoteDir');
+          if assigned(Node) and (Node.NodeValue <> '.\') then
+            log('To : ' + Node.NodeValue)
+          else
+            log('To : ');
+          Node := PlatformNode.ChildNodes.FindNode('RemoteName');
+          if assigned(Node) then
+            log('As : ' + Node.NodeValue)
+          else
+            log('As : ' + tpath.getfilename(DeployFileNode.Attributes
+              ['LocalName']));
+          Node := PlatformNode.ChildNodes.FindNode('Overwrite');
+          if assigned(Node) then
+            log('Avec écrasement')
+          else
+            log('Copie si absent');
+          log('');
         end;
       end;
-      if assigned(PlatformNode) then
-      begin
-        log('From : ' + DeployFileNode.Attributes['LocalName']);
-
-        FilePath := DeployFileNode.Attributes['LocalName'];
-        if tpath.IsRelativePath(FilePath) then
-          log(tpath.Combine(tpath.GetDirectoryName(FileName), FilePath));
-
-        Node := PlatformNode.ChildNodes.FindNode('RemoteDir');
-        if assigned(Node) and (Node.NodeValue <> '.\') then
-          log('To : ' + Node.NodeValue)
-        else
-          log('To : ');
-        Node := PlatformNode.ChildNodes.FindNode('RemoteName');
-        if assigned(Node) then
-          log('As : ' + Node.NodeValue)
-        else
-          log('As : ' + tpath.getfilename(DeployFileNode.Attributes
-            ['LocalName']));
-        Node := PlatformNode.ChildNodes.FindNode('Overwrite');
-        if assigned(Node) then
-          log('Avec écrasement')
-        else
-          log('Copie si absent');
-        log('');
-      end;
     end;
+
+  finally
+    AliasList.free;
   end;
 end;
 
 procedure TForm1.log(Text: string);
 begin
-  Memo1.lines.add(Text);
+  Memo1.lines.Add(Text);
 end;
+
+initialization
+
+ReportMemoryLeaksOnShutdown := true;
 
 end.
