@@ -104,6 +104,10 @@ Un code simple pour renommer des fichiers dans un dossier et utiliser un compteu
 
 Affiche toutes les images (JPG, PNB) d'un dossier en plein écran une par une. Changez avec les flèches pour passer de l'une à l'autre et sortez avec ESC ou ENTREE.
 
+### SVGFromFolderToStringArrayInUnit
+
+Liste tous les fichiers SVG d'un dossier et crée une unité dans laquelle ils sont stockés sous forme d'un tableau de chaines avec comme index le nom du fichier défini comme constante.
+
 ### TDirectory_CreateDirectory_Check
 
 Test des méthodes TDirectory.CreateDirectory(), TDirectory.Delete() et TPath.GetXXXPath() pour les programmes Delphi sur toutes les plateformes disponibles.
