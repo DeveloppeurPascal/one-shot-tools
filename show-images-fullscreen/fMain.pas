@@ -44,12 +44,17 @@ implementation
 {$R *.fmx}
 
 Uses
-  System.IOUtils, fDisplayImages;
+  System.IOUtils,
+  fDisplayImages,
+  Olf.RTL.Params;
 
 procedure TfrmMain.Button1Click(Sender: TObject);
 begin
   if not TDirectory.Exists(Edit1.Text) then
     raise exception.Create('Folder "' + Edit1.Text + '" doesn''t exist !');
+
+  tparams.setValue('PP', Edit1.Text);
+  tparams.Save;
 
   TfrmDisplayImages.Execute(Edit1.Text);
 end;
@@ -65,7 +70,7 @@ end;
 
 procedure TfrmMain.FormCreate(Sender: TObject);
 begin
-  Edit1.Text := tpath.getpicturespath;
+  Edit1.Text := tparams.getValue('PP', tpath.getpicturespath);
   Edit1.SetFocus;
 end;
 
@@ -81,5 +86,6 @@ initialization
 {$IFDEF DEBUG}
   ReportMemoryLeaksOnShutdown := true;
 {$ENDIF}
+tparams.InitDefaultFileNameV2('OlfSoftware', 'ShowImgFullScreen', true);
 
 end.
