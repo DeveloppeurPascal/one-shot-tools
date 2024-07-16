@@ -20,6 +20,7 @@ To download this code repository, we recommend using "git", but you can also dow
 
 This project uses dependencies in the form of sub-modules. They will be absent from the ZIP file. You'll have to download them by hand.
 
+* [DeveloppeurPascal/Delphi-Game-Engine](https://github.com/DeveloppeurPascal/librairies) must be installed in the ./lib-externes/Delphi-Game-Engine subfolder.
 * [DeveloppeurPascal/librairies](https://github.com/DeveloppeurPascal/librairies) must be installed in the ./lib-externes/librairies subfolder.
 
 ## License to use this code repository and its contents
@@ -63,6 +64,10 @@ or if you speack french you can [subscribe to Zone Abo](https://zone-abo.fr/nos-
 ### DisplayDPROJContent
 
 Displays the content of Delphi project options file.
+
+### gamepad-ui-tests
+
+Some VCL and FMX tests project to use the user interface with a keyboard, mouse and gamepads.
 
 ### generation-serie-mots-de-passe
 

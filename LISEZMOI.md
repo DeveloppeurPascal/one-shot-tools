@@ -20,6 +20,7 @@ Pour télécharger ce dépôt de code il est recommandé de passer par "git" mai
 
 Ce projet utilise des dépendances sous forme de sous modules. Ils seront absents du fichier ZIP. Vous devrez les télécharger à la main.
 
+* [DeveloppeurPascal/Delphi-Game-Engine](https://github.com/DeveloppeurPascal/Delphi-Game-Engine) doit être installé dans le sous dossier ./lib-externes/Delphi-Game-Engine
 * [DeveloppeurPascal/librairies](https://github.com/DeveloppeurPascal/librairies) doit être installé dans le sous dossier ./lib-externes/librairies
 
 ## Licence d'utilisation de ce dépôt de code et de son contenu
@@ -63,6 +64,10 @@ ou si vous parlez français vous pouvez [vous abonner à Zone Abo](https://zone-
 ### DisplayDPROJContent
 
 Affichage d'informations contenues dans un fichier d'options de projet de Delphi.
+
+### gamepad-ui-tests
+
+Des tests en VCL et FireMonkey pour manipuler une interface utilisateur avec clavier, souris et contrôleur de jeux.
 
 ### generation-serie-mots-de-passe
 
