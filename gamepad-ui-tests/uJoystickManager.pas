@@ -18,13 +18,13 @@ type
   TOnNewGamepadDetected = procedure(const GamepadID: integer) of object;
   TOnGamepadLost = procedure(const GamepadID: integer) of object;
   TOnGamepadButtonUp = procedure(const GamepadID: integer;
-    const Button: TJoystickButtons);
+    const Button: TJoystickButtons) of object;
   TOnGamepadButtonDown = procedure(const GamepadID: integer;
-    const Button: TJoystickButtons);
+    const Button: TJoystickButtons) of object;
   TOnGamepadAxesChange = procedure(const GamepadID: integer;
-    const Axe: TJoystickAxes; const Value: single);
+    const Axe: TJoystickAxes; const Value: single) of object;
   TOnGamepadDirectionPadChange = procedure(const GamepadID: integer;
-    const Value: TJoystickDPad);
+    const Value: TJoystickDPad) of object;
 
   /// <summary>
   /// Gamepad manager class, to use as a singleton.
@@ -111,6 +111,10 @@ type
     procedure SetOnGamepadButtonUp(const Value: TOnGamepadButtonUp);
     procedure SetOnGamepadDirectionPadChange(const Value
       : TOnGamepadDirectionPadChange);
+    function GetOnGamepadAxesChange: TOnGamepadAxesChange;
+    function GetOnGamepadButtonDown: TOnGamepadButtonDown;
+    function GetOnGamepadButtonUp: TOnGamepadButtonUp;
+    function GetOnGamepadDirectionPadChange: TOnGamepadDirectionPadChange;
   protected
   public
     property IsSupported: boolean read GetIsSupported;
@@ -147,6 +151,7 @@ type
     FOnGamepadAxesChange: TOnGamepadAxesChange;
     FOnGamepadButtonDown: TOnGamepadButtonDown;
     FOnGamepadButtonUp: TOnGamepadButtonUp;
+    FJoystickInfo: TJoystickInfo;
     procedure SetID(const Value: integer);
     function GetIsSupported: boolean;
     procedure SetEnabled(const Value: boolean);
@@ -156,6 +161,7 @@ type
     procedure SetOnGamepadDirectionPadChange(const Value
       : TOnGamepadDirectionPadChange);
   protected
+    procedure SetNewJoystickInfo(const NewJoystickInfo: TJoystickInfo);
   public
     property IsSupported: boolean read GetIsSupported;
     property Enabled: boolean read FEnabled write SetEnabled;
@@ -364,6 +370,7 @@ begin
               // TODO : boucle de détection des valeurs des gamepad
               // TODO : si nouveau appeler onNewGamepadDetected
               // TODO : si gamepad inexistant, appeler onLostGamepad
+              // TODO : répercuter les valeurs sur le GamePadClass correspondant depuis la liste
             end;
           finally
             FLoopIsRunning := false;
@@ -400,6 +407,27 @@ begin
   result := TGamepadManagerClass.Current.IsSupported;
 end;
 
+function TGamepadManager.GetOnGamepadAxesChange: TOnGamepadAxesChange;
+begin
+  result := TGamepadManagerClass.Current.OnGamepadAxesChange;
+end;
+
+function TGamepadManager.GetOnGamepadButtonDown: TOnGamepadButtonDown;
+begin
+  result := TGamepadManagerClass.Current.OnGamepadButtonDown;
+end;
+
+function TGamepadManager.GetOnGamepadButtonUp: TOnGamepadButtonUp;
+begin
+  result := TGamepadManagerClass.Current.OnGamepadButtonUp;
+end;
+
+function TGamepadManager.GetOnGamepadDirectionPadChange
+  : TOnGamepadDirectionPadChange;
+begin
+  result := TGamepadManagerClass.Current.OnGamepadDirectionPadChange;
+end;
+
 function TGamepadManager.GetOnGamepadLost: TOnGamepadLost;
 begin
   result := TGamepadManagerClass.Current.OnGamepadLost;
@@ -418,24 +446,24 @@ end;
 procedure TGamepadManager.SetOnGamepadAxesChange(const Value
   : TOnGamepadAxesChange);
 begin
-  FOnGamepadAxesChange := Value;
+  TGamepadManagerClass.Current.OnGamepadAxesChange := Value;
 end;
 
 procedure TGamepadManager.SetOnGamepadButtonDown(const Value
   : TOnGamepadButtonDown);
 begin
-  FOnGamepadButtonDown := Value;
+  TGamepadManagerClass.Current.OnGamepadButtonDown := Value;
 end;
 
 procedure TGamepadManager.SetOnGamepadButtonUp(const Value: TOnGamepadButtonUp);
 begin
-  FOnGamepadButtonUp := Value;
+  TGamepadManagerClass.Current.OnGamepadButtonUp := Value;
 end;
 
 procedure TGamepadManager.SetOnGamepadDirectionPadChange
   (const Value: TOnGamepadDirectionPadChange);
 begin
-  FOnGamepadDirectionPadChange := Value;
+  TGamepadManagerClass.Current.OnGamepadDirectionPadChange := Value;
 end;
 
 procedure TGamepadManager.SetOnGamepadLost(const Value: TOnGamepadLost);
@@ -536,6 +564,12 @@ end;
 procedure TGamepadClass.SetID(const Value: integer);
 begin
   FID := Value;
+end;
+
+procedure TGamepadClass.SetNewJoystickInfo(
+  const NewJoystickInfo: TJoystickInfo);
+begin
+// TODO : à compléter
 end;
 
 procedure TGamepadClass.SetOnGamepadAxesChange(const Value
