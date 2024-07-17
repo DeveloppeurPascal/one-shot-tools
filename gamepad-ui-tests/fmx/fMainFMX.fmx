@@ -7,5 +7,50 @@ object Form1: TForm1
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Bottom
+    Position.Y = 312.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 168.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 164.000000000000000000
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 144
+    Top = 240
+  end
+  object Rectangle1: TRectangle
+    Position.X = 360.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object GameLoop: TTimer
+    Interval = 16
+    OnTimer = GameLoopTimer
+    Left = 208
+    Top = 240
+  end
+  object GamepadManager1: TGamepadManager
+    OnNewGamepadDetected = GamepadManager1NewGamepadDetected
+    Left = 168
+    Top = 128
+  end
+  object Gamepad1: TGamepad
+    ID = -1
+    Enabled = True
+    OnButtonDown = Gamepad1ButtonDown
+    OnDirectionPadChange = Gamepad1DirectionPadChange
+    OnLost = Gamepad1Lost
+    Left = 304
+    Top = 128
+  end
 end
