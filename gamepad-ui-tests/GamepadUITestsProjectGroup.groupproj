@@ -3,6 +3,9 @@
         <ProjectGuid>{04DF0760-16C6-4701-915B-12FC3C5B507C}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
+        <Projects Include="components\GamepadUITestPackage.dproj">
+            <Dependencies/>
+        </Projects>
         <Projects Include="fmx\GamepadUITestsFMX.dproj">
             <Dependencies/>
         </Projects>
@@ -17,6 +20,15 @@
             <Default.Personality/>
         </BorlandProject>
     </ProjectExtensions>
+    <Target Name="GamepadUITestPackage">
+        <MSBuild Projects="components\GamepadUITestPackage.dproj"/>
+    </Target>
+    <Target Name="GamepadUITestPackage:Clean">
+        <MSBuild Projects="components\GamepadUITestPackage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GamepadUITestPackage:Make">
+        <MSBuild Projects="components\GamepadUITestPackage.dproj" Targets="Make"/>
+    </Target>
     <Target Name="GamepadUITestsFMX">
         <MSBuild Projects="fmx\GamepadUITestsFMX.dproj"/>
     </Target>
@@ -36,13 +48,13 @@
         <MSBuild Projects="vcl\GamepadUITestsVCL.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="GamepadUITestsFMX;GamepadUITestsVCL"/>
+        <CallTarget Targets="GamepadUITestPackage;GamepadUITestsFMX;GamepadUITestsVCL"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="GamepadUITestsFMX:Clean;GamepadUITestsVCL:Clean"/>
+        <CallTarget Targets="GamepadUITestPackage:Clean;GamepadUITestsFMX:Clean;GamepadUITestsVCL:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="GamepadUITestsFMX:Make;GamepadUITestsVCL:Make"/>
+        <CallTarget Targets="GamepadUITestPackage:Make;GamepadUITestsFMX:Make;GamepadUITestsVCL:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
