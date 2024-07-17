@@ -1,5 +1,6 @@
 unit uJoystickManager;
 
+// TODO : add a Asynchronous or SynchronizeEvents property (true => thread possible, false=>Queue)
 interface
 
 uses
@@ -73,30 +74,79 @@ type
     constructor Create;
     destructor Destroy; override;
     procedure Execute;
+    procedure RegisterGamePadClass(const Gamepad: TGamepadClass);
+    procedure UnRegisterGamePadClass(const Gamepad: TGamepadClass);
+    procedure DoNewGamepad(const GamepadID: integer);
+    procedure DoLostGamepad(const GamepadID: integer);
+    function IsGamepadConnected(const GamepadID: integer): boolean;
   public
+    /// <summary>
+    /// Check if the gamepad API is available for this platform
+    /// </summary>
     property IsSupported: boolean read GetIsSupported;
+    /// <summary>
+    /// Start or stop the gamepad infos check loop
+    /// </summary>
     property Enabled: boolean read FEnabled write SetEnabled;
+    /// <summary>
+    /// Used when a new gamepad is detected (it should be connected but can be not).
+    /// </summary>
     property OnNewGamepadDetected: TOnNewGamepadDetected
       read FOnNewGamepadDetected write SetOnNewGamepadDetected;
+    /// <summary>
+    /// To know if a connected gamepad is disconnected from the system or powered off.
+    /// </summary>
     property OnGamepadLost: TOnGamepadLost read FOnGamepadLost
       write SetOnGamepadLost;
+    /// <summary>
+    /// Called when a gamepad button is up (unpressed)
+    /// </summary>
     property OnGamepadButtonUp: TOnGamepadButtonUp read FOnGamepadButtonUp
       write SetOnGamepadButtonUp;
+    /// <summary>
+    /// Called when a gamepad button is down (pressed)
+    /// </summary>
     property OnGamepadButtonDown: TOnGamepadButtonDown read FOnGamepadButtonDown
       write SetOnGamepadButtonDown;
+    /// <summary>
+    /// Called for each new value of a gamepad axe (X,Y or others)
+    /// </summary>
     property OnGamepadAxesChange: TOnGamepadAxesChange read FOnGamepadAxesChange
       write SetOnGamepadAxesChange;
+    /// <summary>
+    /// Called for each direction change from a gamepad DPAD (if available on it)
+    /// </summary>
     property OnGamepadDirectionPadChange: TOnGamepadDirectionPadChange
       read FOnGamepadDirectionPadChange write SetOnGamepadDirectionPadChange;
     class function Current: TGamepadManagerClass;
     class constructor Create;
     class destructor Destroy;
+    /// <summary>
+    /// Return the gamepad data class
+    /// </summary>
     function GetGamepad(const AID: integer): TGamepadClass;
+    /// <summary>
+    /// Count the detected gamepads number (detected or declared in the OS depending on the platform)
+    /// </summary>
+    function GamepadCount: integer;
+    /// <summary>
+    /// Return the connected gamepads number
+    /// </summary>
+    function ConnectedGamepadCount: integer;
   end;
 
   /// <summary>
   /// Gamepad manager component
   /// </summary>
+{$IF CompilerVersion >= 33.0}
+  [ComponentPlatformsAttribute(pfidWindows or pfidOSX or pfidLinux or
+    pfidAndroid or pfidiOS)]
+{$ELSE}
+  [ComponentPlatformsAttribute(pidWin32 or pidWin64 or pidOSX32 or pidOSX64 or
+    pidiOSSimulator or pidiOSDevice32 or pidiOSDevice64 or pidAndroid or
+    pidAndroid64 or pidLinux64)]
+{$ENDIF}
+
   TGamepadManager = class(TComponent)
   private
     function GetIsSupported: boolean;
@@ -118,21 +168,19 @@ type
   protected
   public
     property IsSupported: boolean read GetIsSupported;
-    constructor Create(AOwner: TComponent); override;
-    destructor Destroy; override;
-  published
     property Enabled: boolean read GetEnabled write SetEnabled;
+  published
     property OnNewGamepadDetected: TOnNewGamepadDetected
       read GetOnNewGamepadDetected write SetOnNewGamepadDetected;
     property OnGamepadLost: TOnGamepadLost read GetOnGamepadLost
       write SetOnGamepadLost;
-    property OnGamepadButtonUp: TOnGamepadButtonUp read GetOnGamepadButtonUp
+    property OnButtonUp: TOnGamepadButtonUp read GetOnGamepadButtonUp
       write SetOnGamepadButtonUp;
-    property OnGamepadButtonDown: TOnGamepadButtonDown
-      read GetOnGamepadButtonDown write SetOnGamepadButtonDown;
-    property OnGamepadAxesChange: TOnGamepadAxesChange
-      read GetOnGamepadAxesChange write SetOnGamepadAxesChange;
-    property OnGamepadDirectionPadChange: TOnGamepadDirectionPadChange
+    property OnButtonDown: TOnGamepadButtonDown read GetOnGamepadButtonDown
+      write SetOnGamepadButtonDown;
+    property OnAxesChange: TOnGamepadAxesChange read GetOnGamepadAxesChange
+      write SetOnGamepadAxesChange;
+    property OnDirectionPadChange: TOnGamepadDirectionPadChange
       read GetOnGamepadDirectionPadChange write SetOnGamepadDirectionPadChange;
   end;
 
@@ -152,6 +200,9 @@ type
     FOnGamepadButtonDown: TOnGamepadButtonDown;
     FOnGamepadButtonUp: TOnGamepadButtonUp;
     FJoystickInfo: TJoystickInfo;
+    FOnGamepadLost: TOnGamepadLost;
+    FIsConnected: boolean;
+    FhasDPAD: boolean;
     procedure SetID(const Value: integer);
     function GetIsSupported: boolean;
     procedure SetEnabled(const Value: boolean);
@@ -160,11 +211,29 @@ type
     procedure SetOnGamepadButtonUp(const Value: TOnGamepadButtonUp);
     procedure SetOnGamepadDirectionPadChange(const Value
       : TOnGamepadDirectionPadChange);
+    procedure SetOnGamepadLost(const Value: TOnGamepadLost);
+    procedure SetIsConnected(const Value: boolean);
+    function GetIsConnected: boolean;
+    function GetAxes(const AxeID: TJoystickAxes): single;
+    function GetButtons(const ButtonID: TJoystickButtons): boolean;
+    function GetDPad: TJoystickDPad;
   protected
     procedure SetNewJoystickInfo(const NewJoystickInfo: TJoystickInfo);
+    procedure DoAxeChanged(const AxeID: integer);
+    procedure DoButtonChanged(const ButtonID: integer);
+    procedure DoDirectionPadChanged;
+    procedure DoLost;
+    procedure RegisterGamePadComponent(const Gamepad: TGamepad);
+    procedure UnRegisterGamePadComponent(const Gamepad: TGamepad);
   public
+    property ID: integer read FID;
     property IsSupported: boolean read GetIsSupported;
     property Enabled: boolean read FEnabled write SetEnabled;
+    property IsConnected: boolean read GetIsConnected write SetIsConnected;
+    property hasDPAD: boolean read FhasDPAD;
+    property Buttons[const ButtonID: TJoystickButtons]: boolean read GetButtons;
+    property Axes[const AxeID: TJoystickAxes]: single read GetAxes;
+    property DPad: TJoystickDPad read GetDPad;
     property OnGamepadButtonUp: TOnGamepadButtonUp read FOnGamepadButtonUp
       write SetOnGamepadButtonUp;
     property OnGamepadButtonDown: TOnGamepadButtonDown read FOnGamepadButtonDown
@@ -173,9 +242,10 @@ type
       write SetOnGamepadAxesChange;
     property OnGamepadDirectionPadChange: TOnGamepadDirectionPadChange
       read FOnGamepadDirectionPadChange write SetOnGamepadDirectionPadChange;
+    property OnGamepadLost: TOnGamepadLost read FOnGamepadLost
+      write SetOnGamepadLost;
+    constructor Create(const AID: integer);
     destructor Destroy; override;
-    property ID: integer read FID write SetID;
-    constructor Create;
   end;
 
   TGamepadClassDict = class(TObjectDictionary<integer, TGamepadClass>)
@@ -184,6 +254,15 @@ type
   /// <summary>
   /// Gamepad component
   /// </summary>
+{$IF CompilerVersion >= 33.0}
+  [ComponentPlatformsAttribute(pfidWindows or pfidOSX or pfidLinux or
+    pfidAndroid or pfidiOS)]
+{$ELSE}
+  [ComponentPlatformsAttribute(pidWin32 or pidWin64 or pidOSX32 or pidOSX64 or
+    pidiOSSimulator or pidiOSDevice32 or pidiOSDevice64 or pidAndroid or
+    pidAndroid64 or pidLinux64)]
+{$ENDIF}
+
   TGamepad = class(TComponent)
   private
     FID: integer;
@@ -192,6 +271,8 @@ type
     FOnGamepadAxesChange: TOnGamepadAxesChange;
     FOnGamepadButtonDown: TOnGamepadButtonDown;
     FOnGamepadButtonUp: TOnGamepadButtonUp;
+    FOnGamepadLost: TOnGamepadLost;
+    FhasDPAD: boolean;
     procedure SetID(const Value: integer);
     function GetIsSupported: boolean;
     procedure SetEnabled(const Value: boolean);
@@ -200,42 +281,54 @@ type
     procedure SetOnGamepadButtonUp(const Value: TOnGamepadButtonUp);
     procedure SetOnGamepadDirectionPadChange(const Value
       : TOnGamepadDirectionPadChange);
+    procedure SetOnGamepadLost(const Value: TOnGamepadLost);
+    function GetIsConnected: boolean;
+    function GetHasDPAD: boolean;
+    function GetAxes(const AxeID: TJoystickAxes): single;
+    function GetButtons(const ButtonID: TJoystickButtons): boolean;
+    function GetDPad: TJoystickDPad;
   protected
     function getGamepadData: TGamepadClass;
   public
     property IsSupported: boolean read GetIsSupported;
+    property IsConnected: boolean read GetIsConnected;
+    property hasDPAD: boolean read FhasDPAD;
+    property Buttons[const ButtonID: TJoystickButtons]: boolean read GetButtons;
+    property Axes[const AxeID: TJoystickAxes]: single read GetAxes;
+    property DPad: TJoystickDPad read GetDPad;
     constructor Create(AOwner: TComponent); override;
-    destructor Destroy; override;
   published
     property ID: integer read FID write SetID;
     property Enabled: boolean read FEnabled write SetEnabled;
-    property OnGamepadButtonUp: TOnGamepadButtonUp read FOnGamepadButtonUp
+    property OnButtonUp: TOnGamepadButtonUp read FOnGamepadButtonUp
       write SetOnGamepadButtonUp;
-    property OnGamepadButtonDown: TOnGamepadButtonDown read FOnGamepadButtonDown
+    property OnButtonDown: TOnGamepadButtonDown read FOnGamepadButtonDown
       write SetOnGamepadButtonDown;
-    property OnGamepadAxesChange: TOnGamepadAxesChange read FOnGamepadAxesChange
+    property OnAxesChange: TOnGamepadAxesChange read FOnGamepadAxesChange
       write SetOnGamepadAxesChange;
-    property OnGamepadDirectionPadChange: TOnGamepadDirectionPadChange
+    property OnDirectionPadChange: TOnGamepadDirectionPadChange
       read FOnGamepadDirectionPadChange write SetOnGamepadDirectionPadChange;
+    property OnLost: TOnGamepadLost read FOnGamepadLost write SetOnGamepadLost;
   end;
 
-  TGamepadList = class(TObjectList<TGamepad>)
+  TGamepadList = class(TList<TGamepad>)
   end;
 
 procedure Register;
 
 implementation
 
+uses
 {$IF Defined(FRAMEWORK_FMX)}
-
-uses
   FMX.Platform,
-  Gamolf.FMX.Joystick;
+  Gamolf.FMX.Joystick,
 {$ELSEIF Defined(FRAMEWORK_VCL)}
-
-uses
-  Gamolf.VCL.Joystick;
+  Gamolf.VCL.Joystick,
 {$ENDIF}
+{$IFDEF DEBUG}
+  FMX.Types,
+{$ENDIF}
+  System.SysUtils;
 
 procedure Register;
 begin
@@ -243,6 +336,16 @@ begin
 end;
 
 { TGamepadManagerClass }
+
+function TGamepadManagerClass.ConnectedGamepadCount: integer;
+var
+  GP: TGamepadClass;
+begin
+  result := 0;
+  for GP in FGamepads.Values do
+    if GP.IsConnected then
+      inc(result);
+end;
 
 class constructor TGamepadManagerClass.Create;
 begin
@@ -259,12 +362,28 @@ begin
     FGamolfJoystickService := nil;
 {$ELSEIF Defined(FRAMEWORK_VCL)}
   FGamolfJoystickService := GetGamolfJoystickService;
+{$ELSEIF Defined(IDE)}
+  // Component package for the IDE
 {$ELSE}
 {$MESSAGE FATAL 'Project type not implemented.'}
 {$ENDIF}
   FLoopIsRunning := false;
-  Enabled := IsSupported; // start the gamepad thread loop if its supported
-  // TODO : à compléter
+  FLoopThread := nil;
+  FOnNewGamepadDetected := nil;
+  FOnGamepadLost := nil;
+  FOnGamepadDirectionPadChange := nil;
+  FOnGamepadAxesChange := nil;
+  FOnGamepadButtonDown := nil;
+  FOnGamepadButtonUp := nil;
+  FOnGamepadDirectionPadChange := nil;
+  FEnabled := false;
+
+  // TODO : à ne pas faire dans l'IDE en conception de fiche
+  TThread.ForceQueue(nil,
+    procedure
+    begin
+      Enabled := IsSupported; // start the gamepad thread loop if its supported
+    end);
 end;
 
 class function TGamepadManagerClass.Current: TGamepadManagerClass;
@@ -276,7 +395,6 @@ destructor TGamepadManagerClass.Destroy;
 var
   i: integer;
 begin
-  // TODO : à compléter
   Enabled := false; // stop the gamepad thread loop
 
   // Wait max 1 minute the end of the thread loop
@@ -291,11 +409,25 @@ begin
   inherited;
 end;
 
+function TGamepadManagerClass.GamepadCount: integer;
+begin
+  result := FGamepads.Count;
+end;
+
 function TGamepadManagerClass.GetGamepad(const AID: integer): TGamepadClass;
 begin
-  // TODO : traiter cas de AID=-1 (dernier ayant eu une modification ou le premier disponible)
-  if not FGamepads.TryGetValue(AID, result) then
+  if (AID < 0) then
+  begin
+    // TODO : traiter cas de AID=-1 (dernier ayant eu une modification ou le premier disponible)
     result := nil;
+  end
+  else if not FGamepads.TryGetValue(AID, result) then
+  begin
+    result := TGamepadClass.Create(AID);
+    result.FhasDPAD := FGamolfJoystickService.hasDPAD(AID);
+    // TODO : HasDPAD() à remonter au niveau de TGameDataClass
+    DoNewGamepad(AID);
+  end;
 end;
 
 function TGamepadManagerClass.GetIsSupported: boolean;
@@ -303,10 +435,30 @@ begin
   result := assigned(FGamolfJoystickService);
 end;
 
+function TGamepadManagerClass.IsGamepadConnected(const GamepadID
+  : integer): boolean;
+begin
+  result := assigned(FGamolfJoystickService) and
+    FGamolfJoystickService.IsConnected(GamepadID);
+end;
+
+procedure TGamepadManagerClass.RegisterGamePadClass(const Gamepad
+  : TGamepadClass);
+begin
+  if not assigned(self) then
+    exit;
+
+  if assigned(Gamepad) and (not FGamepads.ContainsKey(Gamepad.ID)) then
+    FGamepads.Add(Gamepad.ID, Gamepad);
+end;
+
 procedure TGamepadManagerClass.SetEnabled(const Value: boolean);
 begin
   if (not Value) and FLoopIsRunning then
     FLoopThread.Terminate;
+
+  if Value and (not IsSupported) then
+    raise EJoystickServiceException.Create('Gamepad API not available.');
 
   FEnabled := Value;
 
@@ -349,9 +501,37 @@ begin
   FOnNewGamepadDetected := Value;
 end;
 
+procedure TGamepadManagerClass.UnRegisterGamePadClass(const Gamepad
+  : TGamepadClass);
+begin
+  if not assigned(self) then
+    exit;
+
+  if assigned(Gamepad) and FGamepads.ContainsKey(Gamepad.ID) then
+    FGamepads.ExtractPair(Gamepad.ID);
+end;
+
 class destructor TGamepadManagerClass.Destroy;
 begin
   FGamepadManager.Free;
+end;
+
+procedure TGamepadManagerClass.DoLostGamepad(const GamepadID: integer);
+var
+  GP: TGamepadClass;
+begin
+  GP := GetGamepad(GamepadID);
+  GP.DoLost;
+  if assigned(FOnGamepadLost) then
+    FOnGamepadLost(GamepadID);
+end;
+
+procedure TGamepadManagerClass.DoNewGamepad(const GamepadID: integer);
+begin
+  GetGamepad(GamepadID).IsConnected := true;
+  // TODO : plutôt IsDetected que IsConnected
+  if assigned(FOnNewGamepadDetected) then
+    FOnNewGamepadDetected(GamepadID);
 end;
 
 procedure TGamepadManagerClass.Execute;
@@ -360,21 +540,61 @@ begin
   begin
     FLoopIsRunning := true;
     try
+{$IFDEF DEBUG}
+      // log.d('GamepadManagerLoop: starting');
+{$ENDIF}
       FLoopThread := TThread.CreateAnonymousThread(
         procedure
+        var
+          LJoystickInfo: TJoystickInfo;
         begin
           try
-            while not TThread.CheckTerminated do
-            begin
-              TThread.Sleep(10);
-              // TODO : boucle de détection des valeurs des gamepad
-              // TODO : si nouveau appeler onNewGamepadDetected
-              // TODO : si gamepad inexistant, appeler onLostGamepad
-              // TODO : répercuter les valeurs sur le GamePadClass correspondant depuis la liste
+            try
+{$IFDEF DEBUG}
+              // log.d('GamepadManagerLoop: started');
+{$ENDIF}
+              while not TThread.CheckTerminated do
+              begin
+                TThread.Sleep(10);
+                FGamolfJoystickService.ForEach(LJoystickInfo,
+                  procedure(JoystickID: TJoystickID;
+                    var JoystickInfo: TJoystickInfo; hadError: boolean)
+                  var
+                    GP: TGamepadClass;
+                  begin
+{$IFDEF DEBUG}
+                    // log.d('Joystick '+joystickid.ToString+ ' error ? '+haderror.ToString);
+{$ENDIF}
+                    GP := GetGamepad(JoystickID);
+                    if hadError then
+                    begin
+                      if GP.IsConnected then
+                        DoLostGamepad(JoystickID);
+                    end
+                    else
+                    begin
+                      if not GP.IsConnected then
+                        GP.IsConnected := true;
+                      GP.SetNewJoystickInfo(JoystickInfo);
+                    end;
+                  end);
+              end;
+            finally
+              FLoopIsRunning := false;
             end;
-          finally
-            FLoopIsRunning := false;
+          except
+            on e: exception do
+            begin
+              // TODO : ajouter un evenement pour remonter les erreurs au développeur
+
+{$IFDEF DEBUG}
+              // log.d('GamepadManagerLoop: ' + e.Message);
+{$ENDIF}
+            end;
           end;
+{$IFDEF DEBUG}
+          // log.d('GamepadManagerLoop: stopped');
+{$ENDIF}
         end);
       FLoopThread.start;
     except
@@ -385,21 +605,9 @@ end;
 
 { TGamepadManager }
 
-constructor TGamepadManager.Create(AOwner: TComponent);
-begin
-  inherited;
-  // TODO : à compléter
-end;
-
-destructor TGamepadManager.Destroy;
-begin
-  // TODO : à compléter
-  inherited;
-end;
-
 function TGamepadManager.GetEnabled: boolean;
 begin
-
+  result := TGamepadManagerClass.Current.Enabled;
 end;
 
 function TGamepadManager.GetIsSupported: boolean;
@@ -483,18 +691,43 @@ constructor TGamepad.Create(AOwner: TComponent);
 begin
   inherited;
   FID := -1;
-  // TODO : à compléter
+  FEnabled := true;
+  FOnGamepadDirectionPadChange := nil;
+  FOnGamepadAxesChange := nil;
+  FOnGamepadButtonDown := nil;
+  FOnGamepadButtonUp := nil;
+  FOnGamepadDirectionPadChange := nil;
+  FOnGamepadLost := nil;
 end;
 
-destructor TGamepad.Destroy;
+function TGamepad.GetAxes(const AxeID: TJoystickAxes): single;
 begin
-  // TODO : à compléter
-  inherited;
+  result := getGamepadData.GetAxes(AxeID);
+end;
+
+function TGamepad.GetButtons(const ButtonID: TJoystickButtons): boolean;
+begin
+  result := getGamepadData.GetButtons(ButtonID);
+end;
+
+function TGamepad.GetDPad: TJoystickDPad;
+begin
+  result := getGamepadData.GetDPad;
 end;
 
 function TGamepad.getGamepadData: TGamepadClass;
 begin
   result := TGamepadManagerClass.Current.GetGamepad(FID);
+end;
+
+function TGamepad.GetHasDPAD: boolean;
+begin
+  result := getGamepadData.hasDPAD;
+end;
+
+function TGamepad.GetIsConnected: boolean;
+begin
+  result := getGamepadData.IsConnected;
 end;
 
 function TGamepad.GetIsSupported: boolean;
@@ -509,9 +742,9 @@ end;
 
 procedure TGamepad.SetID(const Value: integer);
 begin
-  // TODO : se déréférencer de l'ancien gamepadclass
+  getGamepadData.UnRegisterGamePadComponent(self);
   FID := Value;
-  // TODO : se référencer sur le bon gamepadclass
+  getGamepadData.RegisterGamePadComponent(self);
 end;
 
 procedure TGamepad.SetOnGamepadAxesChange(const Value: TOnGamepadAxesChange);
@@ -535,25 +768,166 @@ begin
   FOnGamepadDirectionPadChange := Value;
 end;
 
+procedure TGamepad.SetOnGamepadLost(const Value: TOnGamepadLost);
+begin
+  FOnGamepadLost := Value;
+end;
+
 { TGamepadClass }
 
-constructor TGamepadClass.Create;
+constructor TGamepadClass.Create(const AID: integer);
 begin
-  inherited;
+  inherited Create;
   FGamepads := TGamepadList.Create;
-  // TODO : à compléter
+  FID := AID;
+  FEnabled := true;
+  FhasDPAD := false;
+  FOnGamepadDirectionPadChange := nil;
+  FOnGamepadAxesChange := nil;
+  FOnGamepadButtonDown := nil;
+  FOnGamepadButtonUp := nil;
+  FOnGamepadLost := nil;
+  setlength(FJoystickInfo.Axes, 0);
+  setlength(FJoystickInfo.Buttons, 0);
+  setlength(FJoystickInfo.PressedButtons, 0);
+  FJoystickInfo.DPad := ord(TJoystickDPad.Center);
+  FIsConnected := false;
+
+  TGamepadManagerClass.Current.RegisterGamePadClass(self);
 end;
 
 destructor TGamepadClass.Destroy;
 begin
-  // TODO : à compléter
+  TGamepadManagerClass.Current.UnRegisterGamePadClass(self);
+
   FGamepads.Free;
   inherited;
+end;
+
+procedure TGamepadClass.DoAxeChanged(const AxeID: integer);
+var
+  GP: TGamepad;
+begin
+  if (AxeID >= 0) and (AxeID < length(FJoystickInfo.Axes)) then
+  begin
+    if assigned(FOnGamepadAxesChange) then
+      FOnGamepadAxesChange(ID, TJoystickAxes(AxeID), FJoystickInfo.Axes[AxeID]);
+    for GP in FGamepads do
+      if assigned(GP.OnAxesChange) and GP.Enabled then
+        GP.OnAxesChange(ID, TJoystickAxes(AxeID), FJoystickInfo.Axes[AxeID]);
+  end;
+end;
+
+procedure TGamepadClass.DoButtonChanged(const ButtonID: integer);
+var
+  GP: TGamepad;
+begin
+  if (ButtonID >= 0) and (ButtonID < length(FJoystickInfo.Buttons)) then
+    case FJoystickInfo.Buttons[ButtonID] of
+      true:
+        begin
+          if assigned(FOnGamepadButtonDown) then
+            FOnGamepadButtonDown(ID, TJoystickButtons(ButtonID));
+          for GP in FGamepads do
+            if assigned(GP.OnButtonDown) and GP.Enabled then
+              GP.OnButtonDown(ID, TJoystickButtons(ButtonID));
+        end;
+    else
+      if assigned(FOnGamepadButtonUp) then
+        FOnGamepadButtonUp(ID, TJoystickButtons(ButtonID));
+      for GP in FGamepads do
+        if assigned(GP.OnButtonUp) and GP.Enabled then
+          GP.OnButtonUp(ID, TJoystickButtons(ButtonID));
+    end;
+end;
+
+procedure TGamepadClass.DoDirectionPadChanged;
+var
+  GP: TGamepad;
+begin
+{$IFDEF DEBUG}
+  // log.d('Joystick ' + FID.ToString+' DPAD changed');
+{$ENDIF}
+  if assigned(FOnGamepadDirectionPadChange) then
+    FOnGamepadDirectionPadChange(ID, TJoystickDPad(FJoystickInfo.DPad));
+  for GP in FGamepads do
+    if assigned(GP.OnDirectionPadChange) and GP.Enabled then
+      GP.OnDirectionPadChange(ID, TJoystickDPad(FJoystickInfo.DPad));
+end;
+
+procedure TGamepadClass.DoLost;
+var
+  GP: TGamepad;
+begin
+  FIsConnected := false;
+  if assigned(FOnGamepadLost) then
+    FOnGamepadLost(ID);
+  for GP in FGamepads do
+    if assigned(GP.OnLost) and GP.Enabled then
+      GP.OnLost(ID);
+end;
+
+function TGamepadClass.GetAxes(const AxeID: TJoystickAxes): single;
+var
+  idx: integer;
+begin
+  idx := ord(AxeID);
+  if (idx >= 0) and (idx < length(FJoystickInfo.Axes)) then
+    result := FJoystickInfo.Axes[idx]
+  else
+    result := 0;
+end;
+
+function TGamepadClass.GetButtons(const ButtonID: TJoystickButtons): boolean;
+var
+  idx: integer;
+begin
+  idx := ord(ButtonID);
+  if (idx >= 0) and (idx < length(FJoystickInfo.Buttons)) then
+    result := FJoystickInfo.Buttons[idx]
+  else
+    result := false;
+end;
+
+function TGamepadClass.GetDPad: TJoystickDPad;
+begin
+  result := TJoystickDPad(FJoystickInfo.DPad);
+end;
+
+function TGamepadClass.GetIsConnected: boolean;
+begin
+  if not assigned(self) then
+    exit(false);
+
+  result := FIsConnected and TGamepadManagerClass.Current.
+    IsGamepadConnected(FID);
 end;
 
 function TGamepadClass.GetIsSupported: boolean;
 begin
   result := TGamepadManagerClass.Current.IsSupported;
+end;
+
+procedure TGamepadClass.RegisterGamePadComponent(const Gamepad: TGamepad);
+var
+  i: integer;
+  found: boolean;
+begin
+  if not assigned(self) then
+    exit;
+
+  if assigned(Gamepad) then
+  begin
+    found := false;
+    for i := 0 to FGamepads.Count - 1 do
+      if FGamepads[i] = Gamepad then
+      begin
+        found := true;
+        break;
+      end;
+    if not found then
+      FGamepads.Add(Gamepad);
+  end;
 end;
 
 procedure TGamepadClass.SetEnabled(const Value: boolean);
@@ -566,10 +940,58 @@ begin
   FID := Value;
 end;
 
-procedure TGamepadClass.SetNewJoystickInfo(
-  const NewJoystickInfo: TJoystickInfo);
+procedure TGamepadClass.SetIsConnected(const Value: boolean);
 begin
-// TODO : à compléter
+  FIsConnected := Value;
+end;
+
+procedure TGamepadClass.SetNewJoystickInfo(const NewJoystickInfo
+  : TJoystickInfo);
+var
+  CurNb, NewNb: integer;
+  i: integer;
+begin
+{$IFDEF DEBUG}
+  // log.d('Joystick ' + FID.ToString+' enabled ? '+FEnabled.ToString);
+{$ENDIF}
+  if not FEnabled then
+    exit;
+
+  CurNb := length(FJoystickInfo.Axes);
+  NewNb := length(NewJoystickInfo.Axes);
+  if CurNb <> NewNb then
+  begin
+    setlength(FJoystickInfo.Axes, NewNb);
+    for i := CurNb to NewNb - 1 do
+      FJoystickInfo.Axes[i] := 0;
+  end;
+  for i := 0 to NewNb - 1 do
+    if (FJoystickInfo.Axes[i] <> NewJoystickInfo.Axes[i]) then
+    begin
+      FJoystickInfo.Axes[i] := NewJoystickInfo.Axes[i];
+      DoAxeChanged(i);
+    end;
+
+  CurNb := length(FJoystickInfo.Buttons);
+  NewNb := length(NewJoystickInfo.Buttons);
+  if CurNb <> NewNb then
+  begin
+    setlength(FJoystickInfo.Buttons, NewNb);
+    for i := CurNb to NewNb - 1 do
+      FJoystickInfo.Buttons[i] := false;
+  end;
+  for i := 0 to NewNb - 1 do
+    if (FJoystickInfo.Buttons[i] <> NewJoystickInfo.Buttons[i]) then
+    begin
+      FJoystickInfo.Buttons[i] := NewJoystickInfo.Buttons[i];
+      DoButtonChanged(i);
+    end;
+
+  if (FJoystickInfo.DPad <> NewJoystickInfo.DPad) then
+  begin
+    FJoystickInfo.DPad := NewJoystickInfo.DPad;
+    DoDirectionPadChanged;
+  end;
 end;
 
 procedure TGamepadClass.SetOnGamepadAxesChange(const Value
@@ -593,6 +1015,23 @@ procedure TGamepadClass.SetOnGamepadDirectionPadChange
   (const Value: TOnGamepadDirectionPadChange);
 begin
   FOnGamepadDirectionPadChange := Value;
+end;
+
+procedure TGamepadClass.SetOnGamepadLost(const Value: TOnGamepadLost);
+begin
+  FOnGamepadLost := Value;
+end;
+
+procedure TGamepadClass.UnRegisterGamePadComponent(const Gamepad: TGamepad);
+var
+  i: integer;
+begin
+  if not assigned(self) then
+    exit;
+
+  for i := FGamepads.Count - 1 downto 0 do
+    if FGamepads[i] = Gamepad then
+      FGamepads.Delete(i);
 end;
 
 end.
