@@ -164,7 +164,9 @@ begin
   begin
     // Source := Focused as TControl;
     Source := ActiveControl;
-    SourceBounds := Source.LocalToAbsolute(Source.BoundsRect);
+    // SourceBounds := Source.LocalToAbsolute(Source.BoundsRect);
+    SourceBounds := Source.LocalToAbsolute(rectf(0, 0, Source.width,
+      Source.height));
     Target := nil;
     for i := 0 to ComponentCount - 1 do
       // if (Components[i] is TControl) then
@@ -172,7 +174,8 @@ begin
       // TGridPanelLayout est dans les TControl
       begin
         c := components[i] as TControl;
-        CBounds := c.LocalToAbsolute(c.BoundsRect);
+        // CBounds := c.LocalToAbsolute(c.BoundsRect);
+        CBounds := c.LocalToAbsolute(rectf(0, 0, c.width, c.height));
         if (CBounds.top > SourceBounds.top) and
           (CBounds.Left <= SourceBounds.right) and
           (CBounds.right >= SourceBounds.Left) then
@@ -203,7 +206,9 @@ begin
   begin
     // Source := Focused as TControl;
     Source := ActiveControl;
-    SourceBounds := Source.LocalToAbsolute(Source.BoundsRect);
+    // SourceBounds := Source.LocalToAbsolute(Source.BoundsRect);
+    SourceBounds := Source.LocalToAbsolute(rectf(0, 0, Source.width,
+      Source.height));
     Target := nil;
     for i := 0 to ComponentCount - 1 do
       // if (Components[i] is TControl) then
@@ -211,7 +216,8 @@ begin
       // TGridPanelLayout est dans les TControl
       begin
         c := components[i] as TControl;
-        CBounds := c.LocalToAbsolute(c.BoundsRect);
+        // CBounds := c.LocalToAbsolute(c.BoundsRect);
+        CBounds := c.LocalToAbsolute(rectf(0, 0, c.width, c.height));
         if (CBounds.Left < SourceBounds.Left) and
           (CBounds.top <= SourceBounds.bottom) and
           (CBounds.bottom >= SourceBounds.top) then
@@ -242,7 +248,9 @@ begin
   begin
     // Source := Focused as TControl;
     Source := ActiveControl;
-    SourceBounds := Source.LocalToAbsolute(Source.BoundsRect);
+    // SourceBounds := Source.LocalToAbsolute(Source.BoundsRect);
+    SourceBounds := Source.LocalToAbsolute(rectf(0, 0, Source.width,
+      Source.height));
     Target := nil;
     for i := 0 to ComponentCount - 1 do
       // if (Components[i] is TControl) then
@@ -250,7 +258,8 @@ begin
       // TGridPanelLayout est dans les TControl
       begin
         c := components[i] as TControl;
-        CBounds := c.LocalToAbsolute(c.BoundsRect);
+        // CBounds := c.LocalToAbsolute(c.BoundsRect);
+        CBounds := c.LocalToAbsolute(rectf(0, 0, c.width, c.height));
         if (CBounds.Left > SourceBounds.Left) and
           (CBounds.top <= SourceBounds.bottom) and
           (CBounds.bottom >= SourceBounds.top) then
@@ -281,7 +290,9 @@ begin
   begin
     // Source := Focused as TControl;
     Source := ActiveControl;
-    SourceBounds := Source.LocalToAbsolute(Source.BoundsRect);
+    // SourceBounds := Source.LocalToAbsolute(Source.BoundsRect);
+    SourceBounds := Source.LocalToAbsolute(rectf(0, 0, Source.width,
+      Source.height));
     Target := nil;
     for i := 0 to ComponentCount - 1 do
       // if (Components[i] is TControl) then
@@ -289,7 +300,8 @@ begin
       // TGridPanelLayout est dans les TControl
       begin
         c := components[i] as TControl;
-        CBounds := c.LocalToAbsolute(c.BoundsRect);
+        // CBounds := c.LocalToAbsolute(c.BoundsRect);
+        CBounds := c.LocalToAbsolute(rectf(0, 0, c.width, c.height));
         if (CBounds.top < SourceBounds.top) and
           (CBounds.Left <= SourceBounds.right) and
           (CBounds.right >= SourceBounds.Left) then
