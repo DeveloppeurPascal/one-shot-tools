@@ -38,6 +38,8 @@ type
     procedure GameLoopTimer(Sender: TObject);
     procedure Gamepad1ButtonDown(const GamepadID: Integer;
       const Button: TJoystickButtons);
+    procedure GamepadManager1ButtonDown(const GamepadID: Integer;
+      const Button: TJoystickButtons);
   private
     { Déclarations privées }
     procedure AddLog(const Txt: string);
@@ -137,6 +139,17 @@ procedure TForm1.Gamepad1Lost(const GamepadID: Integer);
 begin
   AddLog('lost ' + Gamepad1.id.tostring);
   Gamepad1.id := -1;
+end;
+
+procedure TForm1.GamepadManager1ButtonDown(const GamepadID: Integer;
+const Button: TJoystickButtons);
+begin
+  if Button = TJoystickButtons.B then
+    tthread.queue(nil,
+      procedure
+      begin
+        close;
+      end);
 end;
 
 procedure TForm1.GamepadManager1NewGamepadDetected(const GamepadID: Integer);
