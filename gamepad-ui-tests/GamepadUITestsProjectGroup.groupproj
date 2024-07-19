@@ -15,6 +15,9 @@
         <Projects Include="FMXTestUI\FMXTestUI.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="FMXUIItemsList\FMXTestUIItemsList.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -59,14 +62,23 @@
     <Target Name="FMXTestUI:Make">
         <MSBuild Projects="FMXTestUI\FMXTestUI.dproj" Targets="Make"/>
     </Target>
+    <Target Name="FMXTestUIItemsList">
+        <MSBuild Projects="FMXUIItemsList\FMXTestUIItemsList.dproj"/>
+    </Target>
+    <Target Name="FMXTestUIItemsList:Clean">
+        <MSBuild Projects="FMXUIItemsList\FMXTestUIItemsList.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FMXTestUIItemsList:Make">
+        <MSBuild Projects="FMXUIItemsList\FMXTestUIItemsList.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="GamepadUITestPackage;GamepadUITestsFMX;GamepadUITestsVCL;FMXTestUI"/>
+        <CallTarget Targets="GamepadUITestPackage;GamepadUITestsFMX;GamepadUITestsVCL;FMXTestUI;FMXTestUIItemsList"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="GamepadUITestPackage:Clean;GamepadUITestsFMX:Clean;GamepadUITestsVCL:Clean;FMXTestUI:Clean"/>
+        <CallTarget Targets="GamepadUITestPackage:Clean;GamepadUITestsFMX:Clean;GamepadUITestsVCL:Clean;FMXTestUI:Clean;FMXTestUIItemsList:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="GamepadUITestPackage:Make;GamepadUITestsFMX:Make;GamepadUITestsVCL:Make;FMXTestUI:Make"/>
+        <CallTarget Targets="GamepadUITestPackage:Make;GamepadUITestsFMX:Make;GamepadUITestsVCL:Make;FMXTestUI:Make;FMXTestUIItemsList:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
