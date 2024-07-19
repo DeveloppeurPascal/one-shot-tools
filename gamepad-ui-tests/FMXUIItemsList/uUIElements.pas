@@ -144,6 +144,7 @@ type
   // => calculer le nombre d'éléments disponibles quand on change de niveau
   // => faire un + ou - selon les ajouts/suppressions d'éléments au niveau en cours
   // => ajouter une fonction "hasUIItems()" qui travaille par rapport au nombre d'éléments sur le niveau de layout en cours
+  // TODO : ajouter GoToNext / GoToPrevious et la gestion de TAB et Shift+TAB plus un TabOrder sur les éléments du niveau courant (par défaut leur ordre d'ajout à la liste)
   TUIItemsList = class(TInterfacedObject)
   private
     FList: TList<TUIItem>;
