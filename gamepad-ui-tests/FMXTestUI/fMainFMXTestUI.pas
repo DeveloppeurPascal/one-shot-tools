@@ -3,11 +3,21 @@ unit fMainFMXTestUI;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.SysUtils,
+  System.Types,
+  System.UITypes,
+  System.Classes,
   System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
-  uJoystickManager, FMX.Controls.Presentation, FMX.StdCtrls,
-  Gamolf.RTL.Joystick, FMX.Layouts;
+  FMX.Types,
+  FMX.Controls,
+  FMX.Forms,
+  FMX.Graphics,
+  FMX.Dialogs,
+  uJoystickManager,
+  FMX.Controls.Presentation,
+  FMX.StdCtrls,
+  Gamolf.RTL.Joystick,
+  FMX.Layouts;
 
 type
   TForm3 = class(TForm)
@@ -69,7 +79,7 @@ procedure TForm3.FormCreate(Sender: TObject);
 var
   i: Integer;
 begin
-  if false then
+  if true then
   begin
     Button1.SetFocus;
 
@@ -190,6 +200,7 @@ begin
             TargetBounds := CBounds
           end;
       end;
+    // TODO : si pas de target, chercher le premier élément en dessous (idéalement le plus proche), même s'il ne "touche" pas l'actuel
     if assigned(Target) then
       Target.SetFocus;
   end;
@@ -232,6 +243,7 @@ begin
             TargetBounds := CBounds
           end;
       end;
+    // TODO : si pas de target, chercher le premier élément à gauche (idéalement le plus proche), même s'il ne "touche" pas l'actuel
     if assigned(Target) then
       Target.SetFocus;
   end;
@@ -274,6 +286,7 @@ begin
             TargetBounds := CBounds
           end;
       end;
+    // TODO : si pas de target, chercher le premier élément à droite (idéalement le plus proche), même s'il ne "touche" pas l'actuel
     if assigned(Target) then
       Target.SetFocus;
   end;
@@ -316,6 +329,7 @@ begin
             TargetBounds := CBounds
           end;
       end;
+    // TODO : si pas de target, chercher le premier élément au dessus (idéalement le plus proche), même s'il ne "touche" pas l'actuel
     if assigned(Target) then
       Target.SetFocus;
   end;
