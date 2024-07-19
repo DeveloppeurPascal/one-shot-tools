@@ -107,7 +107,6 @@ type
       const AOnClickProc: TNotifyProc = nil); overload;
     constructor Create(const AOwner: TUIItemsList; const ABounds: TUIItemBounds;
       const AOnClick: TNotifyEvent); overload;
-    destructor Destroy; override;
   public
     property Bounds: TUIItemBounds read FBounds write SetBounds;
     property RightItem: TUIItem read FRightItem write SetRightItem;
@@ -138,9 +137,13 @@ type
     procedure GamepadButtonDown(const Button: TJoystickButtons;
       var Handled: boolean); virtual;
     procedure SetFocus;
+    destructor Destroy; override;
   end;
 
   // TODO : fournir une info indiquant si on a des éléments sur le niveau en cours (avec un cache pour ne pas le recalculer à chaque fois)
+  // => calculer le nombre d'éléments disponibles quand on change de niveau
+  // => faire un + ou - selon les ajouts/suppressions d'éléments au niveau en cours
+  // => ajouter une fonction "hasUIItems()" qui travaille par rapport au nombre d'éléments sur le niveau de layout en cours
   TUIItemsList = class(TInterfacedObject)
   private
     FList: TList<TUIItem>;
@@ -513,7 +516,7 @@ var
   i: integer;
 begin
   Handled := false;
-// TODO : ne prendre en charge la demande que si des éléments d'interface sont disponibles à ce niveau
+  // TODO : ne prendre en charge la demande que si des éléments d'interface sont disponibles à ce niveau
   for i := 0 to FList.Count - 1 do
     if (FList[i].FLayoutIndex = FLayoutIndex) then
     begin
@@ -557,7 +560,7 @@ function TUIItemsList.GoToDown: boolean;
 var
   item: TUIItem;
 begin
-// TODO : ne prendre en charge la demande que si des éléments d'interface sont disponibles à ce niveau
+  // TODO : ne prendre en charge la demande que si des éléments d'interface sont disponibles à ce niveau
   item := Focused;
   if assigned(item) and assigned(item.BottomItem) then
   begin
@@ -572,7 +575,7 @@ function TUIItemsList.GoToLeft: boolean;
 var
   item: TUIItem;
 begin
-// TODO : ne prendre en charge la demande que si des éléments d'interface sont disponibles à ce niveau
+  // TODO : ne prendre en charge la demande que si des éléments d'interface sont disponibles à ce niveau
   item := Focused;
   if assigned(item) and assigned(item.LeftItem) then
   begin
@@ -587,7 +590,7 @@ function TUIItemsList.GoToRight: boolean;
 var
   item: TUIItem;
 begin
-// TODO : ne prendre en charge la demande que si des éléments d'interface sont disponibles à ce niveau
+  // TODO : ne prendre en charge la demande que si des éléments d'interface sont disponibles à ce niveau
   item := Focused;
   if assigned(item) and assigned(item.RightItem) then
   begin
@@ -602,7 +605,7 @@ function TUIItemsList.GoToUp: boolean;
 var
   item: TUIItem;
 begin
-// TODO : ne prendre en charge la demande que si des éléments d'interface sont disponibles à ce niveau
+  // TODO : ne prendre en charge la demande que si des éléments d'interface sont disponibles à ce niveau
   item := Focused;
   if assigned(item) and assigned(item.TopItem) then
   begin
@@ -618,6 +621,7 @@ procedure TUIItemsList.KeyDown(var Key: Word; var KeyChar: WideChar;
 var
   i: integer;
 begin
+  // TODO : ne prendre en charge la demande que si des éléments d'interface sont disponibles à ce niveau
   for i := 0 to FList.Count - 1 do
     if (FList[i].FLayoutIndex = FLayoutIndex) then
     begin
