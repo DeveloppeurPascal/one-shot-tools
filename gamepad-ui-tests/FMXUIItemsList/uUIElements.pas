@@ -184,11 +184,8 @@ type
 implementation
 
 uses
-{$IF Defined(FRAMEWORK_FMX)}
-  FMX.Controls,
-{$ELSE IF Defined(FRAMEWORK_VCL)}
-{$ENDIF}
   System.UITypes;
+
 { TUIItem }
 
 constructor TUIItem.Create(const AOwner: TUIItemsList);
