@@ -227,6 +227,7 @@ type
     /// Return the connected gamepads number
     /// </summary>
     function ConnectedGamepadCount: integer;
+    constructor Create(AOwner: TComponent); override;
   published
     /// <summary>
     /// Execute events in main thread or in the thread used by the gamepad manager
@@ -252,7 +253,7 @@ type
     /// <summary>
     /// TagBool property "in case of" not used in this class
     /// </summary>
-    property TagBool: boolean read FTagBool write SetTagBool;
+    property TagBool: boolean read FTagBool write SetTagBool default false;
     /// <summary>
     /// TagFloat property "in case of" not used in this class
     /// </summary>
@@ -260,7 +261,7 @@ type
     /// <summary>
     /// TagObject property "in case of" not used in this class
     /// </summary>
-    property TagObject: TObject read FTagObject write SetTagObject;
+    property TagObject: TObject read FTagObject write SetTagObject default nil;
     /// <summary>
     /// TagString property "in case of" not used in this class
     /// </summary>
@@ -455,7 +456,7 @@ type
     /// <summary>
     /// TagBool property "in case of" not used in this class
     /// </summary>
-    property TagBool: boolean read FTagBool write SetTagBool;
+    property TagBool: boolean read FTagBool write SetTagBool default false;
     /// <summary>
     /// TagFloat property "in case of" not used in this class
     /// </summary>
@@ -463,7 +464,7 @@ type
     /// <summary>
     /// TagObject property "in case of" not used in this class
     /// </summary>
-    property TagObject: TObject read FTagObject write SetTagObject;
+    property TagObject: TObject read FTagObject write SetTagObject default nil;
     /// <summary>
     /// TagString property "in case of" not used in this class
     /// </summary>
@@ -537,6 +538,11 @@ begin
   FOnGamepadDirectionPadChange := nil;
   FEnabled := false;
   FSynchronizedEvents := false;
+  FTagBool := false;
+  FTagFloat := 0;
+  FTagString := '';
+  FTagObject := nil;
+  FTag := 0;
 
   // TODO : à ne pas faire dans l'IDE en conception de fiche
   TThread.ForceQueue(nil,
@@ -835,6 +841,15 @@ begin
   result := TGamepadDevicesManager.Current.ConnectedGamepadCount;
 end;
 
+constructor TGamepadManager.Create(AOwner: TComponent);
+begin
+  inherited;
+  FTagBool := false;
+  FTagFloat := 0;
+  FTagString := '';
+  FTagObject := nil;
+end;
+
 function TGamepadManager.GamepadCount: integer;
 begin
   result := TGamepadDevicesManager.Current.GamepadCount;
@@ -969,6 +984,10 @@ begin
   FOnGamepadButtonUp := nil;
   FOnGamepadDirectionPadChange := nil;
   FOnGamepadLost := nil;
+  FTagBool := false;
+  FTagFloat := 0;
+  FTagString := '';
+  FTagObject := nil;
 end;
 
 procedure TGamepad.DoAxeChanged(const AAxeID: integer);
@@ -1187,6 +1206,11 @@ begin
   FJoystickInfo.DPad := ord(TJoystickDPad.Center);
   FIsConnected := false;
   FSynchronizedEvents := false;
+  FTagBool := false;
+  FTagFloat := 0;
+  FTagString := '';
+  FTagObject := nil;
+  FTag := 0;
 
   TGamepadDevicesManager.Current.RegisterGamePadClass(self);
 end;
