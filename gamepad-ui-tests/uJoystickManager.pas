@@ -27,8 +27,6 @@ type
   TOnGamepadDirectionPadChange = procedure(const GamepadID: integer;
     const Value: TJoystickDPad) of object;
 
-  // TODO : ajouter Tag, TagBool, TagFloat, TagObject, TagString sur les classes
-
   /// <summary>
   /// Gamepad manager class, to use as a singleton.
   /// </summary>
@@ -64,6 +62,16 @@ type
     FOnGamepadButtonDown: TOnGamepadButtonDown;
     FOnGamepadButtonUp: TOnGamepadButtonUp;
     FSynchronizedEvents: boolean;
+    FTagBool: boolean;
+    FTagFloat: single;
+    FTagString: string;
+    FTagObject: TObject;
+    FTag: integer;
+    procedure SetTag(const Value: integer);
+    procedure SetTagBool(const Value: boolean);
+    procedure SetTagFloat(const Value: single);
+    procedure SetTagObject(const Value: TObject);
+    procedure SetTagString(const Value: string);
     procedure SetSynchronizedEvents(const Value: boolean);
     procedure SetOnGamepadAxesChange(const Value: TOnGamepadAxesChange);
     procedure SetOnGamepadButtonDown(const Value: TOnGamepadButtonDown);
@@ -142,6 +150,26 @@ type
     /// Return the connected gamepads number
     /// </summary>
     function ConnectedGamepadCount: integer;
+    /// <summary>
+    /// Tag property "in case of" not used in this class
+    /// </summary>
+    property Tag: integer read FTag write SetTag;
+    /// <summary>
+    /// TagBool property "in case of" not used in this class
+    /// </summary>
+    property TagBool: boolean read FTagBool write SetTagBool;
+    /// <summary>
+    /// TagFloat property "in case of" not used in this class
+    /// </summary>
+    property TagFloat: single read FTagFloat write SetTagFloat;
+    /// <summary>
+    /// TagObject property "in case of" not used in this class
+    /// </summary>
+    property TagObject: TObject read FTagObject write SetTagObject;
+    /// <summary>
+    /// TagString property "in case of" not used in this class
+    /// </summary>
+    property TagString: string read FTagString write SetTagString;
   end;
 
   /// <summary>
@@ -213,8 +241,6 @@ type
       read GetOnGamepadDirectionPadChange write SetOnGamepadDirectionPadChange;
   end;
 
-  // TODO : ajouter Tag, TagBool, TagFloat, TagObject, TagString sur les classes
-
   /// <summary>
   /// Gamepad class to access data from each gamepad detected on the system
   /// </summary>
@@ -235,6 +261,11 @@ type
     FIsConnected: boolean;
     FhasDPAD: boolean;
     FSynchronizedEvents: boolean;
+    FTagBool: boolean;
+    FTagFloat: single;
+    FTagString: string;
+    FTagObject: TObject;
+    FTag: integer;
     procedure SetID(const Value: integer);
     function GetIsSupported: boolean;
     procedure SetEnabled(const Value: boolean);
@@ -250,6 +281,11 @@ type
     function GetButtons(const ButtonID: TJoystickButtons): boolean;
     function GetDPad: TJoystickDPad;
     procedure SetSynchronizedEvents(const Value: boolean);
+    procedure SetTag(const Value: integer);
+    procedure SetTagBool(const Value: boolean);
+    procedure SetTagFloat(const Value: single);
+    procedure SetTagObject(const Value: TObject);
+    procedure SetTagString(const Value: string);
   protected
     procedure SetNewJoystickInfo(const NewJoystickInfo: TJoystickInfo);
     procedure DoAxeChanged(const AAxeID: integer);
@@ -284,6 +320,26 @@ type
       write SetOnGamepadLost;
     constructor Create(const AID: integer);
     destructor Destroy; override;
+    /// <summary>
+    /// Tag property "in case of" not used in this class
+    /// </summary>
+    property Tag: integer read FTag write SetTag;
+    /// <summary>
+    /// TagBool property "in case of" not used in this class
+    /// </summary>
+    property TagBool: boolean read FTagBool write SetTagBool;
+    /// <summary>
+    /// TagFloat property "in case of" not used in this class
+    /// </summary>
+    property TagFloat: single read FTagFloat write SetTagFloat;
+    /// <summary>
+    /// TagObject property "in case of" not used in this class
+    /// </summary>
+    property TagObject: TObject read FTagObject write SetTagObject;
+    /// <summary>
+    /// TagString property "in case of" not used in this class
+    /// </summary>
+    property TagString: string read FTagString write SetTagString;
   end;
 
   TGamepadDeviceDict = class(TObjectDictionary<integer, TGamepadDevice>)
@@ -550,6 +606,31 @@ end;
 procedure TGamepadManagerClass.SetSynchronizedEvents(const Value: boolean);
 begin
   FSynchronizedEvents := Value;
+end;
+
+procedure TGamepadManagerClass.SetTag(const Value: integer);
+begin
+  FTag := Value;
+end;
+
+procedure TGamepadManagerClass.SetTagBool(const Value: boolean);
+begin
+  FTagBool := Value;
+end;
+
+procedure TGamepadManagerClass.SetTagFloat(const Value: single);
+begin
+  FTagFloat := Value;
+end;
+
+procedure TGamepadManagerClass.SetTagObject(const Value: TObject);
+begin
+  FTagObject := Value;
+end;
+
+procedure TGamepadManagerClass.SetTagString(const Value: string);
+begin
+  FTagString := Value;
 end;
 
 procedure TGamepadManagerClass.UnRegisterGamePadClass(const Gamepad
@@ -1456,6 +1537,31 @@ end;
 procedure TGamepadDevice.SetSynchronizedEvents(const Value: boolean);
 begin
   FSynchronizedEvents := Value;
+end;
+
+procedure TGamepadDevice.SetTag(const Value: integer);
+begin
+  FTag := Value;
+end;
+
+procedure TGamepadDevice.SetTagBool(const Value: boolean);
+begin
+  FTagBool := Value;
+end;
+
+procedure TGamepadDevice.SetTagFloat(const Value: single);
+begin
+  FTagFloat := Value;
+end;
+
+procedure TGamepadDevice.SetTagObject(const Value: TObject);
+begin
+  FTagObject := Value;
+end;
+
+procedure TGamepadDevice.SetTagString(const Value: string);
+begin
+  FTagString := Value;
 end;
 
 procedure TGamepadDevice.UnRegisterGamePadComponent(const Gamepad: TGamepad);
