@@ -47,14 +47,12 @@ type
     procedure FormCreate(Sender: TObject);
     procedure Button1Click(Sender: TObject);
   private
-    { Déclarations privées }
     procedure ClickOnFocused;
     procedure GoLeft;
     procedure GoRight;
     procedure GoUp;
     procedure GoDown;
   public
-    { Déclarations publiques }
   end;
 
 var
