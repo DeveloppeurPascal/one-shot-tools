@@ -19,6 +19,13 @@ uses
   Gamolf.RTL.Joystick,
   FMX.Layouts;
 
+const
+  /// <summary>
+  /// If true : the form contains buttons and a grid with buttons
+  /// If false : the form contains randomly positionned buttons
+  /// </summary>
+  CButtonsAndGrid = false;
+
 type
   TForm3 = class(TForm)
     Button1: TButton;
@@ -79,7 +86,7 @@ procedure TForm3.FormCreate(Sender: TObject);
 var
   i: Integer;
 begin
-  if true then
+  if CButtonsAndGrid then
   begin
     Button1.SetFocus;
 
