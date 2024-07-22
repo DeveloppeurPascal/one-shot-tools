@@ -293,7 +293,6 @@ type
     FTagString: string;
     FTagObject: TObject;
     FTag: integer;
-    procedure SetID(const Value: integer);
     function GetIsSupported: boolean;
     procedure SetEnabled(const Value: boolean);
     procedure SetOnGamepadAxesChange(const Value: TOnGamepadAxesChange);
@@ -409,7 +408,6 @@ type
       : TOnGamepadDirectionPadChange);
     procedure SetOnGamepadLost(const Value: TOnGamepadLost);
     function GetIsConnected: boolean;
-    function GetHasDPAD: boolean;
     function GetAxes(const AxeID: TJoystickAxes): single;
     function GetButtons(const ButtonID: TJoystickButtons): boolean;
     function GetDPad: TJoystickDPad;
@@ -1111,11 +1109,6 @@ begin
   result := TGamepadDevicesManager.Current.GetGamepad(FID);
 end;
 
-function TGamepad.GetHasDPAD: boolean;
-begin
-  result := getGamepadData.hasDPAD;
-end;
-
 function TGamepad.GetIsConnected: boolean;
 begin
   result := getGamepadData.IsConnected;
@@ -1565,11 +1558,6 @@ end;
 procedure TGamepadDevice.SetEnabled(const Value: boolean);
 begin
   FEnabled := Value;
-end;
-
-procedure TGamepadDevice.SetID(const Value: integer);
-begin
-  FID := Value;
 end;
 
 procedure TGamepadDevice.SetIsConnected(const Value: boolean);
