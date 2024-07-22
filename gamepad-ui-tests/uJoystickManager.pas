@@ -184,9 +184,12 @@ type
     pidAndroid64 or pidLinux64)]
 {$ENDIF}
 
-  // TODO : ajouter TagBool, TagFloat, TagObject, TagString sur les composants
   TGamepadManager = class(TComponent)
   private
+    FTagBool: boolean;
+    FTagFloat: single;
+    FTagString: string;
+    FTagObject: TObject;
     function GetIsSupported: boolean;
     procedure SetEnabled(const Value: boolean);
     function GetEnabled: boolean;
@@ -205,6 +208,10 @@ type
     function GetOnGamepadDirectionPadChange: TOnGamepadDirectionPadChange;
     function GetSynchronizedEvents: boolean;
     procedure SetSynchronizedEvents(const Value: boolean);
+    procedure SetTagBool(const Value: boolean);
+    procedure SetTagFloat(const Value: single);
+    procedure SetTagObject(const Value: TObject);
+    procedure SetTagString(const Value: string);
   protected
   public
     property IsSupported: boolean read GetIsSupported;
@@ -239,6 +246,26 @@ type
       write SetOnGamepadAxesChange;
     property OnDirectionPadChange: TOnGamepadDirectionPadChange
       read GetOnGamepadDirectionPadChange write SetOnGamepadDirectionPadChange;
+    /// <summary>
+    /// Tag property "in case of" not used in this class
+    /// </summary>
+    property Tag;
+    /// <summary>
+    /// TagBool property "in case of" not used in this class
+    /// </summary>
+    property TagBool: boolean read FTagBool write SetTagBool;
+    /// <summary>
+    /// TagFloat property "in case of" not used in this class
+    /// </summary>
+    property TagFloat: single read FTagFloat write SetTagFloat;
+    /// <summary>
+    /// TagObject property "in case of" not used in this class
+    /// </summary>
+    property TagObject: TObject read FTagObject write SetTagObject;
+    /// <summary>
+    /// TagString property "in case of" not used in this class
+    /// </summary>
+    property TagString: string read FTagString write SetTagString;
   end;
 
   /// <summary>
@@ -357,7 +384,6 @@ type
     pidAndroid64 or pidLinux64)]
 {$ENDIF}
 
-  // TODO : ajouter TagBool, TagFloat, TagObject, TagString sur les composants
   TGamepad = class(TComponent)
   private
     FID: integer;
@@ -369,6 +395,10 @@ type
     FOnGamepadLost: TOnGamepadLost;
     FhasDPAD: boolean;
     FSynchronizedEvents: boolean;
+    FTagBool: boolean;
+    FTagFloat: single;
+    FTagString: string;
+    FTagObject: TObject;
     procedure SetID(const Value: integer);
     function GetIsSupported: boolean;
     procedure SetEnabled(const Value: boolean);
@@ -384,6 +414,10 @@ type
     function GetButtons(const ButtonID: TJoystickButtons): boolean;
     function GetDPad: TJoystickDPad;
     procedure SetSynchronizedEvents(const Value: boolean);
+    procedure SetTagBool(const Value: boolean);
+    procedure SetTagFloat(const Value: single);
+    procedure SetTagObject(const Value: TObject);
+    procedure SetTagString(const Value: string);
   protected
     function getGamepadData: TGamepadDevice;
     procedure DoAxeChanged(const AAxeID: integer);
@@ -415,6 +449,26 @@ type
     property OnDirectionPadChange: TOnGamepadDirectionPadChange
       read FOnGamepadDirectionPadChange write SetOnGamepadDirectionPadChange;
     property OnLost: TOnGamepadLost read FOnGamepadLost write SetOnGamepadLost;
+    /// <summary>
+    /// Tag property "in case of" not used in this class
+    /// </summary>
+    property Tag;
+    /// <summary>
+    /// TagBool property "in case of" not used in this class
+    /// </summary>
+    property TagBool: boolean read FTagBool write SetTagBool;
+    /// <summary>
+    /// TagFloat property "in case of" not used in this class
+    /// </summary>
+    property TagFloat: single read FTagFloat write SetTagFloat;
+    /// <summary>
+    /// TagObject property "in case of" not used in this class
+    /// </summary>
+    property TagObject: TObject read FTagObject write SetTagObject;
+    /// <summary>
+    /// TagString property "in case of" not used in this class
+    /// </summary>
+    property TagString: string read FTagString write SetTagString;
   end;
 
   TGamepadList = class(TList<TGamepad>)
@@ -882,6 +936,26 @@ begin
   TGamepadManagerClass.Current.SynchronizedEvents := Value;
 end;
 
+procedure TGamepadManager.SetTagBool(const Value: boolean);
+begin
+  FTagBool := Value;
+end;
+
+procedure TGamepadManager.SetTagFloat(const Value: single);
+begin
+  FTagFloat := Value;
+end;
+
+procedure TGamepadManager.SetTagObject(const Value: TObject);
+begin
+  FTagObject := Value;
+end;
+
+procedure TGamepadManager.SetTagString(const Value: string);
+begin
+  FTagString := Value;
+end;
+
 { TGamepad }
 
 constructor TGamepad.Create(AOwner: TComponent);
@@ -1072,6 +1146,26 @@ end;
 procedure TGamepad.SetSynchronizedEvents(const Value: boolean);
 begin
   FSynchronizedEvents := Value;
+end;
+
+procedure TGamepad.SetTagBool(const Value: boolean);
+begin
+  FTagBool := Value;
+end;
+
+procedure TGamepad.SetTagFloat(const Value: single);
+begin
+  FTagFloat := Value;
+end;
+
+procedure TGamepad.SetTagObject(const Value: TObject);
+begin
+  FTagObject := Value;
+end;
+
+procedure TGamepad.SetTagString(const Value: string);
+begin
+  FTagString := Value;
 end;
 
 { TGamepadDevice }
