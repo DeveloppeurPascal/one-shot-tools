@@ -136,11 +136,7 @@ begin
     tthread.queue(nil,
       procedure
       begin
-        tthread.forcequeue(nil,
-          procedure
-          begin
-            close;
-          end);
+        close;
       end);
 end;
 
