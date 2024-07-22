@@ -50,7 +50,6 @@ begin
     procedure
     begin
       Memo1.lines.Insert(0, Txt);
-      // TODO : ajouter un positionnement en première ligne
     end);
 end;
 
