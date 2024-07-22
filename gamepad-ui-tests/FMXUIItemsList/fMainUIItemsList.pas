@@ -43,6 +43,8 @@ type
     procedure FormKeyDown(Sender: TObject; var Key: Word; var KeyChar: WideChar;
       Shift: TShiftState);
   private
+  protected
+    procedure SetFocusToUIItemFromControl(Sender: TObject);
   public
     UIItems: TUIItemsList;
   end;
@@ -62,19 +64,14 @@ end;
 procedure TForm4.FormCreate(Sender: TObject);
   procedure AddItem(const Control: TControl);
   var
-    LItem: TControl;
     UIItem: TUIItem;
   begin
-    LItem := Control;
-    UIItem := UIItems.AddUIItem(LItem.LocalToAbsolute(trectf.create(0, 0,
-      LItem.Width, LItem.Height)),
+    UIItem := UIItems.AddUIItem(
       procedure(const Sender: TObject)
       begin
-        // showmessage(LItem.ClassName + ' ' + LItem.name);
-        if assigned(LItem.OnClick) then
-          LItem.OnClick(LItem);
+        if (Sender is TUIItem) and assigned((Sender as TUIItem).OnClick) then
+          (Sender as TUIItem).OnClick(Sender as TUIItem);
       end);
-    UIItem.tagobject := LItem;
     UIItem.OnPaintProc := procedure(const Sender: TObject)
       var
         item: TUIItem;
@@ -98,6 +95,9 @@ procedure TForm4.FormCreate(Sender: TObject);
           end;
         end;
       end;
+    UIItem.tagobject := Control;
+    Control.tagobject := UIItem;
+    Control.OnEnter := SetFocusToUIItemFromControl;
   end;
 
 var
@@ -132,8 +132,6 @@ begin
   item.KeyShortcuts.Add(vkhome, #0, []);
 
   UIItems.GetElementByTagObject(Button2).SetFocus;
-
-  // TODO : répercuter les changements de focus des éléments d'interface vers les éléments de la liste
 end;
 
 procedure TForm4.FormDestroy(Sender: TObject);
@@ -225,6 +223,14 @@ end;
 procedure TForm4.Rectangle3Click(Sender: TObject);
 begin
   showmessage((Sender as tcomponent).name);
+end;
+
+procedure TForm4.SetFocusToUIItemFromControl(Sender: TObject);
+begin
+  if assigned(Sender) and (Sender is TControl) and
+    assigned((Sender as TControl).tagobject) and
+    ((Sender as TControl).tagobject is TUIItem) then
+    ((Sender as TControl).tagobject as TUIItem).SetFocus;
 end;
 
 initialization
