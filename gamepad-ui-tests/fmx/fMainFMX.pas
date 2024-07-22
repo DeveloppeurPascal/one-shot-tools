@@ -165,11 +165,12 @@ end;
 
 procedure TForm1.Timer1Timer(Sender: TObject);
 begin
-  if (Timer1.tag <> tGamepadManagerclass.current.GamepadCount) or
-    (Timer1.TagFloat <> tGamepadManagerclass.current.ConnectedGamepadCount) then
+  if (Timer1.tag <> TGamepadDevicesManager.current.GamepadCount) or
+    (Timer1.TagFloat <> TGamepadDevicesManager.current.ConnectedGamepadCount)
+  then
   begin
-    Timer1.tag := tGamepadManagerclass.current.GamepadCount;
-    Timer1.TagFloat := tGamepadManagerclass.current.ConnectedGamepadCount;
+    Timer1.tag := TGamepadDevicesManager.current.GamepadCount;
+    Timer1.TagFloat := TGamepadDevicesManager.current.ConnectedGamepadCount;
     AddLog('Gamepads : ' + Timer1.TagFloat.tostring + '/' +
       Timer1.tag.tostring);
   end;
