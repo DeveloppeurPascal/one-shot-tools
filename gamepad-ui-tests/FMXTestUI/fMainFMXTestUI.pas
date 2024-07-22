@@ -24,7 +24,7 @@ const
   /// If true : the form contains buttons and a grid with buttons
   /// If false : the form contains randomly positionned buttons
   /// </summary>
-  CButtonsAndGrid = false;
+  CButtonsAndGrid = true;
 
 type
   TForm3 = class(TForm)
@@ -205,7 +205,25 @@ begin
             TargetBounds := CBounds
           end;
       end;
-    // TODO : si pas de target, chercher le premier élément en dessous (idéalement le plus proche), même s'il ne "touche" pas l'actuel
+    if not assigned(Target) then
+      for i := 0 to ComponentCount - 1 do
+        if (components[i] is TButton) then
+        begin
+          c := components[i] as TControl;
+          CBounds := c.LocalToAbsolute(rectf(0, 0, c.width, c.height));
+          if (CBounds.top > SourceBounds.top) then
+            if not assigned(Target) then
+            begin
+              Target := c;
+              TargetBounds := CBounds;
+            end
+            else if (TargetBounds.top > CBounds.top) then
+            begin
+              Target := c;
+              TargetBounds := CBounds
+            end;
+        end;
+
     if assigned(Target) then
       Target.SetFocus;
   end;
@@ -248,7 +266,24 @@ begin
             TargetBounds := CBounds
           end;
       end;
-    // TODO : si pas de target, chercher le premier élément à gauche (idéalement le plus proche), même s'il ne "touche" pas l'actuel
+    if not assigned(Target) then
+      for i := 0 to ComponentCount - 1 do
+        if (components[i] is TButton) then
+        begin
+          c := components[i] as TControl;
+          CBounds := c.LocalToAbsolute(rectf(0, 0, c.width, c.height));
+          if (CBounds.Left < SourceBounds.Left) then
+            if not assigned(Target) then
+            begin
+              Target := c;
+              TargetBounds := CBounds
+            end
+            else if (TargetBounds.Left < CBounds.Left) then
+            begin
+              Target := c;
+              TargetBounds := CBounds
+            end;
+        end;
     if assigned(Target) then
       Target.SetFocus;
   end;
@@ -291,7 +326,24 @@ begin
             TargetBounds := CBounds
           end;
       end;
-    // TODO : si pas de target, chercher le premier élément à droite (idéalement le plus proche), même s'il ne "touche" pas l'actuel
+    if not assigned(Target) then
+      for i := 0 to ComponentCount - 1 do
+        if (components[i] is TButton) then
+        begin
+          c := components[i] as TControl;
+          CBounds := c.LocalToAbsolute(rectf(0, 0, c.width, c.height));
+          if (CBounds.Left > SourceBounds.Left) then
+            if not assigned(Target) then
+            begin
+              Target := c;
+              TargetBounds := CBounds
+            end
+            else if (TargetBounds.Left > CBounds.Left) then
+            begin
+              Target := c;
+              TargetBounds := CBounds
+            end;
+        end;
     if assigned(Target) then
       Target.SetFocus;
   end;
@@ -334,7 +386,24 @@ begin
             TargetBounds := CBounds
           end;
       end;
-    // TODO : si pas de target, chercher le premier élément au dessus (idéalement le plus proche), même s'il ne "touche" pas l'actuel
+    if not assigned(Target) then
+      for i := 0 to ComponentCount - 1 do
+        if (components[i] is TButton) then
+        begin
+          c := components[i] as TControl;
+          CBounds := c.LocalToAbsolute(rectf(0, 0, c.width, c.height));
+          if (CBounds.top < SourceBounds.top) then
+            if not assigned(Target) then
+            begin
+              Target := c;
+              TargetBounds := CBounds
+            end
+            else if (TargetBounds.top < CBounds.top) then
+            begin
+              Target := c;
+              TargetBounds := CBounds
+            end;
+        end;
     if assigned(Target) then
       Target.SetFocus;
   end;
