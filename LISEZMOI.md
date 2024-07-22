@@ -113,6 +113,8 @@ Affiche toutes les images (JPG, PNB) d'un dossier en plein écran une par une. C
 
 Liste tous les fichiers SVG d'un dossier et crée une unité dans laquelle ils sont stockés sous forme d'un tableau de chaines avec comme index le nom du fichier défini comme constante.
 
+Ce programme temporare est désormais un vrai projet disponible [sur ce dépôt de code](https://github.com/DeveloppeurPascal/SVGFolder2DelphiUnit).
+
 ### TDirectory_CreateDirectory_Check
 
 Test des méthodes TDirectory.CreateDirectory(), TDirectory.Delete() et TPath.GetXXXPath() pour les programmes Delphi sur toutes les plateformes disponibles.

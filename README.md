@@ -113,6 +113,8 @@ Show all images (JPG, PNG) from a folder in full screen. Use arrow keys to chang
 
 List all SVG files from a folder and create a unit where they are stored as strings in an array, with the filename as a constant used as array index.
 
+This one shot program is now a real project available [from this repository](https://github.com/DeveloppeurPascal/SVGFolder2DelphiUnit).
+
 ### TDirectory_CreateDirectory_Check
 
 Test methods TDirectory.CreateDirectory(), TDirectory.Delete() and the TPath.GetXXXPath() for Delphi programs on all available platforms.
