@@ -544,12 +544,15 @@ begin
   FTagObject := nil;
   FTag := 0;
 
-  // TODO : à ne pas faire dans l'IDE en conception de fiche
+{$IFNDEF IDE}
+  // Ne pas faire dans l'IDE en conception de fiche
+  // *** penser au define IDE dans les packages ***
   TThread.ForceQueue(nil,
     procedure
     begin
       Enabled := IsSupported; // start the gamepad thread loop if its supported
     end);
+{$ENDIF}
 end;
 
 class function TGamepadDevicesManager.Current: TGamepadDevicesManager;
