@@ -29,7 +29,7 @@ type
       const Button: TJoystickButtons);
   private
     { Déclarations privées }
-    Timer1TagFloat: single;
+    Timer1TagFloat: Single;
     Timer1TagString: string;
     procedure AddLog(const Txt: string);
   public
@@ -137,7 +137,11 @@ begin
     tthread.queue(nil,
       procedure
       begin
-        close;
+        tthread.forcequeue(nil,
+          procedure
+          begin
+            close;
+          end);
       end);
 end;
 
