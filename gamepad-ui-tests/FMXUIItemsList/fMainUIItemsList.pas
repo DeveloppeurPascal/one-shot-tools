@@ -17,7 +17,8 @@ uses
   FMX.Controls.Presentation,
   FMX.StdCtrls,
   uJoystickManager,
-  uUIElements, Gamolf.RTL.Joystick;
+  uUIElements,
+  Gamolf.RTL.Joystick;
 
 type
   TForm4 = class(TForm)
@@ -42,9 +43,7 @@ type
     procedure FormKeyDown(Sender: TObject; var Key: Word; var KeyChar: WideChar;
       Shift: TShiftState);
   private
-    { Déclarations privées }
   public
-    { Déclarations publiques }
     UIItems: TUIItemsList;
   end;
 
