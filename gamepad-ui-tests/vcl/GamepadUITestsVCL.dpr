@@ -3,10 +3,8 @@ program GamepadUITestsVCL;
 uses
   Vcl.Forms,
   fMainVCL in 'fMainVCL.pas' {Form2},
-  uJoystickManager in '..\uJoystickManager.pas',
   Gamolf.RTL.Joystick.DirectInput.Win in '..\..\lib-externes\Delphi-Game-Engine\src\Gamolf.RTL.Joystick.DirectInput.Win.pas',
-  Gamolf.RTL.Joystick in '..\..\lib-externes\Delphi-Game-Engine\src\Gamolf.RTL.Joystick.pas',
-  Gamolf.VCL.Joystick in 'Gamolf.VCL.Joystick.pas';
+  Gamolf.RTL.Joystick in '..\..\lib-externes\Delphi-Game-Engine\src\Gamolf.RTL.Joystick.pas';
 
 {$R *.res}
 

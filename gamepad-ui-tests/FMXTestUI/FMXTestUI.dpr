@@ -4,7 +4,6 @@ uses
   System.StartUpCopy,
   FMX.Forms,
   fMainFMXTestUI in 'fMainFMXTestUI.pas' {Form3},
-  uJoystickManager in '..\uJoystickManager.pas',
   Gamolf.FMX.Joystick in '..\..\lib-externes\Delphi-Game-Engine\src\Gamolf.FMX.Joystick.pas',
   Gamolf.RTL.Joystick.DirectInput.Win in '..\..\lib-externes\Delphi-Game-Engine\src\Gamolf.RTL.Joystick.DirectInput.Win.pas',
   Gamolf.RTL.Joystick.Mac in '..\..\lib-externes\Delphi-Game-Engine\src\Gamolf.RTL.Joystick.Mac.pas',

@@ -3,9 +3,6 @@
         <ProjectGuid>{04DF0760-16C6-4701-915B-12FC3C5B507C}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
-        <Projects Include="components\GamepadUITestPackage.dproj">
-            <Dependencies/>
-        </Projects>
         <Projects Include="fmx\GamepadUITestsFMX.dproj">
             <Dependencies/>
         </Projects>
@@ -26,15 +23,6 @@
             <Default.Personality/>
         </BorlandProject>
     </ProjectExtensions>
-    <Target Name="GamepadUITestPackage">
-        <MSBuild Projects="components\GamepadUITestPackage.dproj"/>
-    </Target>
-    <Target Name="GamepadUITestPackage:Clean">
-        <MSBuild Projects="components\GamepadUITestPackage.dproj" Targets="Clean"/>
-    </Target>
-    <Target Name="GamepadUITestPackage:Make">
-        <MSBuild Projects="components\GamepadUITestPackage.dproj" Targets="Make"/>
-    </Target>
     <Target Name="GamepadUITestsFMX">
         <MSBuild Projects="fmx\GamepadUITestsFMX.dproj"/>
     </Target>
@@ -72,13 +60,13 @@
         <MSBuild Projects="FMXUIItemsList\FMXTestUIItemsList.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="GamepadUITestPackage;GamepadUITestsFMX;GamepadUITestsVCL;FMXTestUI;FMXTestUIItemsList"/>
+        <CallTarget Targets="GamepadUITestsFMX;GamepadUITestsVCL;FMXTestUI;FMXTestUIItemsList"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="GamepadUITestPackage:Clean;GamepadUITestsFMX:Clean;GamepadUITestsVCL:Clean;FMXTestUI:Clean;FMXTestUIItemsList:Clean"/>
+        <CallTarget Targets="GamepadUITestsFMX:Clean;GamepadUITestsVCL:Clean;FMXTestUI:Clean;FMXTestUIItemsList:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="GamepadUITestPackage:Make;GamepadUITestsFMX:Make;GamepadUITestsVCL:Make;FMXTestUI:Make;FMXTestUIItemsList:Make"/>
+        <CallTarget Targets="GamepadUITestsFMX:Make;GamepadUITestsVCL:Make;FMXTestUI:Make;FMXTestUIItemsList:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

@@ -310,7 +310,6 @@
             <Form>Form4</Form>
             <FormType>fmx</FormType>
         </DCCReference>
-        <DCCReference Include="..\uJoystickManager.pas"/>
         <DCCReference Include="..\..\lib-externes\Delphi-Game-Engine\src\Gamolf.FMX.Joystick.pas"/>
         <DCCReference Include="..\..\lib-externes\Delphi-Game-Engine\src\Gamolf.RTL.Joystick.DirectInput.Win.pas"/>
         <DCCReference Include="..\..\lib-externes\Delphi-Game-Engine\src\Gamolf.RTL.Joystick.Mac.pas"/>

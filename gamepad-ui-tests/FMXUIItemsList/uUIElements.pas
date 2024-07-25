@@ -12,9 +12,6 @@ uses
 type
   TNotifyProc = reference to procedure(const Sender: TObject);
 
-  TJoystickButtonsSet = set of TJoystickButtons;
-  // TODO : à mettre sur Gamolf.RTL.Joystick
-
 {$IF Defined(FRAMEWORK_FMX)}
   TUIItemBounds = TRectF;
 {$ELSE IF Defined(FRAMEWORK_VCL)}
