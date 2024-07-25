@@ -129,6 +129,7 @@
         </DCCReference>
         <DCCReference Include="..\..\lib-externes\Delphi-Game-Engine\src\Gamolf.RTL.Joystick.DirectInput.Win.pas"/>
         <DCCReference Include="..\..\lib-externes\Delphi-Game-Engine\src\Gamolf.RTL.Joystick.pas"/>
+        <DCCReference Include="..\..\lib-externes\Delphi-Game-Engine\src\Gamolf.VCL.Joystick.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

@@ -3,10 +3,18 @@ unit fMainVCL;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
-  System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uJoystickManager, Vcl.ExtCtrls,
-  Vcl.StdCtrls, Gamolf.RTL.Joystick;
+  Winapi.Windows,
+  Winapi.Messages,
+  System.SysUtils,
+  System.Variants,
+  System.Classes,
+  Vcl.Graphics,
+  Vcl.Controls,
+  Vcl.Forms,
+  Vcl.Dialogs,
+  Vcl.ExtCtrls,
+  Vcl.StdCtrls,
+  Gamolf.RTL.Joystick;
 
 type
   TForm2 = class(TForm)

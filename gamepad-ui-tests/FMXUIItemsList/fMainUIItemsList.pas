@@ -16,7 +16,6 @@ uses
   FMX.Objects,
   FMX.Controls.Presentation,
   FMX.StdCtrls,
-  uJoystickManager,
   uUIElements,
   Gamolf.RTL.Joystick;
 
@@ -69,8 +68,11 @@ procedure TForm4.FormCreate(Sender: TObject);
     UIItem := UIItems.AddUIItem(
       procedure(const Sender: TObject)
       begin
-        if (Sender is TUIItem) and assigned((Sender as TUIItem).OnClick) then
-          (Sender as TUIItem).OnClick(Sender as TUIItem);
+        if (Sender is TUIItem) and assigned((Sender as TUIItem).TagObject) and
+          ((Sender as TUIItem).TagObject is TControl) and
+          assigned(((Sender as TUIItem).TagObject as TControl).onclick) then
+          ((Sender as TUIItem).TagObject as TControl)
+            .onclick((Sender as TUIItem).TagObject as TControl);
       end);
     UIItem.OnPaintProc := procedure(const Sender: TObject)
       var
@@ -79,24 +81,24 @@ procedure TForm4.FormCreate(Sender: TObject);
         if (Sender is TUIItem) then
         begin
           item := Sender as TUIItem;
-          if assigned(item.tagobject) then
+          if assigned(item.TagObject) then
           begin
             if item.IsFocused then
             begin
-              if item.tagobject is tshape then
-                (item.tagobject as tshape).Stroke.dash := tstrokedash.DashDotdot
-              else if (item.tagobject is TControl) then
-                (item.tagobject as TControl).SetFocus;
+              if item.TagObject is tshape then
+                (item.TagObject as tshape).Stroke.dash := tstrokedash.DashDotdot
+              else if (item.TagObject is TControl) then
+                (item.TagObject as TControl).SetFocus;
             end
-            else if item.tagobject is tshape then
-              (item.tagobject as tshape).Stroke.dash := tstrokedash.Solid
-            else if (item.tagobject is TControl) then
-              (item.tagobject as TControl).resetFocus;
+            else if item.TagObject is tshape then
+              (item.TagObject as tshape).Stroke.dash := tstrokedash.Solid
+            else if (item.TagObject is TControl) then
+              (item.TagObject as TControl).resetFocus;
           end;
         end;
       end;
-    UIItem.tagobject := Control;
-    Control.tagobject := UIItem;
+    UIItem.TagObject := Control;
+    Control.TagObject := UIItem;
     Control.OnEnter := SetFocusToUIItemFromControl;
   end;
 
@@ -228,9 +230,9 @@ end;
 procedure TForm4.SetFocusToUIItemFromControl(Sender: TObject);
 begin
   if assigned(Sender) and (Sender is TControl) and
-    assigned((Sender as TControl).tagobject) and
-    ((Sender as TControl).tagobject is TUIItem) then
-    ((Sender as TControl).tagobject as TUIItem).SetFocus;
+    assigned((Sender as TControl).TagObject) and
+    ((Sender as TControl).TagObject is TUIItem) then
+    ((Sender as TControl).TagObject as TUIItem).SetFocus;
 end;
 
 initialization

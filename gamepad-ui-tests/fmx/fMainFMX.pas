@@ -13,7 +13,6 @@ uses
   FMX.Forms,
   FMX.Graphics,
   FMX.Dialogs,
-  uJoystickManager,
   FMX.Memo.Types,
   FMX.Controls.Presentation,
   FMX.ScrollBox,

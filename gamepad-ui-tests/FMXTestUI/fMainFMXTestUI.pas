@@ -13,7 +13,6 @@ uses
   FMX.Forms,
   FMX.Graphics,
   FMX.Dialogs,
-  uJoystickManager,
   FMX.Controls.Presentation,
   FMX.StdCtrls,
   Gamolf.RTL.Joystick,
