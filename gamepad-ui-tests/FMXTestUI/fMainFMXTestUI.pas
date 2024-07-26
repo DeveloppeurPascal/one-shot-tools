@@ -164,7 +164,7 @@ end;
 procedure TForm3.GamepadManager1NewGamepadDetected(const GamepadID: Integer);
 begin
   if ((not Gamepad1.IsConnected) or (Gamepad1.id < 0)) then
-    Gamepad1.id := GamepadID;;
+    Gamepad1.id := GamepadID;
 end;
 
 procedure TForm3.GoDown;
