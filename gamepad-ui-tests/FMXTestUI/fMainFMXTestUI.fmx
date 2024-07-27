@@ -140,6 +140,7 @@ object Form3: TForm3
       end>
   end
   object GamepadManager1: TGamepadManager
+    SynchronizedEvents = True
     OnNewGamepadDetected = GamepadManager1NewGamepadDetected
     OnButtonDown = GamepadManager1ButtonDown
     Left = 528
