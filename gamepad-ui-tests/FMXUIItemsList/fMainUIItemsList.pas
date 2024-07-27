@@ -16,8 +16,8 @@ uses
   FMX.Objects,
   FMX.Controls.Presentation,
   FMX.StdCtrls,
-  uUIElements,
-  Gamolf.RTL.Joystick;
+  Gamolf.RTL.Joystick,
+  Gamolf.RTL.UIElements;
 
 type
   TForm4 = class(TForm)
@@ -45,7 +45,7 @@ type
   protected
     procedure SetFocusToUIItemFromControl(Sender: TObject);
   public
-    UIItems: TUIItemsList;
+    UIItems: TUIElementsList;
   end;
 
 var
@@ -63,24 +63,24 @@ end;
 procedure TForm4.FormCreate(Sender: TObject);
   procedure AddItem(const Control: TControl);
   var
-    UIItem: TUIItem;
+    UIItem: TUIElement;
   begin
     UIItem := UIItems.AddUIItem(
       procedure(const Sender: TObject)
       begin
-        if (Sender is TUIItem) and assigned((Sender as TUIItem).TagObject) and
-          ((Sender as TUIItem).TagObject is TControl) and
-          assigned(((Sender as TUIItem).TagObject as TControl).onclick) then
-          ((Sender as TUIItem).TagObject as TControl)
-            .onclick((Sender as TUIItem).TagObject as TControl);
+        if (Sender is TUIElement) and assigned((Sender as TUIElement).TagObject) and
+          ((Sender as TUIElement).TagObject is TControl) and
+          assigned(((Sender as TUIElement).TagObject as TControl).onclick) then
+          ((Sender as TUIElement).TagObject as TControl)
+            .onclick((Sender as TUIElement).TagObject as TControl);
       end);
     UIItem.OnPaintProc := procedure(const Sender: TObject)
       var
-        item: TUIItem;
+        item: TUIElement;
       begin
-        if (Sender is TUIItem) then
+        if (Sender is TUIElement) then
         begin
-          item := Sender as TUIItem;
+          item := Sender as TUIElement;
           if assigned(item.TagObject) then
           begin
             if item.IsFocused then
@@ -104,11 +104,11 @@ procedure TForm4.FormCreate(Sender: TObject);
 
 var
   i: Integer;
-  item: TUIItem;
+  item: TUIElement;
 begin
   Label1.Visible := false;
 
-  UIItems := TUIItemsList.create;
+  UIItems := TUIElementsList.create;
 
   for i := 0 to ComponentCount - 1 do
     if (components[i] is TButton) or (components[i] is TRectangle) then
@@ -144,7 +144,7 @@ end;
 procedure TForm4.FormKeyDown(Sender: TObject; var Key: Word;
 var KeyChar: WideChar; Shift: TShiftState);
 var
-  item: TUIItem;
+  item: TUIElement;
 begin
   UIItems.KeyDown(Key, KeyChar, Shift);
   if (Key = vkEscape) or (Key = vkHardwareBack) then
@@ -178,7 +178,7 @@ procedure TForm4.GamepadManager1ButtonDown(const GamepadID: Integer;
 const Button: TJoystickButtons);
 var
   handled: boolean;
-  item: TUIItem;
+  item: TUIElement;
 begin
   UIItems.GamepadButtonDown(Button, handled);
   if not handled then
@@ -231,8 +231,8 @@ procedure TForm4.SetFocusToUIItemFromControl(Sender: TObject);
 begin
   if assigned(Sender) and (Sender is TControl) and
     assigned((Sender as TControl).TagObject) and
-    ((Sender as TControl).TagObject is TUIItem) then
-    ((Sender as TControl).TagObject as TUIItem).SetFocus;
+    ((Sender as TControl).TagObject is TUIElement) then
+    ((Sender as TControl).TagObject as TUIElement).SetFocus;
 end;
 
 initialization
