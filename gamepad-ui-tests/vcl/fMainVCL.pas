@@ -14,7 +14,8 @@ uses
   Vcl.Dialogs,
   Vcl.ExtCtrls,
   Vcl.StdCtrls,
-  Gamolf.RTL.Joystick;
+  Gamolf.RTL.Joystick,
+  Gamolf.RTL.Joystick.Deprecated;
 
 type
   TForm2 = class(TForm)
