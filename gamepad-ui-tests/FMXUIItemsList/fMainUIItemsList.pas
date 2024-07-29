@@ -17,7 +17,8 @@ uses
   FMX.Controls.Presentation,
   FMX.StdCtrls,
   Gamolf.RTL.Joystick,
-  Gamolf.RTL.UIElements;
+  Gamolf.RTL.UIElements,
+  Gamolf.RTL.Joystick.Deprecated;
 
 type
   TForm4 = class(TForm)
@@ -68,8 +69,8 @@ procedure TForm4.FormCreate(Sender: TObject);
     UIItem := UIItems.AddUIItem(
       procedure(const Sender: TObject)
       begin
-        if (Sender is TUIElement) and assigned((Sender as TUIElement).TagObject) and
-          ((Sender as TUIElement).TagObject is TControl) and
+        if (Sender is TUIElement) and assigned((Sender as TUIElement).TagObject)
+          and ((Sender as TUIElement).TagObject is TControl) and
           assigned(((Sender as TUIElement).TagObject as TControl).onclick) then
           ((Sender as TUIElement).TagObject as TControl)
             .onclick((Sender as TUIElement).TagObject as TControl);
