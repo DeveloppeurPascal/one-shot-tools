@@ -16,7 +16,8 @@ uses
   FMX.Controls.Presentation,
   FMX.StdCtrls,
   Gamolf.RTL.Joystick,
-  FMX.Layouts;
+  FMX.Layouts,
+  Gamolf.RTL.Joystick.Deprecated;
 
 const
   /// <summary>
