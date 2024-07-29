@@ -18,7 +18,8 @@ uses
   FMX.ScrollBox,
   FMX.Memo,
   Gamolf.RTL.Joystick,
-  FMX.Objects;
+  FMX.Objects,
+  Gamolf.RTL.Joystick.Deprecated;
 
 type
   TForm1 = class(TForm)
