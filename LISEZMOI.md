@@ -1,6 +1,6 @@
 # Programmes à usage unique
 
-[This page in english.](README.md)
+[This page in English.](README.md)
 
 Ces programmes sont de simples utilitaires que j'ai créés pour résoudre un problème ou simplifier une tâche que j'avais.
 
