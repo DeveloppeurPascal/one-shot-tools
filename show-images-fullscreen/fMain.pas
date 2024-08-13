@@ -25,6 +25,7 @@ type
     Button1: TButton;
     Layout1: TLayout;
     EllipsesEditButton1: TEllipsesEditButton;
+    CheckBox1: TCheckBox;
     procedure FormCreate(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; var KeyChar: WideChar;
@@ -54,9 +55,10 @@ begin
     raise exception.Create('Folder "' + Edit1.Text + '" doesn''t exist !');
 
   tparams.setValue('PP', Edit1.Text);
+  tparams.setValue('SF', CheckBox1.IsChecked);
   tparams.Save;
 
-  TfrmDisplayImages.Execute(Edit1.Text);
+  TfrmDisplayImages.Execute(Edit1.Text, CheckBox1.IsChecked);
 end;
 
 procedure TfrmMain.EllipsesEditButton1Click(Sender: TObject);
@@ -71,6 +73,7 @@ end;
 procedure TfrmMain.FormCreate(Sender: TObject);
 begin
   Edit1.Text := tparams.getValue('PP', tpath.getpicturespath);
+  CheckBox1.IsChecked := tparams.getValue('SF', true);
   Edit1.SetFocus;
 end;
 

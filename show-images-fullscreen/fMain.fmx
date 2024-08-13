@@ -13,7 +13,7 @@ object frmMain: TfrmMain
   object Layout1: TLayout
     Align = Center
     Size.Width = 353.000000000000000000
-    Size.Height = 97.000000000000000000
+    Size.Height = 146.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     object Label1: TLabel
@@ -61,14 +61,28 @@ object frmMain: TfrmMain
       Margins.Right = 5.000000000000000000
       Margins.Bottom = 5.000000000000000000
       Position.X = 5.000000000000000000
-      Position.Y = 54.000000000000000000
+      Position.Y = 83.000000000000000000
       Size.Width = 343.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 2
+      TabOrder = 3
       Text = 'Display images'
       TextSettings.Trimming = None
       OnClick = Button1Click
+    end
+    object CheckBox1: TCheckBox
+      Align = Top
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 54.000000000000000000
+      Size.Width = 343.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Show image file name'
     end
   end
 end

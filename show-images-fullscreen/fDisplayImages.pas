@@ -31,7 +31,9 @@ type
   private
     ImageIndex: integer;
     ImagesList: TStringList;
+    FShowImageFilename: boolean;
     procedure SetImagesPath(const Value: string);
+    procedure SetShowImageFilename(const Value: boolean);
   protected
     procedure ShowPicture(Const FileName: string);
     procedure ShowNext;
@@ -39,7 +41,10 @@ type
     procedure GoMainForm;
   public
     property ImagesPath: string write SetImagesPath;
-    class procedure Execute(Const AImagesPath: string);
+    property ShowImageFilename: boolean read FShowImageFilename
+      write SetShowImageFilename;
+    class procedure Execute(Const AImagesPath: string;
+      const AShowImageFilename: boolean);
   end;
 
 implementation
@@ -51,7 +56,8 @@ uses
 
 { TfrmDisplayImages }
 
-class procedure TfrmDisplayImages.Execute(const AImagesPath: string);
+class procedure TfrmDisplayImages.Execute(const AImagesPath: string;
+  const AShowImageFilename: boolean);
 var
   frm: TfrmDisplayImages;
 begin
@@ -61,6 +67,7 @@ begin
   frm := TfrmDisplayImages.Create(nil);
   try
     frm.ImagesPath := AImagesPath;
+    frm.ShowImageFilename := AShowImageFilename;
     frm.Show;
     // ShowModal is not compatible with FullScreen on macOS (15/04/2024)
     // frm.ShowModal;
@@ -140,6 +147,11 @@ begin
   ShowNext;
 end;
 
+procedure TfrmDisplayImages.SetShowImageFilename(const Value: boolean);
+begin
+  FShowImageFilename := Value;
+end;
+
 procedure TfrmDisplayImages.ShowNext;
 begin
   inc(ImageIndex);
@@ -157,9 +169,12 @@ begin
 
   Image1.Bitmap.LoadFromFile(FileName);
   Label1.Text := tpath.GetFileName(FileName);
-  Label1.Visible := true;
-  Timer1.tag := 1000;
-  Timer1.Enabled := true;
+  Label1.Visible := FShowImageFilename;
+  if Label1.Visible then
+  begin
+    Timer1.tag := 1000;
+    Timer1.Enabled := true;
+  end;
 end;
 
 procedure TfrmDisplayImages.ShowPrevious;
