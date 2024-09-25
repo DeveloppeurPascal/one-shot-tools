@@ -15,7 +15,8 @@ uses
   FMX.Dialogs,
   FMX.StdCtrls,
   FMX.Effects,
-  FMX.Controls.Presentation, FMX.Objects;
+  FMX.Controls.Presentation,
+  FMX.Objects;
 
 type
   TfrmDisplayImages = class(TForm)
@@ -64,7 +65,7 @@ begin
   if not TDirectory.Exists(AImagesPath) then
     raise exception.Create('Folder "' + AImagesPath + '" doesn''t exist !');
 
-  frm := TfrmDisplayImages.Create(nil);
+  frm := TfrmDisplayImages.Create(application.MainForm);
   try
     frm.ImagesPath := AImagesPath;
     frm.ShowImageFilename := AShowImageFilename;
