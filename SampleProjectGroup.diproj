@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project Version="1.0">
+  <Title>One Shot Tools</Title>
+  <Summary>Single-use programs and utilities, created to solve a specific problem and not usable for anything else</Summary>
+  <Author>Patrick PREMARTIN</Author>
+  <Email>patrick@premartin.fr</Email>
+  <Copyright>(c) 2022-2025 PATRICK PREMARTIN</Copyright>
+  <Comment/>
+  <Language>2057</Language>
+  <Charset>1</Charset>
+  <HeaderHtml>&lt;%TopicTitle%&gt;</HeaderHtml>
+  <FooterHtml>&lt;a href="https://oneshottools.developpeur-pascal.fr/" target="_blank"&gt;One Shot Tools&lt;/a&gt; (c) 2022-2025 &lt;a href="https://patrick.premartin.fr" target="_blank"&gt;Patrick PREMARTIN&lt;/a&gt; - Powered by &lt;a href="https://devjetsoftware.com/products/documentation-insight/" target="_blank"&gt;DocInsight&lt;/a&gt;</FooterHtml>
+  <CustomDefines/>
+  <ShowImplementationSection>false</ShowImplementationSection>
+  <ShowPrivateMembers>false</ShowPrivateMembers>
+  <ShowProtectedMembers>true</ShowProtectedMembers>
+  <ShowInheritedMembers>true</ShowInheritedMembers>
+  <ShowPropertyAccessors>true</ShowPropertyAccessors>
+  <FileNamePolicy>0</FileNamePolicy>
+  <CompilerVersion>27</CompilerVersion>
+  <TargetPlatform>0</TargetPlatform>
+  <Sources>
+    <Source>.\DisplayDPROJContent\DisplayDPROJContent.dpr</Source>
+    <Source>.\gamepad-ui-tests\fmx\GamepadUITestsFMX.dpr</Source>
+    <Source>.\gamepad-ui-tests\FMXTestUI\FMXTestUI.dpr</Source>
+    <Source>.\gamepad-ui-tests\FMXUIItemsList\FMXTestUIItemsList.dpr</Source>
+    <Source>.\gamepad-ui-tests\vcl\GamepadUITestsVCL.dpr</Source>
+    <Source>.\generation-serie-mots-de-passe\src\generation_de_mots_de_passe.dpr</Source>
+    <Source>.\genpassword\src\GenPassword.dpr</Source>
+    <Source>.\import-CSV-from-MSSQLServer-To-MySQL\src\ImportCSVMSSQL.dpr</Source>
+    <Source>.\mesiim471422-ovh-vps\src\HostingAccessGenerator.dpr</Source>
+    <Source>.\mesimf371818_ovh\mesimf371818_ovh.dpr</Source>
+    <Source>.\RedirectionPasDPK\RedirectPasFilesAfterFolderTreeChange.dpr</Source>
+    <Source>.\rename-all-files-in-a-folder\src\RenameFilesInFolder.dpr</Source>
+    <Source>.\show-images-fullscreen\ShowImagesFullscreen.dpr</Source>
+    <Source>.\TDirectory_CreateDirectory_Check\src\TDirectoryCreate.dpr</Source>
+    <Source>.\tirages_au_sort\src\tirages_au_sort.dpr</Source>
+    <Source>.\webhosting-send-ftp-config-email\src\WebHostingCreateAndSendFTPByEmail.dpr</Source>
+    <Source>.\webhosting-send-mysql-config-email\src\WebHostingCreateAndSendMySQLByEmail.dpr</Source>
+  </Sources>
+  <Outputs>
+    <Output Type="HTML">
+      <Active>true</Active>
+      <OutputDirectory>.\docs</OutputDirectory>
+    </Output>
+    <Output Type="CHM">
+      <Active>true</Active>
+      <OutputFileName>.\OneShotTools.chm</OutputFileName>
+    </Output>
+    <Output Type="MSHELP2">
+      <Active>false</Active>
+      <OutputFileName>build\docs\mshelp2\SampleProjectGroup.HxS</OutputFileName>
+      <Namespace>SampleProjectGroup</Namespace>
+      <TitleID>library</TitleID>
+    </Output>
+    <Output Type="HelpAndManual">
+      <Active>false</Active>
+      <OutputFileName>build\docs\hm\SampleProjectGroup.hmxp</OutputFileName>
+    </Output>
+  </Outputs>
+</Project>
