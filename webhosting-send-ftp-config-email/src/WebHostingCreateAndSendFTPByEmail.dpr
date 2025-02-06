@@ -34,7 +34,7 @@
 /// ***************************************************************************
 /// </summary>
 
-program Project1;
+program WebHostingCreateAndSendFTPByEmail;
 
 uses
   Forms,
