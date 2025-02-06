@@ -34,7 +34,7 @@
 /// ***************************************************************************
 /// </summary>
 
-program Project1;
+program WebHostingCreateAndSendMySQLByEmail;
 
 uses
   Forms,
