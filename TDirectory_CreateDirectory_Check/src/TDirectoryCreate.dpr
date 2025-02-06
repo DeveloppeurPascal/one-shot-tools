@@ -34,7 +34,7 @@
 /// ***************************************************************************
 /// </summary>
 
-program Project1;
+program TDirectoryCreate;
 
 uses
   System.StartUpCopy,
