@@ -1,0 +1,228 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2B95167A-87B8-47CD-88E4-23AC0D0D67A7}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DisplayDPROJContent\DisplayDPROJContent.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="gamepad-ui-tests\fmx\GamepadUITestsFMX.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="gamepad-ui-tests\FMXTestUI\FMXTestUI.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="gamepad-ui-tests\FMXUIItemsList\FMXTestUIItemsList.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="gamepad-ui-tests\vcl\GamepadUITestsVCL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="generation-serie-mots-de-passe\src\generation_de_mots_de_passe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="genpassword\src\GenPassword.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="import-CSV-from-MSSQLServer-To-MySQL\src\ImportCSVMSSQL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="mesiim471422-ovh-vps\src\HostingAccessGenerator.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="mesimf371818_ovh\mesimf371818_ovh.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RedirectionPasDPK\RedirectPasFilesAfterFolderTreeChange.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="rename-all-files-in-a-folder\src\RenameFilesInFolder.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="show-images-fullscreen\ShowImagesFullscreen.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TDirectory_CreateDirectory_Check\src\TDirectoryCreate.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tirages_au_sort\src\tirages_au_sort.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="webhosting-send-ftp-config-email\src\WebHostingCreateAndSendFTPByEmail.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="webhosting-send-mysql-config-email\src\WebHostingCreateAndSendMySQLByEmail.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DisplayDPROJContent">
+        <MSBuild Projects="DisplayDPROJContent\DisplayDPROJContent.dproj"/>
+    </Target>
+    <Target Name="DisplayDPROJContent:Clean">
+        <MSBuild Projects="DisplayDPROJContent\DisplayDPROJContent.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DisplayDPROJContent:Make">
+        <MSBuild Projects="DisplayDPROJContent\DisplayDPROJContent.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GamepadUITestsFMX">
+        <MSBuild Projects="gamepad-ui-tests\fmx\GamepadUITestsFMX.dproj"/>
+    </Target>
+    <Target Name="GamepadUITestsFMX:Clean">
+        <MSBuild Projects="gamepad-ui-tests\fmx\GamepadUITestsFMX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GamepadUITestsFMX:Make">
+        <MSBuild Projects="gamepad-ui-tests\fmx\GamepadUITestsFMX.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FMXTestUI">
+        <MSBuild Projects="gamepad-ui-tests\FMXTestUI\FMXTestUI.dproj"/>
+    </Target>
+    <Target Name="FMXTestUI:Clean">
+        <MSBuild Projects="gamepad-ui-tests\FMXTestUI\FMXTestUI.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FMXTestUI:Make">
+        <MSBuild Projects="gamepad-ui-tests\FMXTestUI\FMXTestUI.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FMXTestUIItemsList">
+        <MSBuild Projects="gamepad-ui-tests\FMXUIItemsList\FMXTestUIItemsList.dproj"/>
+    </Target>
+    <Target Name="FMXTestUIItemsList:Clean">
+        <MSBuild Projects="gamepad-ui-tests\FMXUIItemsList\FMXTestUIItemsList.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FMXTestUIItemsList:Make">
+        <MSBuild Projects="gamepad-ui-tests\FMXUIItemsList\FMXTestUIItemsList.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GamepadUITestsVCL">
+        <MSBuild Projects="gamepad-ui-tests\vcl\GamepadUITestsVCL.dproj"/>
+    </Target>
+    <Target Name="GamepadUITestsVCL:Clean">
+        <MSBuild Projects="gamepad-ui-tests\vcl\GamepadUITestsVCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GamepadUITestsVCL:Make">
+        <MSBuild Projects="gamepad-ui-tests\vcl\GamepadUITestsVCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="generation_de_mots_de_passe">
+        <MSBuild Projects="generation-serie-mots-de-passe\src\generation_de_mots_de_passe.dproj"/>
+    </Target>
+    <Target Name="generation_de_mots_de_passe:Clean">
+        <MSBuild Projects="generation-serie-mots-de-passe\src\generation_de_mots_de_passe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="generation_de_mots_de_passe:Make">
+        <MSBuild Projects="generation-serie-mots-de-passe\src\generation_de_mots_de_passe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GenPassword">
+        <MSBuild Projects="genpassword\src\GenPassword.dproj"/>
+    </Target>
+    <Target Name="GenPassword:Clean">
+        <MSBuild Projects="genpassword\src\GenPassword.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GenPassword:Make">
+        <MSBuild Projects="genpassword\src\GenPassword.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImportCSVMSSQL">
+        <MSBuild Projects="import-CSV-from-MSSQLServer-To-MySQL\src\ImportCSVMSSQL.dproj"/>
+    </Target>
+    <Target Name="ImportCSVMSSQL:Clean">
+        <MSBuild Projects="import-CSV-from-MSSQLServer-To-MySQL\src\ImportCSVMSSQL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImportCSVMSSQL:Make">
+        <MSBuild Projects="import-CSV-from-MSSQLServer-To-MySQL\src\ImportCSVMSSQL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="HostingAccessGenerator">
+        <MSBuild Projects="mesiim471422-ovh-vps\src\HostingAccessGenerator.dproj"/>
+    </Target>
+    <Target Name="HostingAccessGenerator:Clean">
+        <MSBuild Projects="mesiim471422-ovh-vps\src\HostingAccessGenerator.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HostingAccessGenerator:Make">
+        <MSBuild Projects="mesiim471422-ovh-vps\src\HostingAccessGenerator.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="mesimf371818_ovh">
+        <MSBuild Projects="mesimf371818_ovh\mesimf371818_ovh.dproj"/>
+    </Target>
+    <Target Name="mesimf371818_ovh:Clean">
+        <MSBuild Projects="mesimf371818_ovh\mesimf371818_ovh.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="mesimf371818_ovh:Make">
+        <MSBuild Projects="mesimf371818_ovh\mesimf371818_ovh.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RedirectPasFilesAfterFolderTreeChange">
+        <MSBuild Projects="RedirectionPasDPK\RedirectPasFilesAfterFolderTreeChange.dproj"/>
+    </Target>
+    <Target Name="RedirectPasFilesAfterFolderTreeChange:Clean">
+        <MSBuild Projects="RedirectionPasDPK\RedirectPasFilesAfterFolderTreeChange.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RedirectPasFilesAfterFolderTreeChange:Make">
+        <MSBuild Projects="RedirectionPasDPK\RedirectPasFilesAfterFolderTreeChange.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RenameFilesInFolder">
+        <MSBuild Projects="rename-all-files-in-a-folder\src\RenameFilesInFolder.dproj"/>
+    </Target>
+    <Target Name="RenameFilesInFolder:Clean">
+        <MSBuild Projects="rename-all-files-in-a-folder\src\RenameFilesInFolder.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RenameFilesInFolder:Make">
+        <MSBuild Projects="rename-all-files-in-a-folder\src\RenameFilesInFolder.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ShowImagesFullscreen">
+        <MSBuild Projects="show-images-fullscreen\ShowImagesFullscreen.dproj"/>
+    </Target>
+    <Target Name="ShowImagesFullscreen:Clean">
+        <MSBuild Projects="show-images-fullscreen\ShowImagesFullscreen.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ShowImagesFullscreen:Make">
+        <MSBuild Projects="show-images-fullscreen\ShowImagesFullscreen.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TDirectoryCreate">
+        <MSBuild Projects="TDirectory_CreateDirectory_Check\src\TDirectoryCreate.dproj"/>
+    </Target>
+    <Target Name="TDirectoryCreate:Clean">
+        <MSBuild Projects="TDirectory_CreateDirectory_Check\src\TDirectoryCreate.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TDirectoryCreate:Make">
+        <MSBuild Projects="TDirectory_CreateDirectory_Check\src\TDirectoryCreate.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="tirages_au_sort">
+        <MSBuild Projects="tirages_au_sort\src\tirages_au_sort.dproj"/>
+    </Target>
+    <Target Name="tirages_au_sort:Clean">
+        <MSBuild Projects="tirages_au_sort\src\tirages_au_sort.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="tirages_au_sort:Make">
+        <MSBuild Projects="tirages_au_sort\src\tirages_au_sort.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WebHostingCreateAndSendFTPByEmail">
+        <MSBuild Projects="webhosting-send-ftp-config-email\src\WebHostingCreateAndSendFTPByEmail.dproj"/>
+    </Target>
+    <Target Name="WebHostingCreateAndSendFTPByEmail:Clean">
+        <MSBuild Projects="webhosting-send-ftp-config-email\src\WebHostingCreateAndSendFTPByEmail.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WebHostingCreateAndSendFTPByEmail:Make">
+        <MSBuild Projects="webhosting-send-ftp-config-email\src\WebHostingCreateAndSendFTPByEmail.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WebHostingCreateAndSendMySQLByEmail">
+        <MSBuild Projects="webhosting-send-mysql-config-email\src\WebHostingCreateAndSendMySQLByEmail.dproj"/>
+    </Target>
+    <Target Name="WebHostingCreateAndSendMySQLByEmail:Clean">
+        <MSBuild Projects="webhosting-send-mysql-config-email\src\WebHostingCreateAndSendMySQLByEmail.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WebHostingCreateAndSendMySQLByEmail:Make">
+        <MSBuild Projects="webhosting-send-mysql-config-email\src\WebHostingCreateAndSendMySQLByEmail.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DisplayDPROJContent;GamepadUITestsFMX;FMXTestUI;FMXTestUIItemsList;GamepadUITestsVCL;generation_de_mots_de_passe;GenPassword;ImportCSVMSSQL;HostingAccessGenerator;mesimf371818_ovh;RedirectPasFilesAfterFolderTreeChange;RenameFilesInFolder;ShowImagesFullscreen;TDirectoryCreate;tirages_au_sort;WebHostingCreateAndSendFTPByEmail;WebHostingCreateAndSendMySQLByEmail"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DisplayDPROJContent:Clean;GamepadUITestsFMX:Clean;FMXTestUI:Clean;FMXTestUIItemsList:Clean;GamepadUITestsVCL:Clean;generation_de_mots_de_passe:Clean;GenPassword:Clean;ImportCSVMSSQL:Clean;HostingAccessGenerator:Clean;mesimf371818_ovh:Clean;RedirectPasFilesAfterFolderTreeChange:Clean;RenameFilesInFolder:Clean;ShowImagesFullscreen:Clean;TDirectoryCreate:Clean;tirages_au_sort:Clean;WebHostingCreateAndSendFTPByEmail:Clean;WebHostingCreateAndSendMySQLByEmail:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DisplayDPROJContent:Make;GamepadUITestsFMX:Make;FMXTestUI:Make;FMXTestUIItemsList:Make;GamepadUITestsVCL:Make;generation_de_mots_de_passe:Make;GenPassword:Make;ImportCSVMSSQL:Make;HostingAccessGenerator:Make;mesimf371818_ovh:Make;RedirectPasFilesAfterFolderTreeChange:Make;RenameFilesInFolder:Make;ShowImagesFullscreen:Make;TDirectoryCreate:Make;tirages_au_sort:Make;WebHostingCreateAndSendFTPByEmail:Make;WebHostingCreateAndSendMySQLByEmail:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
