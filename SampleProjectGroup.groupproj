@@ -54,6 +54,9 @@
         <Projects Include="webhosting-send-mysql-config-email\src\WebHostingCreateAndSendMySQLByEmail.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="CreateGroupProjFromPath\CreateGroupProjFromPath.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -215,14 +218,23 @@
     <Target Name="WebHostingCreateAndSendMySQLByEmail:Make">
         <MSBuild Projects="webhosting-send-mysql-config-email\src\WebHostingCreateAndSendMySQLByEmail.dproj" Targets="Make"/>
     </Target>
+    <Target Name="CreateGroupProjFromPath">
+        <MSBuild Projects="CreateGroupProjFromPath\CreateGroupProjFromPath.dproj"/>
+    </Target>
+    <Target Name="CreateGroupProjFromPath:Clean">
+        <MSBuild Projects="CreateGroupProjFromPath\CreateGroupProjFromPath.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CreateGroupProjFromPath:Make">
+        <MSBuild Projects="CreateGroupProjFromPath\CreateGroupProjFromPath.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="DisplayDPROJContent;GamepadUITestsFMX;FMXTestUI;FMXTestUIItemsList;GamepadUITestsVCL;generation_de_mots_de_passe;GenPassword;ImportCSVMSSQL;HostingAccessGenerator;mesimf371818_ovh;RedirectPasFilesAfterFolderTreeChange;RenameFilesInFolder;ShowImagesFullscreen;TDirectoryCreate;tirages_au_sort;WebHostingCreateAndSendFTPByEmail;WebHostingCreateAndSendMySQLByEmail"/>
+        <CallTarget Targets="DisplayDPROJContent;GamepadUITestsFMX;FMXTestUI;FMXTestUIItemsList;GamepadUITestsVCL;generation_de_mots_de_passe;GenPassword;ImportCSVMSSQL;HostingAccessGenerator;mesimf371818_ovh;RedirectPasFilesAfterFolderTreeChange;RenameFilesInFolder;ShowImagesFullscreen;TDirectoryCreate;tirages_au_sort;WebHostingCreateAndSendFTPByEmail;WebHostingCreateAndSendMySQLByEmail;CreateGroupProjFromPath"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="DisplayDPROJContent:Clean;GamepadUITestsFMX:Clean;FMXTestUI:Clean;FMXTestUIItemsList:Clean;GamepadUITestsVCL:Clean;generation_de_mots_de_passe:Clean;GenPassword:Clean;ImportCSVMSSQL:Clean;HostingAccessGenerator:Clean;mesimf371818_ovh:Clean;RedirectPasFilesAfterFolderTreeChange:Clean;RenameFilesInFolder:Clean;ShowImagesFullscreen:Clean;TDirectoryCreate:Clean;tirages_au_sort:Clean;WebHostingCreateAndSendFTPByEmail:Clean;WebHostingCreateAndSendMySQLByEmail:Clean"/>
+        <CallTarget Targets="DisplayDPROJContent:Clean;GamepadUITestsFMX:Clean;FMXTestUI:Clean;FMXTestUIItemsList:Clean;GamepadUITestsVCL:Clean;generation_de_mots_de_passe:Clean;GenPassword:Clean;ImportCSVMSSQL:Clean;HostingAccessGenerator:Clean;mesimf371818_ovh:Clean;RedirectPasFilesAfterFolderTreeChange:Clean;RenameFilesInFolder:Clean;ShowImagesFullscreen:Clean;TDirectoryCreate:Clean;tirages_au_sort:Clean;WebHostingCreateAndSendFTPByEmail:Clean;WebHostingCreateAndSendMySQLByEmail:Clean;CreateGroupProjFromPath:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="DisplayDPROJContent:Make;GamepadUITestsFMX:Make;FMXTestUI:Make;FMXTestUIItemsList:Make;GamepadUITestsVCL:Make;generation_de_mots_de_passe:Make;GenPassword:Make;ImportCSVMSSQL:Make;HostingAccessGenerator:Make;mesimf371818_ovh:Make;RedirectPasFilesAfterFolderTreeChange:Make;RenameFilesInFolder:Make;ShowImagesFullscreen:Make;TDirectoryCreate:Make;tirages_au_sort:Make;WebHostingCreateAndSendFTPByEmail:Make;WebHostingCreateAndSendMySQLByEmail:Make"/>
+        <CallTarget Targets="DisplayDPROJContent:Make;GamepadUITestsFMX:Make;FMXTestUI:Make;FMXTestUIItemsList:Make;GamepadUITestsVCL:Make;generation_de_mots_de_passe:Make;GenPassword:Make;ImportCSVMSSQL:Make;HostingAccessGenerator:Make;mesimf371818_ovh:Make;RedirectPasFilesAfterFolderTreeChange:Make;RenameFilesInFolder:Make;ShowImagesFullscreen:Make;TDirectoryCreate:Make;tirages_au_sort:Make;WebHostingCreateAndSendFTPByEmail:Make;WebHostingCreateAndSendMySQLByEmail:Make;CreateGroupProjFromPath:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
