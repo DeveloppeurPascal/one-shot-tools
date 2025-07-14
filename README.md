@@ -28,6 +28,7 @@ This project uses dependencies in the form of sub-modules. They will be absent f
 
 * [DeveloppeurPascal/Delphi-Game-Engine](https://github.com/DeveloppeurPascal/Delphi-Game-Engine) must be installed in the ./lib-externes/Delphi-Game-Engine subfolder.
 * [DeveloppeurPascal/librairies](https://github.com/DeveloppeurPascal/librairies) must be installed in the ./lib-externes/librairies subfolder.
+* [DeveloppeurPascal/SVG-cards](https://github.com/DeveloppeurPascal/SVG-cards) must be installed in the ./lib-externes/SVG-cards subfolder.
 
 ## Documentation and support
 
@@ -92,6 +93,10 @@ If you speak French [subscribe to Zone Abo](https://zone-abo.fr/nos-abonnements.
 
 ## List of projects
 
+### CreateGroupProjFromPath
+
+Create a Delphi projects group from the list of projects found in a repository tree.
+
 ### DisplayDPROJContent
 
 Displays the content of Delphi project options file.
@@ -140,11 +145,15 @@ A simple code to rename files in a folder and use a local counter for that.
 
 Show all images (JPG, PNG) from a folder in full screen. Use arrow keys to change the picture (next / previous) and ESC/RETURN to exit.
 
+### SVGCardSocialPreviewImageGenerator
+
+Use SVG Cards images to generate a social preview image for its GitHub repository.
+
 ### SVGFromFolderToStringArrayInUnit
 
 List all SVG files from a folder and create a unit where they are stored as strings in an array, with the filename as a constant used as array index.
 
-This one shot program is now a real project available [from this repository](https://github.com/DeveloppeurPascal/SVGFolder2DelphiUnit).
+This program is no longer available here. It's now [SVG Folder To Delphi Unit](http://svgfolder2delphiunit.olfsoftware.fr). Its sources files are available [from this repository](https://github.com/DeveloppeurPascal/SVGFolder2DelphiUnit).
 
 ### TDirectory_CreateDirectory_Check
 

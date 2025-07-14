@@ -28,6 +28,7 @@ Ce projet utilise des dépendances sous forme de sous modules. Ils seront absent
 
 * [DeveloppeurPascal/Delphi-Game-Engine](https://github.com/DeveloppeurPascal/Delphi-Game-Engine) doit être installé dans le sous dossier ./lib-externes/Delphi-Game-Engine
 * [DeveloppeurPascal/librairies](https://github.com/DeveloppeurPascal/librairies) doit être installé dans le sous dossier ./lib-externes/librairies
+* [DeveloppeurPascal/SVG-cards](https://github.com/DeveloppeurPascal/SVG-cards) doit être installé dans le sous dossier ./lib-externes/SVG-cards
 
 ## Documentation et assistance
 
@@ -92,6 +93,10 @@ Si vous parlez français [abonnez-vous à Zone Abo](https://zone-abo.fr/nos-abon
 
 ## Liste des projets
 
+### CreateGroupProjFromPath
+
+Crée un groupe de projet pour Delphi à partir des projets trouvés dans une arborescence donnée.
+
 ### DisplayDPROJContent
 
 Affichage d'informations contenues dans un fichier d'options de projet de Delphi.
@@ -140,11 +145,15 @@ Un code simple pour renommer des fichiers dans un dossier et utiliser un compteu
 
 Affiche toutes les images (JPG, PNB) d'un dossier en plein écran une par une. Changez avec les flèches pour passer de l'une à l'autre et sortez avec ESC ou ENTREE.
 
+### SVGCardSocialPreviewImageGenerator
+
+Utilise les images vectorielles de SVG Cards pour générer une image utilisée en prévisualisation sur les réseaux sociaux lors du partage de son dépôt GitHub.
+
 ### SVGFromFolderToStringArrayInUnit
 
 Liste tous les fichiers SVG d'un dossier et crée une unité dans laquelle ils sont stockés sous forme d'un tableau de chaines avec comme index le nom du fichier défini comme constante.
 
-Ce programme temporare est désormais un vrai projet disponible [sur ce dépôt de code](https://github.com/DeveloppeurPascal/SVGFolder2DelphiUnit).
+Ce programme n'est plus disponible ici. Il est devenu [SVG Folder To Delphi Unit](http://svgfolder2delphiunit.olfsoftware.fr). Ses codes sources sont disponibles [sur ce dépôt de code](https://github.com/DeveloppeurPascal/SVGFolder2DelphiUnit).
 
 ### TDirectory_CreateDirectory_Check
 
