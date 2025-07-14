@@ -37,6 +37,8 @@
     <Source>.\tirages_au_sort\src\tirages_au_sort.dpr</Source>
     <Source>.\webhosting-send-ftp-config-email\src\WebHostingCreateAndSendFTPByEmail.dpr</Source>
     <Source>.\webhosting-send-mysql-config-email\src\WebHostingCreateAndSendMySQLByEmail.dpr</Source>
+    <Source>.\CreateGroupProjFromPath\CreateGroupProjFromPath.dpr</Source>
+    <Source>.\SVGCardSocialPreviewImageGenerator\SVGCardSocialPreviewImageGenerator.dpr</Source>
   </Sources>
   <Outputs>
     <Output Type="HTML">
