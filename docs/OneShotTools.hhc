@@ -7773,6 +7773,1199 @@
                           </UL>
                   </UL>
           </UL>
+      <LI> <OBJECT type="text/sitemap">
+          <param name="Name" value="CreateGroupProjFromPath">
+          <param name="Local" value="CreateGroupProjFromPath.html">
+          </OBJECT>
+          <UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="Unit5">
+                  <param name="Local" value="Unit5.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TForm5">
+                                  <param name="Local" value="Unit5.TForm5.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Button1Click">
+                                                  <param name="Local" value="Unit5.TForm5.Button1Click.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Button2Click">
+                                                  <param name="Local" value="Unit5.TForm5.Button2Click.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Button1">
+                                                  <param name="Local" value="Unit5.TForm5.Button1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Button2">
+                                                  <param name="Local" value="Unit5.TForm5.Button2.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Memo1">
+                                                  <param name="Local" value="Unit5.TForm5.Memo1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtGroupProjName">
+                                                  <param name="Local" value="Unit5.TForm5.edtGroupProjName.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtRootPath">
+                                                  <param name="Local" value="Unit5.TForm5.edtRootPath.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Variables">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="Form5">
+                                  <param name="Local" value="Unit5.Form5.html">
+                                  </OBJECT>
+                          </UL>
+                  </UL>
+          </UL>
+      <LI> <OBJECT type="text/sitemap">
+          <param name="Name" value="SVGCardSocialPreviewImageGenerator">
+          <param name="Local" value="SVGCardSocialPreviewImageGenerator.html">
+          </OBJECT>
+          <UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="Olf.FMX.TextImageFrame">
+                  <param name="Local" value="Olf.FMX.TextImageFrame.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TOlfFMXTextImageFrame">
+                                  <param name="Local" value="Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Constructors">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Create">
+                                                  <param name="Local" value="Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.Create.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Properties">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="AutoSize">
+                                                  <param name="Local" value="Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.AutoSize.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Font">
+                                                  <param name="Local" value="Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.Font.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="HasPendingRefresh">
+                                                  <param name="Local" value="Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.HasPendingRefresh.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LetterSpacing">
+                                                  <param name="Local" value="Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.LetterSpacing.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="OnGetImageIndexOfUnknowChar">
+                                                  <param name="Local" value="Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.OnGetImageIndexOfUnknowChar.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="SpaceWidth">
+                                                  <param name="Local" value="Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.SpaceWidth.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Text">
+                                                  <param name="Local" value="Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.Text.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="AjoutImageEtRetourneLargeur">
+                                                  <param name="Local" value="Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.AjoutImageEtRetourneLargeur.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="DefaultOnGetImageIndexOfUnknowChar">
+                                                  <param name="Local" value="Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.DefaultOnGetImageIndexOfUnknowChar.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="DoEndUpdate">
+                                                  <param name="Local" value="Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.DoEndUpdate.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Refresh">
+                                                  <param name="Local" value="Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.Refresh.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="RetourneLargeur">
+                                                  <param name="Local" value="Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.RetourneLargeur.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="getImageIndexOfChar">
+                                                  <param name="Local" value="Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.getImageIndexOfChar.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Delegates">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TOlfFMXTIFOnGetImageIndexOfUnknowChar">
+                                  <param name="Local" value="Olf.FMX.TextImageFrame.TOlfFMXTIFOnGetImageIndexOfUnknowChar.html">
+                                  </OBJECT>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="Olf.Skia.SVGToBitmap">
+                  <param name="Local" value="Olf.Skia.SVGToBitmap.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TOlfSVGBitmapList">
+                                  <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="AddAList">
+                                                  <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.AddAList.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="AddItem">
+                                                  </OBJECT>
+                                                  <UL>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="AddItem(array of string)">
+                                                          <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.AddItem(array-of-string).html">
+                                                          </OBJECT>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="AddItem(string)">
+                                                          <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.AddItem(string).html">
+                                                          </OBJECT>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="AddItem(word,array of string)">
+                                                          <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.AddItem(word,array-of-string).html">
+                                                          </OBJECT>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="AddItem(word,string)">
+                                                          <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.AddItem(word,string).html">
+                                                          </OBJECT>
+                                                  </UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="AddItemAt">
+                                                  </OBJECT>
+                                                  <UL>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="AddItemAt(word,string)">
+                                                          <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.AddItemAt(word,string).html">
+                                                          </OBJECT>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="AddItemAt(word,word,string)">
+                                                          <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.AddItemAt(word,word,string).html">
+                                                          </OBJECT>
+                                                  </UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Bitmap">
+                                                  </OBJECT>
+                                                  <UL>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="Bitmap(word,integer,integer,single,single,single,single,single)">
+                                                          <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.Bitmap(word,integer,integer,single,single,single,single,single).html">
+                                                          </OBJECT>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="Bitmap(word,integer,integer,single)">
+                                                          <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.Bitmap(word,integer,integer,single).html">
+                                                          </OBJECT>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="Bitmap(word,word,integer,integer,single,single,single,single,single)">
+                                                          <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.Bitmap(word,word,integer,integer,single,single,single,single,single).html">
+                                                          </OBJECT>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="Bitmap(word,word,integer,integer,single)">
+                                                          <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.Bitmap(word,word,integer,integer,single).html">
+                                                          </OBJECT>
+                                                  </UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="BitmapWithNoCache">
+                                                  </OBJECT>
+                                                  <UL>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="BitmapWithNoCache(word,integer,integer,single,single,single,single,single)">
+                                                          <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.BitmapWithNoCache(word,integer,integer,single,single,single,single,single).html">
+                                                          </OBJECT>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="BitmapWithNoCache(word,integer,integer,single)">
+                                                          <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.BitmapWithNoCache(word,integer,integer,single).html">
+                                                          </OBJECT>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="BitmapWithNoCache(word,word,integer,integer,single,single,single,single,single)">
+                                                          <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.BitmapWithNoCache(word,word,integer,integer,single,single,single,single,single).html">
+                                                          </OBJECT>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="BitmapWithNoCache(word,word,integer,integer,single)">
+                                                          <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.BitmapWithNoCache(word,word,integer,integer,single).html">
+                                                          </OBJECT>
+                                                  </UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ClearAll">
+                                                  <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.ClearAll.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ClearCache">
+                                                  <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.ClearCache.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Count">
+                                                  <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.Count.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="DeleteItem">
+                                                  </OBJECT>
+                                                  <UL>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="DeleteItem(word)">
+                                                          <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.DeleteItem(word).html">
+                                                          </OBJECT>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="DeleteItem(word,word)">
+                                                          <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.DeleteItem(word,word).html">
+                                                          </OBJECT>
+                                                  </UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="DeleteList">
+                                                  <param name="Local" value="Olf.Skia.SVGToBitmap.TOlfSVGBitmapList.DeleteList.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Routines">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="SVGToBitmap">
+                                  <param name="Local" value="Olf.Skia.SVGToBitmap.SVGToBitmap.html">
+                                  </OBJECT>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="fMain">
+                  <param name="Local" value="fMain.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TForm1">
+                                  <param name="Local" value="fMain.TForm1.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FormCreate">
+                                                  <param name="Local" value="fMain.TForm1.FormCreate.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnAddCardsClick">
+                                                  <param name="Local" value="fMain.TForm1.btnAddCardsClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnCaptureImageClick">
+                                                  <param name="Local" value="fMain.TForm1.btnCaptureImageClick.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="OlfFMXTextImageFrame1">
+                                                  <param name="Local" value="fMain.TForm1.OlfFMXTextImageFrame1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnAddCards">
+                                                  <param name="Local" value="fMain.TForm1.btnAddCards.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnCaptureImage">
+                                                  <param name="Local" value="fMain.TForm1.btnCaptureImage.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lSocialPreview">
+                                                  <param name="Local" value="fMain.TForm1.lSocialPreview.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Variables">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="Form1">
+                                  <param name="Local" value="fMain.Form1.html">
+                                  </OBJECT>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="uSVGCardsDelphi12WithSkia">
+                  <param name="Local" value="uSVGCardsDelphi12WithSkia.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TSVGCards">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Constants">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Back">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Back.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Blackjoker">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Blackjoker.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Jackclub">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Jackclub.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Jackdiamond">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Jackdiamond.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Jackheart">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Jackheart.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Jackspade">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Jackspade.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Kingclub">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Kingclub.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Kingdiamond">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Kingdiamond.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Kingheart">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Kingheart.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Kingspade">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Kingspade.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Queenclub">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Queenclub.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Queendiamond">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Queendiamond.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Queenheart">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Queenheart.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Queenspade">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Queenspade.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Redjoker">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Redjoker.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_10Club">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._10Club.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_10Diamond">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._10Diamond.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_10Heart">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._10Heart.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_10Spade">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._10Spade.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_1Club">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._1Club.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_1Diamond">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._1Diamond.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_1Heart">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._1Heart.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_1Spade">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._1Spade.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_2Club">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._2Club.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_2Diamond">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._2Diamond.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_2Heart">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._2Heart.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_2Spade">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._2Spade.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_3Club">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._3Club.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_3Diamond">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._3Diamond.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_3Heart">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._3Heart.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_3Spade">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._3Spade.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_4Club">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._4Club.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_4Diamond">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._4Diamond.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_4Heart">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._4Heart.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_4Spade">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._4Spade.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_5Club">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._5Club.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_5Diamond">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._5Diamond.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_5Heart">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._5Heart.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_5Spade">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._5Spade.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_6Club">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._6Club.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_6Diamond">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._6Diamond.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_6Heart">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._6Heart.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_6Spade">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._6Spade.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_7Club">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._7Club.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_7Diamond">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._7Diamond.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_7Heart">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._7Heart.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_7Spade">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._7Spade.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_8Club">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._8Club.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_8Diamond">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._8Diamond.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_8Heart">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._8Heart.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_8Spade">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._8Spade.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_9Club">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._9Club.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_9Diamond">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._9Diamond.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_9Heart">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._9Heart.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="_9Spade">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards._9Spade.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Constructors">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Create">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Create.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Properties">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Tag">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Tag.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="TagBool">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.TagBool.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="TagFloat">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.TagFloat.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="TagObject">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.TagObject.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="TagString">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.TagString.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Bitmap">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Bitmap.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Count">
+                                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.Count.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="SVG">
+                                                  </OBJECT>
+                                                  <UL>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="SVG(TSVGCardsIndex)">
+                                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.SVG(TSVGCardsIndex).html">
+                                                          </OBJECT>
+                                                      <LI> <OBJECT type="text/sitemap">
+                                                          <param name="Name" value="SVG(Integer)">
+                                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCards.SVG(Integer).html">
+                                                          </OBJECT>
+                                                  </UL>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Enumerations">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TSVGCardsIndex">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_1Club">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._1Club.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_1Diamond">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._1Diamond.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_1Heart">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._1Heart.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_1Spade">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._1Spade.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_10Club">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._10Club.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_10Diamond">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._10Diamond.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_10Heart">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._10Heart.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_10Spade">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._10Spade.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_2Club">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._2Club.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_2Diamond">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._2Diamond.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_2Heart">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._2Heart.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_2Spade">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._2Spade.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_3Club">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._3Club.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_3Diamond">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._3Diamond.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_3Heart">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._3Heart.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_3Spade">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._3Spade.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_4Club">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._4Club.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_4Diamond">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._4Diamond.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_4Heart">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._4Heart.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_4Spade">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._4Spade.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_5Club">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._5Club.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_5Diamond">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._5Diamond.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_5Heart">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._5Heart.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_5Spade">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._5Spade.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_6Club">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._6Club.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_6Diamond">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._6Diamond.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_6Heart">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._6Heart.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_6Spade">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._6Spade.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_7Club">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._7Club.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_7Diamond">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._7Diamond.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_7Heart">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._7Heart.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_7Spade">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._7Spade.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_8Club">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._8Club.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_8Diamond">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._8Diamond.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_8Heart">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._8Heart.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_8Spade">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._8Spade.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_9Club">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._9Club.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_9Diamond">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._9Diamond.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_9Heart">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._9Heart.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="_9Spade">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex._9Spade.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Back">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex.Back.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Blackjoker">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex.Blackjoker.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Jackclub">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex.Jackclub.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Jackdiamond">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex.Jackdiamond.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Jackheart">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex.Jackheart.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Jackspade">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex.Jackspade.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Kingclub">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex.Kingclub.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Kingdiamond">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex.Kingdiamond.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Kingheart">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex.Kingheart.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Kingspade">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex.Kingspade.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Queenclub">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex.Queenclub.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Queendiamond">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex.Queendiamond.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Queenheart">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex.Queenheart.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Queenspade">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex.Queenspade.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Redjoker">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.TSVGCardsIndex.Redjoker.html">
+                                          </OBJECT>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Variables">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="SVGCards">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.SVGCards.html">
+                                  </OBJECT>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Constants">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG10Club">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG10Club.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG10Diamond">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG10Diamond.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG10Heart">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG10Heart.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG10Spade">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG10Spade.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG1Club">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG1Club.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG1Diamond">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG1Diamond.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG1Heart">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG1Heart.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG1Spade">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG1Spade.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG2Club">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG2Club.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG2Diamond">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG2Diamond.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG2Heart">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG2Heart.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG2Spade">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG2Spade.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG3Club">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG3Club.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG3Diamond">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG3Diamond.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG3Heart">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG3Heart.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG3Spade">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG3Spade.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG4Club">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG4Club.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG4Diamond">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG4Diamond.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG4Heart">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG4Heart.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG4Spade">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG4Spade.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG5Club">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG5Club.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG5Diamond">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG5Diamond.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG5Heart">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG5Heart.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG5Spade">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG5Spade.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG6Club">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG6Club.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG6Diamond">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG6Diamond.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG6Heart">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG6Heart.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG6Spade">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG6Spade.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG7Club">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG7Club.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG7Diamond">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG7Diamond.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG7Heart">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG7Heart.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG7Spade">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG7Spade.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG8Club">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG8Club.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG8Diamond">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG8Diamond.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG8Heart">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG8Heart.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG8Spade">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG8Spade.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG9Club">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG9Club.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG9Diamond">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG9Diamond.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG9Heart">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG9Heart.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVG9Spade">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVG9Spade.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVGBack">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVGBack.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVGBlackjoker">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVGBlackjoker.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVGJackclub">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVGJackclub.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVGJackdiamond">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVGJackdiamond.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVGJackheart">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVGJackheart.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVGJackspade">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVGJackspade.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVGKingclub">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVGKingclub.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVGKingdiamond">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVGKingdiamond.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVGKingheart">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVGKingheart.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVGKingspade">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVGKingspade.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVGQueenclub">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVGQueenclub.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVGQueendiamond">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVGQueendiamond.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVGQueenheart">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVGQueenheart.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVGQueenspade">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVGQueenspade.html">
+                                  </OBJECT>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="CSVGRedjoker">
+                                  <param name="Local" value="uSVGCardsDelphi12WithSkia.CSVGRedjoker.html">
+                                  </OBJECT>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Routines">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="getBitmapFromSVG">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="getBitmapFromSVG(TSVGCardsIndex,single,single,single)">
+                                          <param name="Local" value="uSVGCardsDelphi12WithSkia.getBitmapFromSVG(TSVGCardsIndex,single,single,single).html">
+                                          </OBJECT>
+                                  </UL>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="udmAdobeStock_526775911">
+                  <param name="Local" value="udmAdobeStock_526775911.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TdmAdobeStock_526775911">
+                                  <param name="Local" value="udmAdobeStock_526775911.TdmAdobeStock_526775911.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ImageList">
+                                                  <param name="Local" value="udmAdobeStock_526775911.TdmAdobeStock_526775911.ImageList.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Variables">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="dmAdobeStock_526775911">
+                                  <param name="Local" value="udmAdobeStock_526775911.dmAdobeStock_526775911.html">
+                                  </OBJECT>
+                          </UL>
+                  </UL>
+          </UL>
     </UL>
 </BODY>
 </HTML>
