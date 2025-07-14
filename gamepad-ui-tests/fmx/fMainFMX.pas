@@ -1,38 +1,34 @@
-/// <summary>
-/// ***************************************************************************
-///
-/// One Shot Tools
-///
-/// Copyright 2022-2024 Patrick PREMARTIN under AGPL 3.0 license.
-///
-/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-/// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-/// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-/// DEALINGS IN THE SOFTWARE.
-///
-/// ***************************************************************************
-///
-/// projects for a unique (or very little number of) usage
-///
-/// ***************************************************************************
-///
-/// Author(s) :
-/// Patrick PREMARTIN
-///
-/// Site :
-/// https://oneshottools.developpeur-pascal.fr/
-///
-/// Project site :
-/// https://github.com/DeveloppeurPascal/one-shot-tools
-///
-/// ***************************************************************************
-/// File last update : 2025-02-05T21:09:26.254+01:00
-/// Signature : c865ba9e4bb55e271bfb6cb14e03c4b6c7c53913
-/// ***************************************************************************
-/// </summary>
+(* C2PP
+  ***************************************************************************
+
+  One Shot Tools
+
+  Copyright 2022-2025 Patrick PREMARTIN under AGPL 3.0 license.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+  THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+  DEALINGS IN THE SOFTWARE.
+
+  ***************************************************************************
+
+  Author(s) :
+  Patrick PREMARTIN
+
+  Site :
+  https://oneshottools.developpeur-pascal.fr/
+
+  Project site :
+  https://github.com/DeveloppeurPascal/one-shot-tools
+
+  ***************************************************************************
+  File last update : 2025-02-09T11:12:13.649+01:00
+  Signature : d07b7e799a5efd81a6d928dbd1ac559af29b8ac1
+  ***************************************************************************
+*)
 
 unit fMainFMX;
 
