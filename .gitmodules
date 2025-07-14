@@ -4,3 +4,6 @@
 [submodule "lib-externes/Delphi-Game-Engine"]
 	path = lib-externes/Delphi-Game-Engine
 	url = https://github.com/DeveloppeurPascal/Delphi-Game-Engine.git
+[submodule "lib-externes/SVG-cards"]
+	path = lib-externes/SVG-cards
+	url = https://github.com/DeveloppeurPascal/SVG-cards.git
