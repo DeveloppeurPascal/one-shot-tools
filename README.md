@@ -97,6 +97,8 @@ If you speak French [subscribe to Zone Abo](https://zone-abo.fr/nos-abonnements.
 
 Create a Delphi projects group from the list of projects found in a repository tree.
 
+This program is no longer available here. It's now [GroupProj Updater](https://groupprojupdater.olfsoftware.fr). Its sources files are available [from this repository](https://github.com/DeveloppeurPascal/GroupProjUpdater).
+
 ### DisplayDPROJContent
 
 Displays the content of Delphi project options file.

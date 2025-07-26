@@ -97,6 +97,8 @@ Si vous parlez français [abonnez-vous à Zone Abo](https://zone-abo.fr/nos-abon
 
 Crée un groupe de projet pour Delphi à partir des projets trouvés dans une arborescence donnée.
 
+Ce programme n'est plus disponible ici. Il est devenu [GroupProj Updater](https://groupprojupdater.olfsoftware.fr). Ses codes sources sont disponibles [sur ce dépôt de code](https://github.com/DeveloppeurPascal/GroupProjUpdater).
+
 ### DisplayDPROJContent
 
 Affichage d'informations contenues dans un fichier d'options de projet de Delphi.
