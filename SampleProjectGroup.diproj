@@ -21,9 +21,9 @@
   <TargetPlatform>0</TargetPlatform>
   <Sources>
     <Source>.\DisplayDPROJContent\DisplayDPROJContent.dpr</Source>
-    <Source>.\gamepad-ui-tests\fmx\GamepadUITestsFMX.dpr</Source>
     <Source>.\gamepad-ui-tests\FMXTestUI\FMXTestUI.dpr</Source>
     <Source>.\gamepad-ui-tests\FMXUIItemsList\FMXTestUIItemsList.dpr</Source>
+    <Source>.\gamepad-ui-tests\fmx\GamepadUITestsFMX.dpr</Source>
     <Source>.\gamepad-ui-tests\vcl\GamepadUITestsVCL.dpr</Source>
     <Source>.\generation-serie-mots-de-passe\src\generation_de_mots_de_passe.dpr</Source>
     <Source>.\genpassword\src\GenPassword.dpr</Source>
@@ -33,12 +33,11 @@
     <Source>.\RedirectionPasDPK\RedirectPasFilesAfterFolderTreeChange.dpr</Source>
     <Source>.\rename-all-files-in-a-folder\src\RenameFilesInFolder.dpr</Source>
     <Source>.\show-images-fullscreen\ShowImagesFullscreen.dpr</Source>
+    <Source>.\SVGCardSocialPreviewImageGenerator\SVGCardSocialPreviewImageGenerator.dpr</Source>
     <Source>.\TDirectory_CreateDirectory_Check\src\TDirectoryCreate.dpr</Source>
     <Source>.\tirages_au_sort\src\tirages_au_sort.dpr</Source>
     <Source>.\webhosting-send-ftp-config-email\src\WebHostingCreateAndSendFTPByEmail.dpr</Source>
     <Source>.\webhosting-send-mysql-config-email\src\WebHostingCreateAndSendMySQLByEmail.dpr</Source>
-    <Source>.\CreateGroupProjFromPath\CreateGroupProjFromPath.dpr</Source>
-    <Source>.\SVGCardSocialPreviewImageGenerator\SVGCardSocialPreviewImageGenerator.dpr</Source>
   </Sources>
   <Outputs>
     <Output Type="HTML">
