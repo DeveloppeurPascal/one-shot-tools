@@ -93,12 +93,6 @@ Si vous parlez français [abonnez-vous à Zone Abo](https://zone-abo.fr/nos-abon
 
 ## Liste des projets
 
-### CreateGroupProjFromPath
-
-Crée un groupe de projet pour Delphi à partir des projets trouvés dans une arborescence donnée.
-
-Ce programme n'est plus disponible ici. Il est devenu [GroupProj Updater](https://groupprojupdater.olfsoftware.fr). Ses codes sources sont disponibles [sur ce dépôt de code](https://github.com/DeveloppeurPascal/GroupProjUpdater).
-
 ### DisplayDPROJContent
 
 Affichage d'informations contenues dans un fichier d'options de projet de Delphi.
@@ -151,12 +145,6 @@ Affiche toutes les images (JPG, PNB) d'un dossier en plein écran une par une. C
 
 Utilise les images vectorielles de SVG Cards pour générer une image utilisée en prévisualisation sur les réseaux sociaux lors du partage de son dépôt GitHub.
 
-### SVGFromFolderToStringArrayInUnit
-
-Liste tous les fichiers SVG d'un dossier et crée une unité dans laquelle ils sont stockés sous forme d'un tableau de chaines avec comme index le nom du fichier défini comme constante.
-
-Ce programme n'est plus disponible ici. Il est devenu [SVG Folder To Delphi Unit](http://svgfolder2delphiunit.olfsoftware.fr). Ses codes sources sont disponibles [sur ce dépôt de code](https://github.com/DeveloppeurPascal/SVGFolder2DelphiUnit).
-
 ### TDirectory_CreateDirectory_Check
 
 Test des méthodes TDirectory.CreateDirectory(), TDirectory.Delete() et TPath.GetXXXPath() pour les programmes Delphi sur toutes les plateformes disponibles.
@@ -172,3 +160,19 @@ Envoyer le "FTP config mail" pour un service d'hébergement web à partir d'une 
 ### webhosting-send-mysql-config-email
 
 Envoyer le "mail de configuration de la base de données" pour un service d'hébergement web à partir d'une liste d'utilisateurs/mots de passe.
+
+## Liste des projets supprimés
+
+Ces programmes ne sont plus disponibles ici. Ils ont été transformés en logiciels indépendants ou ont été supprimés pour d'autres raisons.
+
+### CreateGroupProjFromPath
+
+Crée un groupe de projet pour Delphi à partir des projets trouvés dans une arborescence donnée.
+
+Il est devenu [GroupProj Updater](https://groupprojupdater.olfsoftware.fr). Ses codes sources sont disponibles [sur ce dépôt de code](https://github.com/DeveloppeurPascal/GroupProjUpdater).
+
+### SVGFromFolderToStringArrayInUnit
+
+Liste tous les fichiers SVG d'un dossier et crée une unité dans laquelle ils sont stockés sous forme d'un tableau de chaines avec comme index le nom du fichier défini comme constante.
+
+Il est devenu [SVG Folder To Delphi Unit](http://svgfolder2delphiunit.olfsoftware.fr). Ses codes sources sont disponibles [sur ce dépôt de code](https://github.com/DeveloppeurPascal/SVGFolder2DelphiUnit).

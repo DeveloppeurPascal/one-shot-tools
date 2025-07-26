@@ -93,12 +93,6 @@ If you speak French [subscribe to Zone Abo](https://zone-abo.fr/nos-abonnements.
 
 ## List of projects
 
-### CreateGroupProjFromPath
-
-Create a Delphi projects group from the list of projects found in a repository tree.
-
-This program is no longer available here. It's now [GroupProj Updater](https://groupprojupdater.olfsoftware.fr). Its sources files are available [from this repository](https://github.com/DeveloppeurPascal/GroupProjUpdater).
-
 ### DisplayDPROJContent
 
 Displays the content of Delphi project options file.
@@ -151,12 +145,6 @@ Show all images (JPG, PNG) from a folder in full screen. Use arrow keys to chang
 
 Use SVG Cards images to generate a social preview image for its GitHub repository.
 
-### SVGFromFolderToStringArrayInUnit
-
-List all SVG files from a folder and create a unit where they are stored as strings in an array, with the filename as a constant used as array index.
-
-This program is no longer available here. It's now [SVG Folder To Delphi Unit](http://svgfolder2delphiunit.olfsoftware.fr). Its sources files are available [from this repository](https://github.com/DeveloppeurPascal/SVGFolder2DelphiUnit).
-
 ### TDirectory_CreateDirectory_Check
 
 Test methods TDirectory.CreateDirectory(), TDirectory.Delete() and the TPath.GetXXXPath() for Delphi programs on all available platforms.
@@ -172,3 +160,19 @@ Send the "FTP config mail" for a web hosting service from a list of user/passwor
 ### webhosting-send-mysql-config-email
 
 Send the "database config mail" for a web hosting service from a list of user/passwords.
+
+## List of removed projects
+
+Thess programs are no longer available here. They have been transformed in independant softwares or simply removed for other reasons.
+
+### CreateGroupProjFromPath
+
+Create a Delphi projects group from the list of projects found in a repository tree.
+
+It's now [GroupProj Updater](https://groupprojupdater.olfsoftware.fr). Its sources files are available [from this repository](https://github.com/DeveloppeurPascal/GroupProjUpdater).
+
+### SVGFromFolderToStringArrayInUnit
+
+List all SVG files from a folder and create a unit where they are stored as strings in an array, with the filename as a constant used as array index.
+
+It's now [SVG Folder To Delphi Unit](http://svgfolder2delphiunit.olfsoftware.fr). Its sources files are available [from this repository](https://github.com/DeveloppeurPascal/SVGFolder2DelphiUnit).
