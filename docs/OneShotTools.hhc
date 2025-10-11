@@ -718,6 +718,14 @@
                                                   <param name="Local" value="Gamolf.RTL.Joystick.TGamepadDevicesManager.Create.html">
                                                   </OBJECT>
                                               <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Create">
+                                                  <param name="Local" value="Gamolf.RTL.Joystick.TGamepadDevicesManager.Create.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Destroy">
+                                                  <param name="Local" value="Gamolf.RTL.Joystick.TGamepadDevicesManager.Destroy.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="Destroy">
                                                   <param name="Local" value="Gamolf.RTL.Joystick.TGamepadDevicesManager.Destroy.html">
                                                   </OBJECT>
@@ -2117,6 +2125,14 @@
                                                   <param name="Local" value="Gamolf.RTL.Joystick.TGamepadDevicesManager.Create.html">
                                                   </OBJECT>
                                               <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Create">
+                                                  <param name="Local" value="Gamolf.RTL.Joystick.TGamepadDevicesManager.Create.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Destroy">
+                                                  <param name="Local" value="Gamolf.RTL.Joystick.TGamepadDevicesManager.Destroy.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="Destroy">
                                                   <param name="Local" value="Gamolf.RTL.Joystick.TGamepadDevicesManager.Destroy.html">
                                                   </OBJECT>
@@ -3002,12 +3018,12 @@
                                                   </OBJECT>
                                                   <UL>
                                                       <LI> <OBJECT type="text/sitemap">
-                                                          <param name="Name" value="Create(TUIElementsList,TRect,TNotifyEvent)">
-                                                          <param name="Local" value="Gamolf.RTL.UIElements.TUIElement.Create(TUIElementsList,TRect,TNotifyEvent).html">
+                                                          <param name="Name" value="Create(TUIElementsList,TRectF,TNotifyEvent)">
+                                                          <param name="Local" value="Gamolf.RTL.UIElements.TUIElement.Create(TUIElementsList,TRectF,TNotifyEvent).html">
                                                           </OBJECT>
                                                       <LI> <OBJECT type="text/sitemap">
-                                                          <param name="Name" value="Create(TUIElementsList,TRect,TNotifyProc)">
-                                                          <param name="Local" value="Gamolf.RTL.UIElements.TUIElement.Create(TUIElementsList,TRect,TNotifyProc).html">
+                                                          <param name="Name" value="Create(TUIElementsList,TRectF,TNotifyProc)">
+                                                          <param name="Local" value="Gamolf.RTL.UIElements.TUIElement.Create(TUIElementsList,TRectF,TNotifyProc).html">
                                                           </OBJECT>
                                                       <LI> <OBJECT type="text/sitemap">
                                                           <param name="Name" value="Create(TUIElementsList,TNotifyEvent)">
@@ -3169,12 +3185,12 @@
                                                           <param name="Local" value="Gamolf.RTL.UIElements.TUIElementsList.AddUIItem(TNotifyProc).html">
                                                           </OBJECT>
                                                       <LI> <OBJECT type="text/sitemap">
-                                                          <param name="Name" value="AddUIItem(TRect,TNotifyEvent)">
-                                                          <param name="Local" value="Gamolf.RTL.UIElements.TUIElementsList.AddUIItem(TRect,TNotifyEvent).html">
+                                                          <param name="Name" value="AddUIItem(TRectF,TNotifyEvent)">
+                                                          <param name="Local" value="Gamolf.RTL.UIElements.TUIElementsList.AddUIItem(TRectF,TNotifyEvent).html">
                                                           </OBJECT>
                                                       <LI> <OBJECT type="text/sitemap">
-                                                          <param name="Name" value="AddUIItem(TRect,TNotifyProc)">
-                                                          <param name="Local" value="Gamolf.RTL.UIElements.TUIElementsList.AddUIItem(TRect,TNotifyProc).html">
+                                                          <param name="Name" value="AddUIItem(TRectF,TNotifyProc)">
+                                                          <param name="Local" value="Gamolf.RTL.UIElements.TUIElementsList.AddUIItem(TRectF,TNotifyProc).html">
                                                           </OBJECT>
                                                   </UL>
                                               <LI> <OBJECT type="text/sitemap">
@@ -3863,6 +3879,14 @@
                                               <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="Create">
                                                   <param name="Local" value="Gamolf.RTL.Joystick.TGamepadDevicesManager.Create.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Create">
+                                                  <param name="Local" value="Gamolf.RTL.Joystick.TGamepadDevicesManager.Create.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Destroy">
+                                                  <param name="Local" value="Gamolf.RTL.Joystick.TGamepadDevicesManager.Destroy.html">
                                                   </OBJECT>
                                               <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="Destroy">
@@ -5253,6 +5277,14 @@
                                               <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="Create">
                                                   <param name="Local" value="Gamolf.RTL.Joystick.TGamepadDevicesManager.Create.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Create">
+                                                  <param name="Local" value="Gamolf.RTL.Joystick.TGamepadDevicesManager.Create.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Destroy">
+                                                  <param name="Local" value="Gamolf.RTL.Joystick.TGamepadDevicesManager.Destroy.html">
                                                   </OBJECT>
                                               <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="Destroy">
@@ -8892,6 +8924,72 @@
                               <LI> <OBJECT type="text/sitemap">
                                   <param name="Name" value="Form1">
                                   <param name="Local" value="Unit1.Form1.html">
+                                  </OBJECT>
+                          </UL>
+                  </UL>
+          </UL>
+      <LI> <OBJECT type="text/sitemap">
+          <param name="Name" value="LinkWebsiteServerSampleDBGenerator">
+          <param name="Local" value="LinkWebsiteServerSampleDBGenerator.html">
+          </OBJECT>
+          <UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="fMain">
+                  <param name="Local" value="fMain.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Classes">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TfrmMain">
+                                  <param name="Local" value="fMain.TfrmMain.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="AddPage">
+                                                  <param name="Local" value="fMain.TfrmMain.AddPage.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Button1Click">
+                                                  <param name="Local" value="fMain.TfrmMain.Button1Click.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FormCreate">
+                                                  <param name="Local" value="fMain.TfrmMain.FormCreate.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="InitSettings">
+                                                  <param name="Local" value="fMain.TfrmMain.InitSettings.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Button1">
+                                                  <param name="Local" value="fMain.TfrmMain.Button1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Edit1">
+                                                  <param name="Local" value="fMain.TfrmMain.Edit1.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Variables">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="frmMain">
+                                  <param name="Local" value="fMain.frmMain.html">
                                   </OBJECT>
                           </UL>
                   </UL>

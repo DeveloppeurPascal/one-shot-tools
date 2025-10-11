@@ -99,13 +99,16 @@ Returns a transparent bitmap drawn by Skia4Delphi library from a SVG source.
 </div>
 </div>
 <div id="syntaxContent" class="sectionContent" contenteditable="false">
-<div class="codeSnippet" contenteditable="false"><input class="code" type="hidden" value="" /><div class="codeSnippetTabs"><div class="codeSnippetTabActive"><a>Delphi</a></div></div><div class="codeSnippetCodeContainer"><div class="codeSnippetCode"><pre class="delphi" contenteditable="false">function SVGToBitmap(const Width: integer; const Height: integer; const SVGSource: string; const MarginTop: single = 0; const MarginRight: single = 0; const MarginBottom: single = 0; const MarginLeft: single = 0): TBitmap</pre></div></div></div><div class="subSection"><h4 class="subHeading">Parameters</h4><dl id="parameters"><dt><span class="parameter">Width</span></dt><dd>Type: <span title="">System.Integer</span><br /><p>
+<div class="codeSnippet" contenteditable="false"><input class="code" type="hidden" value="" /><div class="codeSnippetTabs"><div class="codeSnippetTabActive"><a>Delphi</a></div></div><div class="codeSnippetCodeContainer"><div class="codeSnippetCode"><pre class="delphi" contenteditable="false">function SVGToBitmap(const Width: integer; const Height: integer; const SVGSource: string; const BitmapScale: single = 1; const MarginTop: single = 0; const MarginRight: single = 0; const MarginBottom: single = 0; const MarginLeft: single = 0): TBitmap</pre></div></div></div><div class="subSection"><h4 class="subHeading">Parameters</h4><dl id="parameters"><dt><span class="parameter">Width</span></dt><dd>Type: <span title="">System.Integer</span><br /><p>
 Logical width of the target bitmap. Its real width will be calculated ith the BitmapScale (in a FireMonkey project).
 </p></dd><dt><span class="parameter">Height</span></dt><dd>Type: <span title="">System.Integer</span><br /><p>
 Logical height of the target bitmap. Its real height will be calculated ith the BitmapScale (in a FireMonkey project).
 </p></dd><dt><span class="parameter">SVGSource</span></dt><dd>Type: <span title="">System.string</span><br /><p>
 XML source code of the SVG  as string.
 No CSS content allowed. Check default Adobe Illustrator settings if you have exports problems.
+</p></dd><dt><span class="parameter">BitmapScale</span></dt><dd>Type: <span title="">System.Single</span><br /><p>
+Only used in FireMonkey projects. The BitmapScale is used to calculate the real bitmap size from logical given size.
+Default value is 1.
 </p></dd><dt><span class="parameter">MarginTop</span></dt><dd>Type: <span title="">System.Single</span><br /><p>
 Margin top used to calculate the real SVG size and position in the final bitmap.
 It's a decimal value between 0 and 100, used as a percent of the bitmap height.
@@ -118,9 +121,6 @@ It's a decimal value between 0 and 100, used as a percent of the bitmap height.
 </p></dd><dt><span class="parameter">MarginLeft</span></dt><dd>Type: <span title="">System.Single</span><br /><p>
 Margin left used to calculate the real SVG size and position in the final bitmap.
 It's a decimal value between 0 and 100, used as a percent of the bitmap width.
-</p></dd><dt><span class="invalidParameter">BitmapScale</span></dt><dd><p>
-Only used in FireMonkey projects. The BitmapScale is used to calculate the real bitmap size from logical given size.
-Default value is 1.
 </p></dd></dl></div><div class="subSection"><h4 class="subHeading">Return Value</h4><div id="returnsType">Type: <span class="returnType">TBitmap</span></div><div id="returns" contenteditable="false"><p> </p></div></div>
 </div>
 </div>
