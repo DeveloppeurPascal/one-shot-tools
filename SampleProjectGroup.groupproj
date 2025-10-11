@@ -27,6 +27,9 @@
         <Projects Include="import-CSV-from-MSSQLServer-To-MySQL\src\ImportCSVMSSQL.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="LinkWebsiteServerSampleDBGenerator\LinkWebsiteServerSampleDBGenerator.dproj">
+            <Dependencies/>
+        </Projects>
         <Projects Include="mesiim471422-ovh-vps\src\HostingAccessGenerator.dproj">
             <Dependencies/>
         </Projects>
@@ -137,6 +140,15 @@
     <Target Name="ImportCSVMSSQL:Make">
         <MSBuild Projects="import-CSV-from-MSSQLServer-To-MySQL\src\ImportCSVMSSQL.dproj" Targets="Make"/>
     </Target>
+    <Target Name="LinkWebsiteServerSampleDBGenerator">
+        <MSBuild Projects="LinkWebsiteServerSampleDBGenerator\LinkWebsiteServerSampleDBGenerator.dproj"/>
+    </Target>
+    <Target Name="LinkWebsiteServerSampleDBGenerator:Clean">
+        <MSBuild Projects="LinkWebsiteServerSampleDBGenerator\LinkWebsiteServerSampleDBGenerator.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LinkWebsiteServerSampleDBGenerator:Make">
+        <MSBuild Projects="LinkWebsiteServerSampleDBGenerator\LinkWebsiteServerSampleDBGenerator.dproj" Targets="Make"/>
+    </Target>
     <Target Name="HostingAccessGenerator">
         <MSBuild Projects="mesiim471422-ovh-vps\src\HostingAccessGenerator.dproj"/>
     </Target>
@@ -228,13 +240,13 @@
         <MSBuild Projects="webhosting-send-mysql-config-email\src\WebHostingCreateAndSendMySQLByEmail.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="DisplayDPROJContent;FMXTestUI;FMXTestUIItemsList;GamepadUITestsFMX;GamepadUITestsVCL;generation_de_mots_de_passe;GenPassword;ImportCSVMSSQL;HostingAccessGenerator;mesimf371818_ovh;RedirectPasFilesAfterFolderTreeChange;RenameFilesInFolder;ShowImagesFullscreen;SVGCardSocialPreviewImageGenerator;TDirectoryCreate;tirages_au_sort;WebHostingCreateAndSendFTPByEmail;WebHostingCreateAndSendMySQLByEmail"/>
+        <CallTarget Targets="DisplayDPROJContent;FMXTestUI;FMXTestUIItemsList;GamepadUITestsFMX;GamepadUITestsVCL;generation_de_mots_de_passe;GenPassword;ImportCSVMSSQL;LinkWebsiteServerSampleDBGenerator;HostingAccessGenerator;mesimf371818_ovh;RedirectPasFilesAfterFolderTreeChange;RenameFilesInFolder;ShowImagesFullscreen;SVGCardSocialPreviewImageGenerator;TDirectoryCreate;tirages_au_sort;WebHostingCreateAndSendFTPByEmail;WebHostingCreateAndSendMySQLByEmail"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="DisplayDPROJContent:Clean;FMXTestUI:Clean;FMXTestUIItemsList:Clean;GamepadUITestsFMX:Clean;GamepadUITestsVCL:Clean;generation_de_mots_de_passe:Clean;GenPassword:Clean;ImportCSVMSSQL:Clean;HostingAccessGenerator:Clean;mesimf371818_ovh:Clean;RedirectPasFilesAfterFolderTreeChange:Clean;RenameFilesInFolder:Clean;ShowImagesFullscreen:Clean;SVGCardSocialPreviewImageGenerator:Clean;TDirectoryCreate:Clean;tirages_au_sort:Clean;WebHostingCreateAndSendFTPByEmail:Clean;WebHostingCreateAndSendMySQLByEmail:Clean"/>
+        <CallTarget Targets="DisplayDPROJContent:Clean;FMXTestUI:Clean;FMXTestUIItemsList:Clean;GamepadUITestsFMX:Clean;GamepadUITestsVCL:Clean;generation_de_mots_de_passe:Clean;GenPassword:Clean;ImportCSVMSSQL:Clean;LinkWebsiteServerSampleDBGenerator:Clean;HostingAccessGenerator:Clean;mesimf371818_ovh:Clean;RedirectPasFilesAfterFolderTreeChange:Clean;RenameFilesInFolder:Clean;ShowImagesFullscreen:Clean;SVGCardSocialPreviewImageGenerator:Clean;TDirectoryCreate:Clean;tirages_au_sort:Clean;WebHostingCreateAndSendFTPByEmail:Clean;WebHostingCreateAndSendMySQLByEmail:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="DisplayDPROJContent:Make;FMXTestUI:Make;FMXTestUIItemsList:Make;GamepadUITestsFMX:Make;GamepadUITestsVCL:Make;generation_de_mots_de_passe:Make;GenPassword:Make;ImportCSVMSSQL:Make;HostingAccessGenerator:Make;mesimf371818_ovh:Make;RedirectPasFilesAfterFolderTreeChange:Make;RenameFilesInFolder:Make;ShowImagesFullscreen:Make;SVGCardSocialPreviewImageGenerator:Make;TDirectoryCreate:Make;tirages_au_sort:Make;WebHostingCreateAndSendFTPByEmail:Make;WebHostingCreateAndSendMySQLByEmail:Make"/>
+        <CallTarget Targets="DisplayDPROJContent:Make;FMXTestUI:Make;FMXTestUIItemsList:Make;GamepadUITestsFMX:Make;GamepadUITestsVCL:Make;generation_de_mots_de_passe:Make;GenPassword:Make;ImportCSVMSSQL:Make;LinkWebsiteServerSampleDBGenerator:Make;HostingAccessGenerator:Make;mesimf371818_ovh:Make;RedirectPasFilesAfterFolderTreeChange:Make;RenameFilesInFolder:Make;ShowImagesFullscreen:Make;SVGCardSocialPreviewImageGenerator:Make;TDirectoryCreate:Make;tirages_au_sort:Make;WebHostingCreateAndSendFTPByEmail:Make;WebHostingCreateAndSendMySQLByEmail:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

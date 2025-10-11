@@ -11,6 +11,7 @@
   <HeaderHtml>&lt;%TopicTitle%&gt;</HeaderHtml>
   <FooterHtml>&lt;a href="https://oneshottools.developpeur-pascal.fr/" target="_blank"&gt;One Shot Tools&lt;/a&gt; (c) 2022-2025 &lt;a href="https://patrick.premartin.fr" target="_blank"&gt;Patrick PREMARTIN&lt;/a&gt; - Powered by &lt;a href="https://devjetsoftware.com/products/documentation-insight/" target="_blank"&gt;DocInsight&lt;/a&gt;</FooterHtml>
   <CustomDefines/>
+  <GlobalSearchPaths>false</GlobalSearchPaths>
   <ShowImplementationSection>false</ShowImplementationSection>
   <ShowPrivateMembers>false</ShowPrivateMembers>
   <ShowProtectedMembers>true</ShowProtectedMembers>
@@ -38,6 +39,7 @@
     <Source>.\tirages_au_sort\src\tirages_au_sort.dpr</Source>
     <Source>.\webhosting-send-ftp-config-email\src\WebHostingCreateAndSendFTPByEmail.dpr</Source>
     <Source>.\webhosting-send-mysql-config-email\src\WebHostingCreateAndSendMySQLByEmail.dpr</Source>
+    <Source>.\LinkWebsiteServerSampleDBGenerator\LinkWebsiteServerSampleDBGenerator.dpr</Source>
   </Sources>
   <Outputs>
     <Output Type="HTML">
