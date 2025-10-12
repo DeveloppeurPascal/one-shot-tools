@@ -85,7 +85,7 @@ var
   i, j, nb: integer;
 begin
   // page_(.*).json
-  // https://github.com/DeveloppeurPascal/Link-Website-Server/blob/main/website-data-and-api.md
+  // https://codeberg.org/PatrickPremartin/Block-Page-Site-Server/src/branch/main/website-data-and-api.md
 
   langues := settings.GetValue<tjsonarray>('langs');
 
@@ -310,7 +310,7 @@ var
   i, j, nb: integer;
 begin
   // settings.json
-  // https://github.com/DeveloppeurPascal/Link-Website-Server/blob/main/website-data-and-api.md
+  // https://codeberg.org/PatrickPremartin/Block-Page-Site-Server/src/branch/main/website-data-and-api.md
 
   result := TJSONObject.Create;
   langues := tjsonarray.Create;
