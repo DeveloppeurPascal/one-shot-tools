@@ -1,0 +1,74 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'GenSite 2025: Fix Footer And Links'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 0
+    Position.X = 10.000000000000000000
+    Position.Y = 10.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 620.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Specify the folder of your sites or one site'
+    object EllipsesEditButton1: TEllipsesEditButton
+      Touch.InteractiveGestures = [LongTap]
+      CanFocus = False
+      Cursor = crArrow
+      Size.Width = 28.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnClick = EllipsesEditButton1Click
+    end
+  end
+  object btnStart: TButton
+    Align = Top
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 42.000000000000000000
+    Size.Width = 620.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Start'
+    OnClick = btnStartClick
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ReadOnly = True
+    Align = Client
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 620.000000000000000000
+    Size.Height = 386.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 616.000000000000000000
+    Viewport.Height = 382.000000000000000000
+  end
+  object OlfSelectDirectoryDialog1: TOlfSelectDirectoryDialog
+    Root = ''
+    Left = 304
+    Top = 224
+  end
+end
