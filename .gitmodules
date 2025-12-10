@@ -7,3 +7,6 @@
 [submodule "lib-externes/SVG-cards"]
 	path = lib-externes/SVG-cards
 	url = https://github.com/DeveloppeurPascal/SVG-cards.git
+[submodule "lib-externes/Delphi-FMXExtend-Library"]
+	path = lib-externes/Delphi-FMXExtend-Library
+	url = https://github.com/DeveloppeurPascal/Delphi-FMXExtend-Library.git
