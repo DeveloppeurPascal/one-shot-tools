@@ -51,6 +51,36 @@ window.DocInsight.toc["Olf.FMX.SelectDirectory"] =   [
         id: "Olf.FMX.SelectDirectory.TOlfSelectDirectoryDialog.Execute",
         title: "Execute",
           href: "Olf.FMX.SelectDirectory.TOlfSelectDirectoryDialog.Execute.html",
+      },      {
+        id: "Olf.FMX.SelectDirectory.TOlfSelectDirectoryDialog.SetDirectory",
+        title: "SetDirectory",
+          href: "Olf.FMX.SelectDirectory.TOlfSelectDirectoryDialog.SetDirectory.html",
+      },      {
+        id: "Olf.FMX.SelectDirectory.TOlfSelectDirectoryDialog.SetRoot",
+        title: "SetRoot",
+          href: "Olf.FMX.SelectDirectory.TOlfSelectDirectoryDialog.SetRoot.html",
+      },      {
+        id: "Olf.FMX.SelectDirectory.TOlfSelectDirectoryDialog.SetText",
+        title: "SetText",
+          href: "Olf.FMX.SelectDirectory.TOlfSelectDirectoryDialog.SetText.html",
+      }  ]
+,
+      },      {
+        id: "Olf.FMX.SelectDirectory.TOlfSelectDirectoryDialog-Fields",
+        title: "Fields",
+          children:   [
+      {
+        id: "Olf.FMX.SelectDirectory.TOlfSelectDirectoryDialog.FDirectory",
+        title: "FDirectory",
+          href: "Olf.FMX.SelectDirectory.TOlfSelectDirectoryDialog.FDirectory.html",
+      },      {
+        id: "Olf.FMX.SelectDirectory.TOlfSelectDirectoryDialog.FRoot",
+        title: "FRoot",
+          href: "Olf.FMX.SelectDirectory.TOlfSelectDirectoryDialog.FRoot.html",
+      },      {
+        id: "Olf.FMX.SelectDirectory.TOlfSelectDirectoryDialog.FText",
+        title: "FText",
+          href: "Olf.FMX.SelectDirectory.TOlfSelectDirectoryDialog.FText.html",
       }  ]
 ,
       }  ]

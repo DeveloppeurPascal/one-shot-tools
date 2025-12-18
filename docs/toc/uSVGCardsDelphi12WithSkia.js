@@ -293,6 +293,56 @@ window.DocInsight.toc["uSVGCardsDelphi12WithSkia"] =   [
         id: "M:uSVGCardsDelphi12WithSkia.TSVGCards.SVG",
         title: "SVG",
           href: "uSVGCardsDelphi12WithSkia.TSVGCards.SVG.html",
+      },      {
+        id: "uSVGCardsDelphi12WithSkia.TSVGCards.SetTag",
+        title: "SetTag",
+          href: "uSVGCardsDelphi12WithSkia.TSVGCards.SetTag.html",
+      },      {
+        id: "uSVGCardsDelphi12WithSkia.TSVGCards.SetTagBool",
+        title: "SetTagBool",
+          href: "uSVGCardsDelphi12WithSkia.TSVGCards.SetTagBool.html",
+      },      {
+        id: "uSVGCardsDelphi12WithSkia.TSVGCards.SetTagFloat",
+        title: "SetTagFloat",
+          href: "uSVGCardsDelphi12WithSkia.TSVGCards.SetTagFloat.html",
+      },      {
+        id: "uSVGCardsDelphi12WithSkia.TSVGCards.SetTagObject",
+        title: "SetTagObject",
+          href: "uSVGCardsDelphi12WithSkia.TSVGCards.SetTagObject.html",
+      },      {
+        id: "uSVGCardsDelphi12WithSkia.TSVGCards.SetTagString",
+        title: "SetTagString",
+          href: "uSVGCardsDelphi12WithSkia.TSVGCards.SetTagString.html",
+      }  ]
+,
+      },      {
+        id: "uSVGCardsDelphi12WithSkia.TSVGCards-Fields",
+        title: "Fields",
+          children:   [
+      {
+        id: "uSVGCardsDelphi12WithSkia.TSVGCards.FBitmapListIndex",
+        title: "FBitmapListIndex",
+          href: "uSVGCardsDelphi12WithSkia.TSVGCards.FBitmapListIndex.html",
+      },      {
+        id: "uSVGCardsDelphi12WithSkia.TSVGCards.FTag",
+        title: "FTag",
+          href: "uSVGCardsDelphi12WithSkia.TSVGCards.FTag.html",
+      },      {
+        id: "uSVGCardsDelphi12WithSkia.TSVGCards.FTagBool",
+        title: "FTagBool",
+          href: "uSVGCardsDelphi12WithSkia.TSVGCards.FTagBool.html",
+      },      {
+        id: "uSVGCardsDelphi12WithSkia.TSVGCards.FTagFloat",
+        title: "FTagFloat",
+          href: "uSVGCardsDelphi12WithSkia.TSVGCards.FTagFloat.html",
+      },      {
+        id: "uSVGCardsDelphi12WithSkia.TSVGCards.FTagObject",
+        title: "FTagObject",
+          href: "uSVGCardsDelphi12WithSkia.TSVGCards.FTagObject.html",
+      },      {
+        id: "uSVGCardsDelphi12WithSkia.TSVGCards.FTagString",
+        title: "FTagString",
+          href: "uSVGCardsDelphi12WithSkia.TSVGCards.FTagString.html",
       }  ]
 ,
       }  ]
@@ -773,6 +823,10 @@ window.DocInsight.toc["uSVGCardsDelphi12WithSkia"] =   [
         title: "Routines",
           children:   [
       {
+        id: "uSVGCardsDelphi12WithSkia.RegisterSVGBitmap",
+        title: "RegisterSVGBitmap",
+          href: "uSVGCardsDelphi12WithSkia.RegisterSVGBitmap.html",
+      },      {
         id: "M:uSVGCardsDelphi12WithSkia.getBitmapFromSVG",
         title: "getBitmapFromSVG",
           href: "uSVGCardsDelphi12WithSkia.getBitmapFromSVG.html",

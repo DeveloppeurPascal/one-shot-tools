@@ -76,6 +76,10 @@ window.DocInsight.toc["Olf.FMX.TextImageFrame"] =   [
         title: "DoEndUpdate",
           href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.DoEndUpdate.html",
       },      {
+        id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.DoRefresh",
+        title: "DoRefresh",
+          href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.DoRefresh.html",
+      },      {
         id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.Refresh",
         title: "Refresh",
           href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.Refresh.html",
@@ -84,9 +88,71 @@ window.DocInsight.toc["Olf.FMX.TextImageFrame"] =   [
         title: "RetourneLargeur",
           href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.RetourneLargeur.html",
       },      {
+        id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.SetAutoSize",
+        title: "SetAutoSize",
+          href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.SetAutoSize.html",
+      },      {
+        id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.SetFont",
+        title: "SetFont",
+          href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.SetFont.html",
+      },      {
+        id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.SetHasPendingRefresh",
+        title: "SetHasPendingRefresh",
+          href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.SetHasPendingRefresh.html",
+      },      {
+        id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.SetLetterSpacing",
+        title: "SetLetterSpacing",
+          href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.SetLetterSpacing.html",
+      },      {
+        id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.SetOnGetImageIndexOfUnknowChar",
+        title: "SetOnGetImageIndexOfUnknowChar",
+          href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.SetOnGetImageIndexOfUnknowChar.html",
+      },      {
+        id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.SetSpaceWidth",
+        title: "SetSpaceWidth",
+          href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.SetSpaceWidth.html",
+      },      {
+        id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.SetText",
+        title: "SetText",
+          href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.SetText.html",
+      },      {
         id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.getImageIndexOfChar",
         title: "getImageIndexOfChar",
           href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.getImageIndexOfChar.html",
+      }  ]
+,
+      },      {
+        id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame-Fields",
+        title: "Fields",
+          children:   [
+      {
+        id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.FAutoSize",
+        title: "FAutoSize",
+          href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.FAutoSize.html",
+      },      {
+        id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.FFont",
+        title: "FFont",
+          href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.FFont.html",
+      },      {
+        id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.FHasPendingRefresh",
+        title: "FHasPendingRefresh",
+          href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.FHasPendingRefresh.html",
+      },      {
+        id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.FLetterSpacing",
+        title: "FLetterSpacing",
+          href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.FLetterSpacing.html",
+      },      {
+        id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.FOnGetImageIndexOfUnknowChar",
+        title: "FOnGetImageIndexOfUnknowChar",
+          href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.FOnGetImageIndexOfUnknowChar.html",
+      },      {
+        id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.FSpaceWidth",
+        title: "FSpaceWidth",
+          href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.FSpaceWidth.html",
+      },      {
+        id: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.FText",
+        title: "FText",
+          href: "Olf.FMX.TextImageFrame.TOlfFMXTextImageFrame.FText.html",
       }  ]
 ,
       }  ]

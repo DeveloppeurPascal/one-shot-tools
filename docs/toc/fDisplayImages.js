@@ -54,6 +54,14 @@ window.DocInsight.toc["fDisplayImages"] =   [
         title: "GoMainForm",
           href: "fDisplayImages.TfrmDisplayImages.GoMainForm.html",
       },      {
+        id: "fDisplayImages.TfrmDisplayImages.SetImagesPath",
+        title: "SetImagesPath",
+          href: "fDisplayImages.TfrmDisplayImages.SetImagesPath.html",
+      },      {
+        id: "fDisplayImages.TfrmDisplayImages.SetShowImageFilename",
+        title: "SetShowImageFilename",
+          href: "fDisplayImages.TfrmDisplayImages.SetShowImageFilename.html",
+      },      {
         id: "fDisplayImages.TfrmDisplayImages.ShowNext",
         title: "ShowNext",
           href: "fDisplayImages.TfrmDisplayImages.ShowNext.html",
@@ -76,6 +84,10 @@ window.DocInsight.toc["fDisplayImages"] =   [
         title: "Fields",
           children:   [
       {
+        id: "fDisplayImages.TfrmDisplayImages.FShowImageFilename",
+        title: "FShowImageFilename",
+          href: "fDisplayImages.TfrmDisplayImages.FShowImageFilename.html",
+      },      {
         id: "fDisplayImages.TfrmDisplayImages.GlowEffect1",
         title: "GlowEffect1",
           href: "fDisplayImages.TfrmDisplayImages.GlowEffect1.html",
@@ -83,6 +95,14 @@ window.DocInsight.toc["fDisplayImages"] =   [
         id: "fDisplayImages.TfrmDisplayImages.Image1",
         title: "Image1",
           href: "fDisplayImages.TfrmDisplayImages.Image1.html",
+      },      {
+        id: "fDisplayImages.TfrmDisplayImages.ImageIndex",
+        title: "ImageIndex",
+          href: "fDisplayImages.TfrmDisplayImages.ImageIndex.html",
+      },      {
+        id: "fDisplayImages.TfrmDisplayImages.ImagesList",
+        title: "ImagesList",
+          href: "fDisplayImages.TfrmDisplayImages.ImagesList.html",
       },      {
         id: "fDisplayImages.TfrmDisplayImages.Label1",
         title: "Label1",

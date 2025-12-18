@@ -20,6 +20,10 @@ window.DocInsight.toc["fMainVCL"] =   [
         title: "Methods",
           children:   [
       {
+        id: "fMainVCL.TForm2.AddLog",
+        title: "AddLog",
+          href: "fMainVCL.TForm2.AddLog.html",
+      },      {
         id: "fMainVCL.TForm2.FormCreate",
         title: "FormCreate",
           href: "fMainVCL.TForm2.FormCreate.html",
@@ -81,6 +85,14 @@ window.DocInsight.toc["fMainVCL"] =   [
         id: "fMainVCL.TForm2.Timer1",
         title: "Timer1",
           href: "fMainVCL.TForm2.Timer1.html",
+      },      {
+        id: "fMainVCL.TForm2.Timer1TagFloat",
+        title: "Timer1TagFloat",
+          href: "fMainVCL.TForm2.Timer1TagFloat.html",
+      },      {
+        id: "fMainVCL.TForm2.Timer1TagString",
+        title: "Timer1TagString",
+          href: "fMainVCL.TForm2.Timer1TagString.html",
       },      {
         id: "fMainVCL.TForm2.vx",
         title: "vx",

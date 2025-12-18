@@ -102,6 +102,58 @@ window.DocInsight.toc["Olf.RTL.Params"] =   [
         title: "EndUpdate",
           href: "Olf.RTL.Params.TParams.EndUpdate.html",
       },      {
+        id: "Olf.RTL.Params.TParams.GetPortableMode",
+        title: "GetPortableMode",
+          href: "Olf.RTL.Params.TParams.GetPortableMode.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.GetonAfterLoadEvent",
+        title: "GetonAfterLoadEvent",
+          href: "Olf.RTL.Params.TParams.GetonAfterLoadEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.GetonAfterLoadProc",
+        title: "GetonAfterLoadProc",
+          href: "Olf.RTL.Params.TParams.GetonAfterLoadProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.GetonAfterSaveEvent",
+        title: "GetonAfterSaveEvent",
+          href: "Olf.RTL.Params.TParams.GetonAfterSaveEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.GetonAfterSaveProc",
+        title: "GetonAfterSaveProc",
+          href: "Olf.RTL.Params.TParams.GetonAfterSaveProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.GetonBeforeLoadEvent",
+        title: "GetonBeforeLoadEvent",
+          href: "Olf.RTL.Params.TParams.GetonBeforeLoadEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.GetonBeforeLoadProc",
+        title: "GetonBeforeLoadProc",
+          href: "Olf.RTL.Params.TParams.GetonBeforeLoadProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.GetonBeforeSaveEvent",
+        title: "GetonBeforeSaveEvent",
+          href: "Olf.RTL.Params.TParams.GetonBeforeSaveEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.GetonBeforeSaveProc",
+        title: "GetonBeforeSaveProc",
+          href: "Olf.RTL.Params.TParams.GetonBeforeSaveProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.GetonCryptEvent",
+        title: "GetonCryptEvent",
+          href: "Olf.RTL.Params.TParams.GetonCryptEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.GetonCryptProc",
+        title: "GetonCryptProc",
+          href: "Olf.RTL.Params.TParams.GetonCryptProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.GetonDecryptEvent",
+        title: "GetonDecryptEvent",
+          href: "Olf.RTL.Params.TParams.GetonDecryptEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.GetonDecryptProc",
+        title: "GetonDecryptProc",
+          href: "Olf.RTL.Params.TParams.GetonDecryptProc.html",
+      },      {
         id: "Olf.RTL.Params.TParams.HasChanged",
         title: "HasChanged",
           href: "Olf.RTL.Params.TParams.HasChanged.html",
@@ -125,6 +177,58 @@ window.DocInsight.toc["Olf.RTL.Params"] =   [
         id: "Olf.RTL.Params.TParams.Save",
         title: "Save",
           href: "Olf.RTL.Params.TParams.Save.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.SetPortableMode",
+        title: "SetPortableMode",
+          href: "Olf.RTL.Params.TParams.SetPortableMode.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.SetonAfterLoadEvent",
+        title: "SetonAfterLoadEvent",
+          href: "Olf.RTL.Params.TParams.SetonAfterLoadEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.SetonAfterLoadProc",
+        title: "SetonAfterLoadProc",
+          href: "Olf.RTL.Params.TParams.SetonAfterLoadProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.SetonAfterSaveEvent",
+        title: "SetonAfterSaveEvent",
+          href: "Olf.RTL.Params.TParams.SetonAfterSaveEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.SetonAfterSaveProc",
+        title: "SetonAfterSaveProc",
+          href: "Olf.RTL.Params.TParams.SetonAfterSaveProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.SetonBeforeLoadEvent",
+        title: "SetonBeforeLoadEvent",
+          href: "Olf.RTL.Params.TParams.SetonBeforeLoadEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.SetonBeforeLoadProc",
+        title: "SetonBeforeLoadProc",
+          href: "Olf.RTL.Params.TParams.SetonBeforeLoadProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.SetonBeforeSaveEvent",
+        title: "SetonBeforeSaveEvent",
+          href: "Olf.RTL.Params.TParams.SetonBeforeSaveEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.SetonBeforeSaveProc",
+        title: "SetonBeforeSaveProc",
+          href: "Olf.RTL.Params.TParams.SetonBeforeSaveProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.SetonCryptEvent",
+        title: "SetonCryptEvent",
+          href: "Olf.RTL.Params.TParams.SetonCryptEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.SetonCryptProc",
+        title: "SetonCryptProc",
+          href: "Olf.RTL.Params.TParams.SetonCryptProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.SetonDecryptEvent",
+        title: "SetonDecryptEvent",
+          href: "Olf.RTL.Params.TParams.SetonDecryptEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParams.SetonDecryptProc",
+        title: "SetonDecryptProc",
+          href: "Olf.RTL.Params.TParams.SetonDecryptProc.html",
       },      {
         id: "Olf.RTL.Params.TParams.ToJSON",
         title: "ToJSON",
@@ -283,6 +387,58 @@ window.DocInsight.toc["Olf.RTL.Params"] =   [
         title: "Save",
           href: "Olf.RTL.Params.TParamsFile.Save.html",
       },      {
+        id: "Olf.RTL.Params.TParamsFile.SetPortableMode",
+        title: "SetPortableMode",
+          href: "Olf.RTL.Params.TParamsFile.SetPortableMode.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.SetonAfterLoadEvent",
+        title: "SetonAfterLoadEvent",
+          href: "Olf.RTL.Params.TParamsFile.SetonAfterLoadEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.SetonAfterLoadProc",
+        title: "SetonAfterLoadProc",
+          href: "Olf.RTL.Params.TParamsFile.SetonAfterLoadProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.SetonAfterSaveEvent",
+        title: "SetonAfterSaveEvent",
+          href: "Olf.RTL.Params.TParamsFile.SetonAfterSaveEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.SetonAfterSaveProc",
+        title: "SetonAfterSaveProc",
+          href: "Olf.RTL.Params.TParamsFile.SetonAfterSaveProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.SetonBeforeLoadEvent",
+        title: "SetonBeforeLoadEvent",
+          href: "Olf.RTL.Params.TParamsFile.SetonBeforeLoadEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.SetonBeforeLoadProc",
+        title: "SetonBeforeLoadProc",
+          href: "Olf.RTL.Params.TParamsFile.SetonBeforeLoadProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.SetonBeforeSaveEvent",
+        title: "SetonBeforeSaveEvent",
+          href: "Olf.RTL.Params.TParamsFile.SetonBeforeSaveEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.SetonBeforeSaveProc",
+        title: "SetonBeforeSaveProc",
+          href: "Olf.RTL.Params.TParamsFile.SetonBeforeSaveProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.SetonCryptEvent",
+        title: "SetonCryptEvent",
+          href: "Olf.RTL.Params.TParamsFile.SetonCryptEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.SetonCryptProc",
+        title: "SetonCryptProc",
+          href: "Olf.RTL.Params.TParamsFile.SetonCryptProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.SetonDecryptEvent",
+        title: "SetonDecryptEvent",
+          href: "Olf.RTL.Params.TParamsFile.SetonDecryptEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.SetonDecryptProc",
+        title: "SetonDecryptProc",
+          href: "Olf.RTL.Params.TParamsFile.SetonDecryptProc.html",
+      },      {
         id: "Olf.RTL.Params.TParamsFile.ToJSON",
         title: "ToJSON",
           href: "Olf.RTL.Params.TParamsFile.ToJSON.html",
@@ -318,6 +474,84 @@ window.DocInsight.toc["Olf.RTL.Params"] =   [
         id: "M:Olf.RTL.Params.TParamsFile.setValue",
         title: "setValue",
           href: "Olf.RTL.Params.TParamsFile.setValue.html",
+      }  ]
+,
+      },      {
+        id: "Olf.RTL.Params.TParamsFile-Fields",
+        title: "Fields",
+          children:   [
+      {
+        id: "Olf.RTL.Params.TParamsFile.FBeginUpdateLevel",
+        title: "FBeginUpdateLevel",
+          href: "Olf.RTL.Params.TParamsFile.FBeginUpdateLevel.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FFileName",
+        title: "FFileName",
+          href: "Olf.RTL.Params.TParamsFile.FFileName.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FFolderName",
+        title: "FFolderName",
+          href: "Olf.RTL.Params.TParamsFile.FFolderName.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FParamChanged",
+        title: "FParamChanged",
+          href: "Olf.RTL.Params.TParamsFile.FParamChanged.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FParamList",
+        title: "FParamList",
+          href: "Olf.RTL.Params.TParamsFile.FParamList.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FPortableMode",
+        title: "FPortableMode",
+          href: "Olf.RTL.Params.TParamsFile.FPortableMode.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FonAfterLoadEvent",
+        title: "FonAfterLoadEvent",
+          href: "Olf.RTL.Params.TParamsFile.FonAfterLoadEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FonAfterLoadProc",
+        title: "FonAfterLoadProc",
+          href: "Olf.RTL.Params.TParamsFile.FonAfterLoadProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FonAfterSaveEvent",
+        title: "FonAfterSaveEvent",
+          href: "Olf.RTL.Params.TParamsFile.FonAfterSaveEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FonAfterSaveProc",
+        title: "FonAfterSaveProc",
+          href: "Olf.RTL.Params.TParamsFile.FonAfterSaveProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FonBeforeLoadEvent",
+        title: "FonBeforeLoadEvent",
+          href: "Olf.RTL.Params.TParamsFile.FonBeforeLoadEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FonBeforeLoadProc",
+        title: "FonBeforeLoadProc",
+          href: "Olf.RTL.Params.TParamsFile.FonBeforeLoadProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FonBeforeSaveEvent",
+        title: "FonBeforeSaveEvent",
+          href: "Olf.RTL.Params.TParamsFile.FonBeforeSaveEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FonBeforeSaveProc",
+        title: "FonBeforeSaveProc",
+          href: "Olf.RTL.Params.TParamsFile.FonBeforeSaveProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FonCryptEvent",
+        title: "FonCryptEvent",
+          href: "Olf.RTL.Params.TParamsFile.FonCryptEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FonCryptProc",
+        title: "FonCryptProc",
+          href: "Olf.RTL.Params.TParamsFile.FonCryptProc.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FonDecryptEvent",
+        title: "FonDecryptEvent",
+          href: "Olf.RTL.Params.TParamsFile.FonDecryptEvent.html",
+      },      {
+        id: "Olf.RTL.Params.TParamsFile.FonDecryptProc",
+        title: "FonDecryptProc",
+          href: "Olf.RTL.Params.TParamsFile.FonDecryptProc.html",
       }  ]
 ,
       }  ]
@@ -391,6 +625,16 @@ window.DocInsight.toc["Olf.RTL.Params"] =   [
 ,
       }  ]
 ,
+      }  ]
+,
+      },      {
+        id: "Olf.RTL.Params-Variables",
+        title: "Variables",
+          children:   [
+      {
+        id: "Olf.RTL.Params.DefaultParamsFile",
+        title: "DefaultParamsFile",
+          href: "Olf.RTL.Params.DefaultParamsFile.html",
       }  ]
 ,
       }  ]

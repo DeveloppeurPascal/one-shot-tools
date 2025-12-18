@@ -86,5 +86,9 @@ window.DocInsight.toc["toc-packages"] =   [
         id: "GenSite2025FixFooterAndLinksProject",
         title: "GenSite2025FixFooterAndLinksProject",
           href: "GenSite2025FixFooterAndLinksProject.html",
+      },      {
+        id: "UpdateSitesFromRepo",
+        title: "UpdateSitesFromRepo",
+          href: "UpdateSitesFromRepo.html",
       }  ]
 ;

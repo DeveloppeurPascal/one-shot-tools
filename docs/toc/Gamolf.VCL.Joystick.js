@@ -7,6 +7,16 @@ window.DocInsight.toc["Gamolf.VCL.Joystick"] =   [
         title: "Gamolf.VCL.Joystick",
           href: "Gamolf.VCL.Joystick.html",
       },      {
+        id: "Gamolf.VCL.Joystick-Variables",
+        title: "Variables",
+          children:   [
+      {
+        id: "Gamolf.VCL.Joystick.JoystickService",
+        title: "JoystickService",
+          href: "Gamolf.VCL.Joystick.JoystickService.html",
+      }  ]
+,
+      },      {
         id: "Gamolf.VCL.Joystick-Routines",
         title: "Routines",
           children:   [

@@ -60,6 +60,18 @@ window.DocInsight.toc["Olf.RTL.DPROJReader"] =   [
         title: "Methods",
           children:   [
       {
+        id: "Olf.RTL.DPROJReader.TOlfDPROJReader.GetAsString",
+        title: "GetAsString",
+          href: "Olf.RTL.DPROJReader.TOlfDPROJReader.GetAsString.html",
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfDPROJReader.GetAsXMLNode",
+        title: "GetAsXMLNode",
+          href: "Olf.RTL.DPROJReader.TOlfDPROJReader.GetAsXMLNode.html",
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfDPROJReader.GetFileName",
+        title: "GetFileName",
+          href: "Olf.RTL.DPROJReader.TOlfDPROJReader.GetFileName.html",
+      },      {
         id: "Olf.RTL.DPROJReader.TOlfDPROJReader.GetFilesToDeploy",
         title: "GetFilesToDeploy",
           href: "Olf.RTL.DPROJReader.TOlfDPROJReader.GetFilesToDeploy.html",
@@ -71,6 +83,32 @@ window.DocInsight.toc["Olf.RTL.DPROJReader"] =   [
         id: "Olf.RTL.DPROJReader.TOlfDPROJReader.HasPlatform",
         title: "HasPlatform",
           href: "Olf.RTL.DPROJReader.TOlfDPROJReader.HasPlatform.html",
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfDPROJReader.SetBDSVersion",
+        title: "SetBDSVersion",
+          href: "Olf.RTL.DPROJReader.TOlfDPROJReader.SetBDSVersion.html",
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfDPROJReader.SetonGetPathForAliasFunc",
+        title: "SetonGetPathForAliasFunc",
+          href: "Olf.RTL.DPROJReader.TOlfDPROJReader.SetonGetPathForAliasFunc.html",
+      }  ]
+,
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfDPROJReader-Fields",
+        title: "Fields",
+          children:   [
+      {
+        id: "Olf.RTL.DPROJReader.TOlfDPROJReader.FBDSVersion",
+        title: "FBDSVersion",
+          href: "Olf.RTL.DPROJReader.TOlfDPROJReader.FBDSVersion.html",
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfDPROJReader.FXMLDocument",
+        title: "FXMLDocument",
+          href: "Olf.RTL.DPROJReader.TOlfDPROJReader.FXMLDocument.html",
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfDPROJReader.FonGetPathForAliasFunc",
+        title: "FonGetPathForAliasFunc",
+          href: "Olf.RTL.DPROJReader.TOlfDPROJReader.FonGetPathForAliasFunc.html",
       }  ]
 ,
       }  ]
@@ -114,6 +152,58 @@ window.DocInsight.toc["Olf.RTL.DPROJReader"] =   [
         id: "Olf.RTL.DPROJReader.TOlfFileToDeploy.ToPath",
         title: "ToPath",
           href: "Olf.RTL.DPROJReader.TOlfFileToDeploy.ToPath.html",
+      }  ]
+,
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfFileToDeploy-Methods",
+        title: "Methods",
+          children:   [
+      {
+        id: "Olf.RTL.DPROJReader.TOlfFileToDeploy.SetFromFileName",
+        title: "SetFromFileName",
+          href: "Olf.RTL.DPROJReader.TOlfFileToDeploy.SetFromFileName.html",
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfFileToDeploy.SetFromPath",
+        title: "SetFromPath",
+          href: "Olf.RTL.DPROJReader.TOlfFileToDeploy.SetFromPath.html",
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfFileToDeploy.SetOverwrite",
+        title: "SetOverwrite",
+          href: "Olf.RTL.DPROJReader.TOlfFileToDeploy.SetOverwrite.html",
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfFileToDeploy.SetToFileName",
+        title: "SetToFileName",
+          href: "Olf.RTL.DPROJReader.TOlfFileToDeploy.SetToFileName.html",
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfFileToDeploy.SetToPath",
+        title: "SetToPath",
+          href: "Olf.RTL.DPROJReader.TOlfFileToDeploy.SetToPath.html",
+      }  ]
+,
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfFileToDeploy-Fields",
+        title: "Fields",
+          children:   [
+      {
+        id: "Olf.RTL.DPROJReader.TOlfFileToDeploy.FFromFileName",
+        title: "FFromFileName",
+          href: "Olf.RTL.DPROJReader.TOlfFileToDeploy.FFromFileName.html",
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfFileToDeploy.FFromPath",
+        title: "FFromPath",
+          href: "Olf.RTL.DPROJReader.TOlfFileToDeploy.FFromPath.html",
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfFileToDeploy.FOverwrite",
+        title: "FOverwrite",
+          href: "Olf.RTL.DPROJReader.TOlfFileToDeploy.FOverwrite.html",
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfFileToDeploy.FToFileName",
+        title: "FToFileName",
+          href: "Olf.RTL.DPROJReader.TOlfFileToDeploy.FToFileName.html",
+      },      {
+        id: "Olf.RTL.DPROJReader.TOlfFileToDeploy.FToPath",
+        title: "FToPath",
+          href: "Olf.RTL.DPROJReader.TOlfFileToDeploy.FToPath.html",
       }  ]
 ,
       }  ]

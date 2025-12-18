@@ -20,29 +20,17 @@ window.DocInsight.toc["fMain"] =   [
         title: "Methods",
           children:   [
       {
-        id: "fMain.TfrmMain.CreateTitleImages",
-        title: "CreateTitleImages",
-          href: "fMain.TfrmMain.CreateTitleImages.html",
-      },      {
-        id: "fMain.TfrmMain.EllipsesEditButton1Click",
-        title: "EllipsesEditButton1Click",
-          href: "fMain.TfrmMain.EllipsesEditButton1Click.html",
+        id: "fMain.TfrmMain.AddLog",
+        title: "AddLog",
+          href: "fMain.TfrmMain.AddLog.html",
       },      {
         id: "fMain.TfrmMain.FormCreate",
         title: "FormCreate",
           href: "fMain.TfrmMain.FormCreate.html",
       },      {
-        id: "fMain.TfrmMain.ProcessFolder",
-        title: "ProcessFolder",
-          href: "fMain.TfrmMain.ProcessFolder.html",
-      },      {
-        id: "fMain.TfrmMain.ProcessSite",
-        title: "ProcessSite",
-          href: "fMain.TfrmMain.ProcessSite.html",
-      },      {
-        id: "fMain.TfrmMain.btnStartClick",
-        title: "btnStartClick",
-          href: "fMain.TfrmMain.btnStartClick.html",
+        id: "fMain.TfrmMain.btnProcessClick",
+        title: "btnProcessClick",
+          href: "fMain.TfrmMain.btnProcessClick.html",
       }  ]
 ,
       },      {
@@ -50,25 +38,25 @@ window.DocInsight.toc["fMain"] =   [
         title: "Fields",
           children:   [
       {
-        id: "fMain.TfrmMain.Edit1",
-        title: "Edit1",
-          href: "fMain.TfrmMain.Edit1.html",
-      },      {
-        id: "fMain.TfrmMain.EllipsesEditButton1",
-        title: "EllipsesEditButton1",
-          href: "fMain.TfrmMain.EllipsesEditButton1.html",
-      },      {
         id: "fMain.TfrmMain.Memo1",
         title: "Memo1",
           href: "fMain.TfrmMain.Memo1.html",
       },      {
-        id: "fMain.TfrmMain.OlfSelectDirectoryDialog1",
-        title: "OlfSelectDirectoryDialog1",
-          href: "fMain.TfrmMain.OlfSelectDirectoryDialog1.html",
+        id: "fMain.TfrmMain.btnProcess",
+        title: "btnProcess",
+          href: "fMain.TfrmMain.btnProcess.html",
       },      {
-        id: "fMain.TfrmMain.btnStart",
-        title: "btnStart",
-          href: "fMain.TfrmMain.btnStart.html",
+        id: "fMain.TfrmMain.cbLogOnlyNoChange",
+        title: "cbLogOnlyNoChange",
+          href: "fMain.TfrmMain.cbLogOnlyNoChange.html",
+      },      {
+        id: "fMain.TfrmMain.edtBlockPageSiteServerFolder",
+        title: "edtBlockPageSiteServerFolder",
+          href: "fMain.TfrmMain.edtBlockPageSiteServerFolder.html",
+      },      {
+        id: "fMain.TfrmMain.edtRootFolder",
+        title: "edtRootFolder",
+          href: "fMain.TfrmMain.edtRootFolder.html",
       }  ]
 ,
       }  ]

@@ -28,9 +28,17 @@ window.DocInsight.toc["Gamolf.RTL.Joystick.DirectInput.Win"] =   [
         title: "StartDiscovery",
           href: "Gamolf.RTL.Joystick.DirectInput.Win.TGamolfJoystickWinDirectInputService.StartDiscovery.html",
       },      {
+        id: "Gamolf.RTL.Joystick.DirectInput.Win.TGamolfJoystickWinDirectInputService.getDevCaps",
+        title: "getDevCaps",
+          href: "Gamolf.RTL.Joystick.DirectInput.Win.TGamolfJoystickWinDirectInputService.getDevCaps.html",
+      },      {
         id: "Gamolf.RTL.Joystick.DirectInput.Win.TGamolfJoystickWinDirectInputService.getInfo",
         title: "getInfo",
           href: "Gamolf.RTL.Joystick.DirectInput.Win.TGamolfJoystickWinDirectInputService.getInfo.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.DirectInput.Win.TGamolfJoystickWinDirectInputService.getJoystickCaps",
+        title: "getJoystickCaps",
+          href: "Gamolf.RTL.Joystick.DirectInput.Win.TGamolfJoystickWinDirectInputService.getJoystickCaps.html",
       },      {
         id: "Gamolf.RTL.Joystick.DirectInput.Win.TGamolfJoystickWinDirectInputService.hasDPad",
         title: "hasDPad",
@@ -49,6 +57,10 @@ window.DocInsight.toc["Gamolf.RTL.Joystick.DirectInput.Win"] =   [
         id: "Gamolf.RTL.Joystick.DirectInput.Win.TGamolfJoystickWinDirectInputService.FNbControllers",
         title: "FNbControllers",
           href: "Gamolf.RTL.Joystick.DirectInput.Win.TGamolfJoystickWinDirectInputService.FNbControllers.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.DirectInput.Win.TGamolfJoystickWinDirectInputService.FTabDevCaps",
+        title: "FTabDevCaps",
+          href: "Gamolf.RTL.Joystick.DirectInput.Win.TGamolfJoystickWinDirectInputService.FTabDevCaps.html",
       }  ]
 ,
       }  ]

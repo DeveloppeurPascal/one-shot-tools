@@ -20,6 +20,10 @@ window.DocInsight.toc["fMainFMX"] =   [
         title: "Methods",
           children:   [
       {
+        id: "fMainFMX.TForm1.AddLog",
+        title: "AddLog",
+          href: "fMainFMX.TForm1.AddLog.html",
+      },      {
         id: "fMainFMX.TForm1.FormCreate",
         title: "FormCreate",
           href: "fMainFMX.TForm1.FormCreate.html",

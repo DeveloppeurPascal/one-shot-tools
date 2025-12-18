@@ -136,9 +136,135 @@ window.DocInsight.toc["Gamolf.RTL.Joystick"] =   [
         title: "DoLost",
           href: "Gamolf.RTL.Joystick.TDGEGamepad.DoLost.html",
       },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.GetAxes",
+        title: "GetAxes",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.GetAxes.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.GetButtons",
+        title: "GetButtons",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.GetButtons.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.GetIsConnected",
+        title: "GetIsConnected",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.GetIsConnected.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.GetIsSupported",
+        title: "GetIsSupported",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.GetIsSupported.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.SetEnabled",
+        title: "SetEnabled",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.SetEnabled.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.SetID",
+        title: "SetID",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.SetID.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.SetOnAxesChange",
+        title: "SetOnAxesChange",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.SetOnAxesChange.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.SetOnButtonDown",
+        title: "SetOnButtonDown",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.SetOnButtonDown.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.SetOnButtonUp",
+        title: "SetOnButtonUp",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.SetOnButtonUp.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.SetOnDirectionPadChange",
+        title: "SetOnDirectionPadChange",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.SetOnDirectionPadChange.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.SetOnLost",
+        title: "SetOnLost",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.SetOnLost.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.SetSynchronizedEvents",
+        title: "SetSynchronizedEvents",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.SetSynchronizedEvents.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.SetTagBool",
+        title: "SetTagBool",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.SetTagBool.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.SetTagFloat",
+        title: "SetTagFloat",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.SetTagFloat.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.SetTagObject",
+        title: "SetTagObject",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.SetTagObject.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.SetTagString",
+        title: "SetTagString",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.SetTagString.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.getDPad",
+        title: "getDPad",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.getDPad.html",
+      },      {
         id: "Gamolf.RTL.Joystick.TDGEGamepad.getGamepadData",
         title: "getGamepadData",
           href: "Gamolf.RTL.Joystick.TDGEGamepad.getGamepadData.html",
+      }  ]
+,
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad-Fields",
+        title: "Fields",
+          children:   [
+      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.FEnabled",
+        title: "FEnabled",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.FEnabled.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.FID",
+        title: "FID",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.FID.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.FOnAxesChange",
+        title: "FOnAxesChange",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.FOnAxesChange.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.FOnButtonDown",
+        title: "FOnButtonDown",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.FOnButtonDown.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.FOnButtonUp",
+        title: "FOnButtonUp",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.FOnButtonUp.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.FOnDirectionPadChange",
+        title: "FOnDirectionPadChange",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.FOnDirectionPadChange.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.FOnLost",
+        title: "FOnLost",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.FOnLost.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.FSynchronizedEvents",
+        title: "FSynchronizedEvents",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.FSynchronizedEvents.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.FTagBool",
+        title: "FTagBool",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.FTagBool.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.FTagFloat",
+        title: "FTagFloat",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.FTagFloat.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.FTagObject",
+        title: "FTagObject",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.FTagObject.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.FTagString",
+        title: "FTagString",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.FTagString.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepad.FhasDPAD",
+        title: "FhasDPAD",
+          href: "Gamolf.RTL.Joystick.TDGEGamepad.FhasDPAD.html",
       }  ]
 ,
       }  ]
@@ -268,6 +394,112 @@ window.DocInsight.toc["Gamolf.RTL.Joystick"] =   [
         id: "Gamolf.RTL.Joystick.TDGEGamepadManager.GetGamepad",
         title: "GetGamepad",
           href: "Gamolf.RTL.Joystick.TDGEGamepadManager.GetGamepad.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.GetIsSupported",
+        title: "GetIsSupported",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.GetIsSupported.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetEnabled",
+        title: "SetEnabled",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetEnabled.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetOnGamepadAxesChange",
+        title: "SetOnGamepadAxesChange",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetOnGamepadAxesChange.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetOnGamepadButtonDown",
+        title: "SetOnGamepadButtonDown",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetOnGamepadButtonDown.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetOnGamepadButtonUp",
+        title: "SetOnGamepadButtonUp",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetOnGamepadButtonUp.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetOnGamepadDirectionPadChange",
+        title: "SetOnGamepadDirectionPadChange",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetOnGamepadDirectionPadChange.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetOnGamepadLost",
+        title: "SetOnGamepadLost",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetOnGamepadLost.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetOnNewGamepadDetected",
+        title: "SetOnNewGamepadDetected",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetOnNewGamepadDetected.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetSynchronizedEvents",
+        title: "SetSynchronizedEvents",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetSynchronizedEvents.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetTagBool",
+        title: "SetTagBool",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetTagBool.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetTagFloat",
+        title: "SetTagFloat",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetTagFloat.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetTagObject",
+        title: "SetTagObject",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetTagObject.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetTagString",
+        title: "SetTagString",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.SetTagString.html",
+      }  ]
+,
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager-Fields",
+        title: "Fields",
+          children:   [
+      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.FEnabled",
+        title: "FEnabled",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.FEnabled.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.FOnGamepadAxesChange",
+        title: "FOnGamepadAxesChange",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.FOnGamepadAxesChange.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.FOnGamepadButtonDown",
+        title: "FOnGamepadButtonDown",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.FOnGamepadButtonDown.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.FOnGamepadButtonUp",
+        title: "FOnGamepadButtonUp",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.FOnGamepadButtonUp.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.FOnGamepadDirectionPadChange",
+        title: "FOnGamepadDirectionPadChange",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.FOnGamepadDirectionPadChange.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.FOnGamepadLost",
+        title: "FOnGamepadLost",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.FOnGamepadLost.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.FOnNewGamepadDetected",
+        title: "FOnNewGamepadDetected",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.FOnNewGamepadDetected.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.FSynchronizedEvents",
+        title: "FSynchronizedEvents",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.FSynchronizedEvents.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.FTagBool",
+        title: "FTagBool",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.FTagBool.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.FTagFloat",
+        title: "FTagFloat",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.FTagFloat.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.FTagObject",
+        title: "FTagObject",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.FTagObject.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TDGEGamepadManager.FTagString",
+        title: "FTagString",
+          href: "Gamolf.RTL.Joystick.TDGEGamepadManager.FTagString.html",
       }  ]
 ,
       }  ]
@@ -394,17 +626,163 @@ window.DocInsight.toc["Gamolf.RTL.Joystick"] =   [
         title: "DoLost",
           href: "Gamolf.RTL.Joystick.TGamepadDevice.DoLost.html",
       },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.GetAxes",
+        title: "GetAxes",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.GetAxes.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.GetButtons",
+        title: "GetButtons",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.GetButtons.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.GetIsConnected",
+        title: "GetIsConnected",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.GetIsConnected.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.GetIsSupported",
+        title: "GetIsSupported",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.GetIsSupported.html",
+      },      {
         id: "Gamolf.RTL.Joystick.TGamepadDevice.RegisterGamePadComponent",
         title: "RegisterGamePadComponent",
           href: "Gamolf.RTL.Joystick.TGamepadDevice.RegisterGamePadComponent.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.SetEnabled",
+        title: "SetEnabled",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.SetEnabled.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.SetIsConnected",
+        title: "SetIsConnected",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.SetIsConnected.html",
       },      {
         id: "Gamolf.RTL.Joystick.TGamepadDevice.SetNewJoystickInfo",
         title: "SetNewJoystickInfo",
           href: "Gamolf.RTL.Joystick.TGamepadDevice.SetNewJoystickInfo.html",
       },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.SetOnAxesChange",
+        title: "SetOnAxesChange",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.SetOnAxesChange.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.SetOnButtonDown",
+        title: "SetOnButtonDown",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.SetOnButtonDown.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.SetOnButtonUp",
+        title: "SetOnButtonUp",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.SetOnButtonUp.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.SetOnDirectionPadChange",
+        title: "SetOnDirectionPadChange",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.SetOnDirectionPadChange.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.SetOnLost",
+        title: "SetOnLost",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.SetOnLost.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.SetSynchronizedEvents",
+        title: "SetSynchronizedEvents",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.SetSynchronizedEvents.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.SetTag",
+        title: "SetTag",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.SetTag.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.SetTagBool",
+        title: "SetTagBool",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.SetTagBool.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.SetTagFloat",
+        title: "SetTagFloat",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.SetTagFloat.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.SetTagObject",
+        title: "SetTagObject",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.SetTagObject.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.SetTagString",
+        title: "SetTagString",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.SetTagString.html",
+      },      {
         id: "Gamolf.RTL.Joystick.TGamepadDevice.UnRegisterGamePadComponent",
         title: "UnRegisterGamePadComponent",
           href: "Gamolf.RTL.Joystick.TGamepadDevice.UnRegisterGamePadComponent.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.getDPad",
+        title: "getDPad",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.getDPad.html",
+      }  ]
+,
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice-Fields",
+        title: "Fields",
+          children:   [
+      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FEnabled",
+        title: "FEnabled",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FEnabled.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FGamepads",
+        title: "FGamepads",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FGamepads.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FID",
+        title: "FID",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FID.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FIsConnected",
+        title: "FIsConnected",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FIsConnected.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FJoystickInfo",
+        title: "FJoystickInfo",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FJoystickInfo.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FOnAxesChange",
+        title: "FOnAxesChange",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FOnAxesChange.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FOnButtonDown",
+        title: "FOnButtonDown",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FOnButtonDown.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FOnButtonUp",
+        title: "FOnButtonUp",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FOnButtonUp.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FOnDirectionPadChange",
+        title: "FOnDirectionPadChange",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FOnDirectionPadChange.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FOnLost",
+        title: "FOnLost",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FOnLost.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FSynchronizedEvents",
+        title: "FSynchronizedEvents",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FSynchronizedEvents.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FTag",
+        title: "FTag",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FTag.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FTagBool",
+        title: "FTagBool",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FTagBool.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FTagFloat",
+        title: "FTagFloat",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FTagFloat.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FTagObject",
+        title: "FTagObject",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FTagObject.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FTagString",
+        title: "FTagString",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FTagString.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevice.FhasDPAD",
+        title: "FhasDPAD",
+          href: "Gamolf.RTL.Joystick.TGamepadDevice.FhasDPAD.html",
       }  ]
 ,
       }  ]
@@ -551,6 +929,10 @@ window.DocInsight.toc["Gamolf.RTL.Joystick"] =   [
         title: "GetGamepad",
           href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.GetGamepad.html",
       },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.GetIsSupported",
+        title: "GetIsSupported",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.GetIsSupported.html",
+      },      {
         id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.IsGamepadConnected",
         title: "IsGamepadConnected",
           href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.IsGamepadConnected.html",
@@ -563,6 +945,58 @@ window.DocInsight.toc["Gamolf.RTL.Joystick"] =   [
         title: "RegisterGamePadManager",
           href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.RegisterGamePadManager.html",
       },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetEnabled",
+        title: "SetEnabled",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetEnabled.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetOnGamepadAxesChange",
+        title: "SetOnGamepadAxesChange",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetOnGamepadAxesChange.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetOnGamepadButtonDown",
+        title: "SetOnGamepadButtonDown",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetOnGamepadButtonDown.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetOnGamepadButtonUp",
+        title: "SetOnGamepadButtonUp",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetOnGamepadButtonUp.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetOnGamepadDirectionPadChange",
+        title: "SetOnGamepadDirectionPadChange",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetOnGamepadDirectionPadChange.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetOnGamepadLost",
+        title: "SetOnGamepadLost",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetOnGamepadLost.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetOnNewGamepadDetected",
+        title: "SetOnNewGamepadDetected",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetOnNewGamepadDetected.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetSynchronizedEvents",
+        title: "SetSynchronizedEvents",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetSynchronizedEvents.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetTag",
+        title: "SetTag",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetTag.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetTagBool",
+        title: "SetTagBool",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetTagBool.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetTagFloat",
+        title: "SetTagFloat",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetTagFloat.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetTagObject",
+        title: "SetTagObject",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetTagObject.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetTagString",
+        title: "SetTagString",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.SetTagString.html",
+      },      {
         id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.UnRegisterGamePadDevice",
         title: "UnRegisterGamePadDevice",
           href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.UnRegisterGamePadDevice.html",
@@ -570,6 +1004,88 @@ window.DocInsight.toc["Gamolf.RTL.Joystick"] =   [
         id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.UnRegisterGamePadManager",
         title: "UnRegisterGamePadManager",
           href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.UnRegisterGamePadManager.html",
+      }  ]
+,
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager-Fields",
+        title: "Fields",
+          children:   [
+      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FEnabled",
+        title: "FEnabled",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FEnabled.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FGamepadManager",
+        title: "FGamepadManager",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FGamepadManager.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FGamepads",
+        title: "FGamepads",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FGamepads.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FGamolfJoystickService",
+        title: "FGamolfJoystickService",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FGamolfJoystickService.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FLoopIsRunning",
+        title: "FLoopIsRunning",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FLoopIsRunning.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FLoopThread",
+        title: "FLoopThread",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FLoopThread.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FManagers",
+        title: "FManagers",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FManagers.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FOnGamepadAxesChange",
+        title: "FOnGamepadAxesChange",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FOnGamepadAxesChange.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FOnGamepadButtonDown",
+        title: "FOnGamepadButtonDown",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FOnGamepadButtonDown.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FOnGamepadButtonUp",
+        title: "FOnGamepadButtonUp",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FOnGamepadButtonUp.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FOnGamepadDirectionPadChange",
+        title: "FOnGamepadDirectionPadChange",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FOnGamepadDirectionPadChange.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FOnGamepadLost",
+        title: "FOnGamepadLost",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FOnGamepadLost.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FOnNewGamepadDetected",
+        title: "FOnNewGamepadDetected",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FOnNewGamepadDetected.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FSynchronizedEvents",
+        title: "FSynchronizedEvents",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FSynchronizedEvents.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FTag",
+        title: "FTag",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FTag.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FTagBool",
+        title: "FTagBool",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FTagBool.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FTagFloat",
+        title: "FTagFloat",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FTagFloat.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FTagObject",
+        title: "FTagObject",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FTagObject.html",
+      },      {
+        id: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FTagString",
+        title: "FTagString",
+          href: "Gamolf.RTL.Joystick.TGamepadDevicesManager.FTagString.html",
       }  ]
 ,
       }  ]

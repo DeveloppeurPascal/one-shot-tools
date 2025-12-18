@@ -57,5 +57,19 @@ window.DocInsight.toc["frm_generation"] =   [
           href: "frm_generation.Form2.html",
       }  ]
 ,
+      },      {
+        id: "frm_generation-Routines",
+        title: "Routines",
+          children:   [
+      {
+        id: "frm_generation.no_space",
+        title: "no_space",
+          href: "frm_generation.no_space.html",
+      },      {
+        id: "frm_generation.serie_aleatoire",
+        title: "serie_aleatoire",
+          href: "frm_generation.serie_aleatoire.html",
+      }  ]
+,
       }  ]
 ;

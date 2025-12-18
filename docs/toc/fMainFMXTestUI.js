@@ -24,6 +24,10 @@ window.DocInsight.toc["fMainFMXTestUI"] =   [
         title: "Button1Click",
           href: "fMainFMXTestUI.TForm3.Button1Click.html",
       },      {
+        id: "fMainFMXTestUI.TForm3.ClickOnFocused",
+        title: "ClickOnFocused",
+          href: "fMainFMXTestUI.TForm3.ClickOnFocused.html",
+      },      {
         id: "fMainFMXTestUI.TForm3.FormCreate",
         title: "FormCreate",
           href: "fMainFMXTestUI.TForm3.FormCreate.html",
@@ -43,6 +47,22 @@ window.DocInsight.toc["fMainFMXTestUI"] =   [
         id: "fMainFMXTestUI.TForm3.GamepadManager1NewGamepadDetected",
         title: "GamepadManager1NewGamepadDetected",
           href: "fMainFMXTestUI.TForm3.GamepadManager1NewGamepadDetected.html",
+      },      {
+        id: "fMainFMXTestUI.TForm3.GoDown",
+        title: "GoDown",
+          href: "fMainFMXTestUI.TForm3.GoDown.html",
+      },      {
+        id: "fMainFMXTestUI.TForm3.GoLeft",
+        title: "GoLeft",
+          href: "fMainFMXTestUI.TForm3.GoLeft.html",
+      },      {
+        id: "fMainFMXTestUI.TForm3.GoRight",
+        title: "GoRight",
+          href: "fMainFMXTestUI.TForm3.GoRight.html",
+      },      {
+        id: "fMainFMXTestUI.TForm3.GoUp",
+        title: "GoUp",
+          href: "fMainFMXTestUI.TForm3.GoUp.html",
       }  ]
 ,
       },      {
