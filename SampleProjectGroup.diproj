@@ -13,8 +13,8 @@
   <FooterHtml>&lt;a href="https://oneshottools.developpeur-pascal.fr/" target="_blank"&gt;One Shot Tools&lt;/a&gt; (c) 2022-2025 &lt;a href="https://patrick.premartin.fr" target="_blank"&gt;Patrick PREMARTIN&lt;/a&gt; - Powered by &lt;a href="https://devjetsoftware.com/products/documentation-insight/" target="_blank"&gt;DocInsight&lt;/a&gt;</FooterHtml>
   <CustomDefines/>
   <GlobalSearchPaths>false</GlobalSearchPaths>
-  <ShowImplementationSection>false</ShowImplementationSection>
-  <ShowPrivateMembers>false</ShowPrivateMembers>
+  <ShowImplementationSection>true</ShowImplementationSection>
+  <ShowPrivateMembers>true</ShowPrivateMembers>
   <ShowProtectedMembers>true</ShowProtectedMembers>
   <ShowInheritedMembers>true</ShowInheritedMembers>
   <ShowPropertyAccessors>true</ShowPropertyAccessors>
@@ -42,6 +42,7 @@
     <Source>.\webhosting-send-mysql-config-email\src\WebHostingCreateAndSendMySQLByEmail.dpr</Source>
     <Source>.\LinkWebsiteServerSampleDBGenerator\LinkWebsiteServerSampleDBGenerator.dpr</Source>
     <Source>.\GenSite2025-FixFooterAndLinks\GenSite2025FixFooterAndLinksProject.dpr</Source>
+    <Source>.\GenSite2025-UpdateSitesFromRepo\UpdateSitesFromRepo.dpr</Source>
   </Sources>
   <Outputs>
     <Output Type="HTML">
