@@ -90,5 +90,9 @@ window.DocInsight.toc["toc-packages"] =   [
         id: "UpdateSitesFromRepo",
         title: "UpdateSitesFromRepo",
           href: "UpdateSitesFromRepo.html",
+      },      {
+        id: "CallAPageOnManyURL",
+        title: "CallAPageOnManyURL",
+          href: "CallAPageOnManyURL.html",
       }  ]
 ;
