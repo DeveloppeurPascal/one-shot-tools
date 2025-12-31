@@ -245,6 +245,9 @@ var
   SiteTitle: string;
   i: integer;
   Key, Value: string;
+  Files: TStringDynArray;
+  FileName: string;
+  PrevPage, Page: string;
 begin
   if (not path.IsEmpty) and tdirectory.Exists(path) and tfile.Exists(tpath.Combine(path, 'settings.json')) then
   begin
@@ -267,6 +270,18 @@ begin
           end;
     finally
       jso.Free;
+    end;
+    Files := TDirectory.GetFiles(path);
+    for i := 0 to length(Files) - 1 do
+    begin
+      FileName := TPath.GetFileName(files[i]);
+      if filename.StartsWith('page_') and filename.EndsWith('.json') then
+      begin
+        PrevPage := tfile.ReadAllText(files[i]);
+        Page := PrevPage.Replace('nos logiciel ', 'nos logiciels ');
+        if not SameText(Page, PrevPage) then
+          TFile.WriteAllText(files[i], Page, TEncoding.ANSI);
+      end;
     end;
   end;
 end;
