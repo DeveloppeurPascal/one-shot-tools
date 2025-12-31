@@ -43,6 +43,7 @@
     <Source>.\LinkWebsiteServerSampleDBGenerator\LinkWebsiteServerSampleDBGenerator.dpr</Source>
     <Source>.\GenSite2025-FixFooterAndLinks\GenSite2025FixFooterAndLinksProject.dpr</Source>
     <Source>.\GenSite2025-UpdateSitesFromRepo\UpdateSitesFromRepo.dpr</Source>
+    <Source>.\GenSite2025-CallAPageOnManyURL\CallAPageOnManyURL.dpr</Source>
   </Sources>
   <Outputs>
     <Output Type="HTML">
