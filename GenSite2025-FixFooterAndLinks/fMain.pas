@@ -283,6 +283,14 @@ begin
           TFile.WriteAllText(files[i], Page, TEncoding.ANSI);
       end;
     end;
+    FileName := TPath.Combine(path, '..', 'robots.txt');
+    if tfile.Exists(filename) then
+    begin
+      PrevPage := tfile.ReadAllText(filename);
+      Page := PrevPage.Replace('sitemap.php', 'sitemap.xml');
+      if not SameText(Page, PrevPage) then
+        TFile.WriteAllText(filename, Page, TEncoding.ANSI);
+    end;
   end;
 end;
 
