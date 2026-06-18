@@ -2,7 +2,7 @@
   ***************************************************************************
 
   One Shot Tools
-  Copyright (c) 2022-2025 Patrick PREMARTIN
+  Copyright (c) 2022-2026 Patrick PREMARTIN
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU Affero General Public License as
@@ -29,7 +29,7 @@
   https://github.com/DeveloppeurPascal/one-shot-tools
 
   ***************************************************************************
-  File last update : 2025-07-14T15:53:37.248+02:00
+  File last update : 2025-12-17T21:16:09.063+01:00
   Signature : ceb09d1a7388f1f78c2b60f5658ff89d1111bb6d
   ***************************************************************************
 *)
